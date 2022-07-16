@@ -5,11 +5,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name checkout
+      - name: checkout
         uses: actions/checkout@v2
-      - name setup node
+
+      - name: setup node
         uses: actions/setup-node@v1
         with: 
           node-version: '17'
-      - name build
+
+      - name: build
         run: npm run build
