@@ -1,6 +1,6 @@
 {
   "name": "qtoken-test",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "企点设计系统design token",
   "main": "src/variables.css",
   "scripts": {
