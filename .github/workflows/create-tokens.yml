@@ -16,8 +16,8 @@ jobs:
       - name: build
         run: 
           npm run build
-          git add -A
-          git commit -m "github action commit"
-          git push origin master
+          # git add -A
+          # git commit -m "github action commit"
+          # git push origin master
 
       
