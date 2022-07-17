@@ -16,8 +16,11 @@ jobs:
       - name: build
         run: 
           npm run build
+          npm publish
           # git add -A
           # git commit -m "github action commit"
           # git push origin master
+        env: 
+          NODE_AUTH_TOKEN: ${{secrets.npm_token}
 
       
