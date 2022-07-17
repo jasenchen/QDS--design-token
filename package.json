@@ -1,5 +1,5 @@
 {
-  "name": "qdtoken",
+  "name": "qtoken",
   "version": "1.0.0",
   "description": "企点设计系统design token",
   "main": "dist/variables.css",

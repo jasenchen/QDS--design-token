@@ -14,4 +14,10 @@ jobs:
           node-version: '17'
 
       - name: build
-        run: npm run build
+        run: 
+          npm run build
+          git add -A
+          git commit -m "github action commit"
+          git push
+
+      
