@@ -1,6 +1,6 @@
 const fs = require('fs');
 const tokenPath = 'tokens.json';
-const outputDir = 'public';
+const outputDir = 'src';
 let variables = [':root,'];
 let originData;
 

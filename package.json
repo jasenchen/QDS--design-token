@@ -1,8 +1,8 @@
 {
-  "name": "qtoken",
+  "name": "qtoken-test",
   "version": "1.0.0",
   "description": "企点设计系统design token",
-  "main": "dist/variables.css",
+  "main": "src/variables.css",
   "scripts": {
     "build": "node ./build/start.js",
     "test": "echo \"Error: no test specified\" && exit 1"
