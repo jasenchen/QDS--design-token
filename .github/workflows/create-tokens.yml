@@ -1,0 +1,26 @@
+name: CI
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+
+      - name: setup node
+        uses: actions/setup-node@v1
+        with: 
+          node-version: '17'
+
+      - name: build
+        run: 
+          npm run build
+          npm publish
+          # git add -A
+          # git commit -m "github action commit"
+          # git push origin master
+        env: 
+          NODE_AUTH_TOKEN: ${secrets.npm_token}
+
+      
