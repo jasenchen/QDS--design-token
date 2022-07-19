@@ -50,7 +50,7 @@ function traverse(data = {}) {
             }
             // 字体
             else if (item.type === 'typography') {
-                value = `${value.fontWeight} ${value.fontSize}/${value.lineHeight} ${value.fontFamily}`;
+                value = `${value.fontWeight} ${value.fontSize}/${value.lineHeight}`;
             }
             // 阴影
             else if (item.type === 'boxShadow') {
@@ -61,7 +61,7 @@ function traverse(data = {}) {
                 });
                 value = vstr.join(',');
             }
-            transformed[name] = `${value}`;
+            transformed[name] = `${value};${item.description ? ' /* ' + item.description + ' */' : ''}`;
         }
         else {
             transformed[name] = traverse(item);
@@ -76,7 +76,7 @@ function tranform(data = {}, themeName, transformed, parentName) {
         let item = data[name];
         if (typeof item === 'string') {
             let n = getVariableName(name, parentName);
-            transformed.push(`${n}: ${replaceVars(item, themeName, n)};`);
+            transformed.push(`${n}: ${replaceVars(item, themeName, n)}`);
         }
         else {
             tranform(item, themeName, transformed, name);
@@ -112,16 +112,19 @@ function replaceVars(str = '', themeName, itemName) {
     str = str.replace(/\{([\w\-\d]+)\.([\w\-\d]*)\}/g, function(matchStr, name1, name2, index, s) {
         let r = name2 ? data[name1][name2] : data[name1];
         log && console.log(`r1: name1: ${name1}, name2: ${name2}, s: ${s}, r:${r}, d:${JSON.stringify(data[name1])}`);
-        return replaceVars(r, themeName);
+        // return replaceVars(r, themeName);
+        return `var(${name2})`;
 
     // $fontSize.3
     }).replace(/\$([\w\-\d]+)\.([\w\-\d]*)/g, function(matchStr, name1, name2, index, s) {
         let r = name2 ? data[name1][name2] : data[name1];
         log && console.log(`r2: name1: ${name1}, name2: ${name2}, s: ${s}, r:${r}, d:${JSON.stringify(data[name1])}`);
-        return replaceVars(r, themeName);
+        // return replaceVars(r, themeName);
+        let n = getVariableName(name1, name2);
+        return `var(${n})`;
 
     // {--radius-normal}*2px 需计算
-    }).replace(/\{(--[\w\-\d]+)\}\s*([*\/])\s*(\d+)/g, function(matchStr, name1, name2, name3, index, s) {
+    }).replace(/\{(--[\w\-\d]+)\}\s*([*\/])\s*(\d+)px/g, function(matchStr, name1, name2, name3, index, s) {
         let r;
         // + - * /, 暂时只处理 * /
         if (name2 === '*') {
@@ -131,12 +134,13 @@ function replaceVars(str = '', themeName, itemName) {
             r = parseInt(data[name1]) / parseInt(name3);
         }
         log && console.log(`r1: name1: ${name1}, name2: ${name2}, name3: ${name3}`);
-        return r;
+        // return r;
+        return `calc(var(${name1})${name2}${name3})`;
 
     // eg:rgba(#ffffff,0.24)
-    }).replace(/(rgba\(\s*)#(\w{6})/g, function(matchStr, name1, name2, index, s) {
+    })/*.replace(/(rgba\(\s*)#(\w{6})/g, function(matchStr, name1, name2, index, s) {
         return `rgba(${toRGB(name2)}`;
-    });
+    })*/;
     log && console.log('return:', str);
     return str;
 }
