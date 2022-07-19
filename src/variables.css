@@ -23,18 +23,18 @@
 	--color-border-normal: var(--color-gray-3);
 	--color-border-hover: var(--color-gray-4);
 	--color-border-active: var(--color-brand-1); /* active */
-	--color-border-disable: rgba(var(--color-gray-2),1); /* 不可用 */
+	--color-border-disable: var(--color-gray-2); /* 不可用 */
 	--color-divider-normal: var(--color-gray-2); /* 分割线颜色 */
-	--color-fill-normal: rgba(var(--color-white),0); /* normal */
-	--color-fill-hover: rgba(var(--color-gray-1),1); /* hover */
-	--color-fill-active: rgba(var(--color-brand-0),1); /* active */
-	--color-fill-disable: rgba(var(--color-gray-0),1); /* disabled */
+	--color-fill-normal: rgba(255,255,255,0); /* normal */
+	--color-fill-hover: var(--color-gray-1); /* hover */
+	--color-fill-active: var(--color-brand-0); /* active */
+	--color-fill-disable: var(--color-gray-0); /* disabled */
 	--color-bg-0: var(--color-white); /* 最底层背景色 */
 	--color-bg-1: var(--color-white); /* 强调背景色（弹框类，控件类） */
 	--color-bg-2: var(--color-white); /* 最上层背景色（气泡类、通知类） */
 	--color-bg-3: var(--color-gray-0); /* 灰色背景色1 */
 	--color-bg-4: var(--color-gray-1); /* 灰色背景色2 */
-	--color-overlay: rgba(var(--color-gray-13),0.32); /* 蒙层颜色 */
+	--color-overlay: rgba(18,19,25,0.32); /* 蒙层颜色 */
 	--color-nav-1: var(--color-gray-11); /* 一级导航颜色 */
 	--color-nav-2: var(--color-white); /* 二级导航颜色 */
 	--color-link-normal: var(--color-brand-5); /* normal */
@@ -237,12 +237,12 @@
 	--color-border-normal: var(--color-gray-3);
 	--color-border-hover: var(--color-gray-4);
 	--color-border-active: var(--color-brand-1); /* active */
-	--color-border-disable: rgba(var(--color-gray-2),1); /* 不可用 */
+	--color-border-disable: var(--color-gray-2); /* 不可用 */
 	--color-divider-normal: var(--color-gray-2); /* 分割线颜色 */
-	--color-fill-normal: rgba(var(--color-white),0); /* normal */
-	--color-fill-hover: rgba(var(--color-gray-2),1); /* hover */
-	--color-fill-active: rgba(var(--color-brand-0),1); /* active */
-	--color-fill-disable: rgba(var(--color-gray-0),1); /* disabled */
+	--color-fill-normal: rgba(0,0,0,0); /* normal */
+	--color-fill-hover: var(--color-gray-2); /* hover */
+	--color-fill-active: var(--color-brand-0); /* active */
+	--color-fill-disable: var(--color-gray-0); /* disabled */
 	--color-bg-0: var(--color-gray-0); /* 最底层背景色 */
 	--color-bg-1: var(--color-gray-1); /* 强调背景色（弹框类，控件类） */
 	--color-bg-2: var(--color-gray-2); /* 最上层背景色（气泡类、通知类） */
