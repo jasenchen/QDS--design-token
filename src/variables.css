@@ -246,8 +246,8 @@
 	--color-bg-0: var(--color-gray-0); /* 最底层背景色 */
 	--color-bg-1: var(--color-gray-1); /* 强调背景色（弹框类，控件类） */
 	--color-bg-2: var(--color-gray-2); /* 最上层背景色（气泡类、通知类） */
-	--color-bg-3: var(--color-gray-2); /* 灰色背景色1 */
-	--color-bg-4: var(--color-gray-3); /* 灰色背景色2 */
+	--color-bg-3: var(--color-gray-1); /* 灰色背景色1 */
+	--color-bg-4: var(--color-gray-2); /* 灰色背景色2 */
 	--color-overlay: rgba(var(--color-gray-13),0.32); /* 蒙层颜色 */
 	--color-nav-1: var(--color-gray-0); /* 一级导航颜色 */
 	--color-nav-2: var(--color-gray-0); /* 二级导航颜色 */
