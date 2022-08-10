@@ -191,13 +191,13 @@
 	--size-xl: 48px;
 	--size-xxl: 64px;
 	--spacing-super-tight: 2px; /* 极相关组件相邻关系 */
-	--spacing-tight: 4px; /* 极紧凑尺寸内/外边距 */
+	--spacing-tight: 4px; /* 极紧凑组件相邻关系 */
 	--spacing-base: 8px; /* 默认间距基准单位 */
-	--spacing-base-loose: 12px;
-	--spacing-loose: 16px; /* 宽松尺寸内/外边距 */
-	--spacing-quite-loose: 20px; /* 较宽松尺寸内/外边距 */
-	--spacing-extra-loose: 24px; /* 超宽松尺寸内/外边距—容器级别 */
-	--spacing-super-loose: 32px; /* 极其宽松尺寸内/外边距—页面级别 */
+	--spacing-base-loose: 12px; /* 紧凑尺寸内/外边距 */
+	--spacing-loose: 16px; /* 默认尺寸内/外边距 */
+	--spacing-quite-loose: 20px; /* 宽松尺寸内/外边距 */
+	--spacing-extra-loose: 24px; /* 较宽松尺寸内/外边距—容器级别 */
+	--spacing-super-loose: 32px; /* 超宽松尺寸内/外边距—页面级别 */
 	--radius-0: 0px; /* 无圆角 */
 	--motion--ease-in-out: cubic-bezier(0.36, 0.01, 0.1, 1); /* 缓入缓出 */
 	--motion--ease-out: cubic-bezier(0, 0, 0.2, 1); /* 减速宽松 */
@@ -403,12 +403,13 @@
 	--size-xl: 48px;
 	--size-xxl: 64px;
 	--spacing-super-tight: 2px; /* 极相关组件相邻关系 */
-	--spacing-tight: 4px; /* 极紧凑尺寸内/外边距 */
+	--spacing-tight: 4px; /* 极紧凑组件相邻关系 */
 	--spacing-base: 8px; /* 默认间距基准单位 */
-	--spacing-base-loose: 12px;
-	--spacing-loose: 16px; /* 宽松尺寸内/外边距 */
-	--spacing-extra-loose: 24px; /* 超宽松尺寸内/外边距—容器级别 */
-	--spacing-super-loose: 32px; /* 极其宽松尺寸内/外边距—页面级别 */
+	--spacing-base-loose: 12px; /* 默认尺寸内/外边距 */
+	--spacing-loose: 16px; /* 默认尺寸内/外边距 */
+	--spacing-quite-loose: 20px; /* 宽松尺寸内/外边距 */
+	--spacing-extra-loose: 24px; /* 较宽松尺寸内/外边距—容器级别 */
+	--spacing-super-loose: 32px; /* 超宽松尺寸内/外边距—页面级别 */
 	--radius-0: 0px; /* 无圆角 */
 	--motion--ease-in-out: cubic-bezier(0.36, 0.01, 0.1, 1); /* 缓入缓出 */
 	--motion--ease-out: cubic-bezier(0, 0, 0.2, 1); /* 减速宽松 */
