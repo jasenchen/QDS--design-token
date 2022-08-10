@@ -1,7 +1,8 @@
 const fs = require('fs');
 const tokenPath = 'tokens.json';
 const outputDir = 'src';
-let variables = [':root,'];
+// let variables = [':root,'];
+let variables = [];
 let originData;
 
 /*
@@ -18,11 +19,12 @@ const token = fs.readFile(tokenPath, 'utf-8', function(err, data) {
     data = JSON.parse(data);
     let themes = Object.keys(data);
     originData = traverse(data);
-    themes.forEach(name => {
-        if (Object.keys(data[name]).length === 0) {
+    themes.forEach((name, index) => {
+        if (Object.keys(data[name]).length === 0 || index > 0) {
             return;
         }
-        let themeStr = [`:root[theme-mode="${name}"] {`];
+        // let themeStr = [`:root[theme-mode="${name}"] {`];
+        let themeStr = [`:root {`];
         themeStr = themeStr.concat(tranform(originData[name], name));
         themeStr.push('}\n');
         variables = variables.concat(themeStr);
@@ -42,7 +44,7 @@ function traverse(data = {}) {
         if (item.value) {
             let value = item.value;
             // 字号、行高加上单位
-            if ('sizing|fontSizes|lineHeights|letterSpacing|paragraphSpacing|borderRadius'.indexOf(item.type) > -1) {
+            if ('sizing|fontSizes|lineHeights|letterSpacing|paragraphSpacing|borderRadius'.indexOf(item.type) > -1 && value.indexOf('%') === -1) {
                 value += 'px';
             }
             else if (item.type === 'fontFamilies') {
@@ -50,7 +52,7 @@ function traverse(data = {}) {
             }
             // 字体
             else if (item.type === 'typography') {
-                value = `${value.fontWeight} ${value.fontSize}/${value.lineHeight}`;
+                value = `${value.fontWeight} ${value.fontSize}/${value.lineHeight} ${value.fontFamily}`;
             }
             // 阴影
             else if (item.type === 'boxShadow') {
