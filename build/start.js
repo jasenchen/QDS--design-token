@@ -1,9 +1,11 @@
 const fs = require('fs');
 const tokenPath = 'tokens.json';
 const outputDir = 'src';
-// let variables = [':root,'];
-let variables = [];
+let variables = [':root,'];
+// let variables = [];
 let originData;
+let vars = [];
+let snippets = {};
 
 /*
  * @eg, output content
@@ -20,21 +22,39 @@ const token = fs.readFile(tokenPath, 'utf-8', function(err, data) {
     let themes = Object.keys(data);
     originData = traverse(data);
     themes.forEach((name, index) => {
-        if (Object.keys(data[name]).length === 0 || index > 0) {
-            return;
+        // if (Object.keys(data[name]).length === 0 || index > 0) {
+        //     return;
+        // }
+        if (Object.keys(originData[name]).length) {
+            let themeStr = [`:root[theme-mode="${name}"] {`];
+            // let themeStr = [`:root {`];
+            themeStr = themeStr.concat(tranform(originData[name], name));
+            themeStr.push('}\n');
+            variables = variables.concat(themeStr);
         }
-        // let themeStr = [`:root[theme-mode="${name}"] {`];
-        let themeStr = [`:root {`];
-        themeStr = themeStr.concat(tranform(originData[name], name));
-        themeStr.push('}\n');
-        variables = variables.concat(themeStr);
     });
+    makeSnippets();
     makeFile();
 });
+
+function makeSnippets() {
+    vars.forEach(name => {
+        let key = cleanName(name);
+        snippets[key] = {
+            "scope": "css,less,sass",
+            "prefix": `var(--${key})`,
+            "body": [`var(--${key})`]
+        };
+    });
+}
 
 function makeFile() {
     fs.mkdir(outputDir, function(err){
         fs.writeFileSync(`${outputDir}/variables.css`, variables.join('\n'));
+        fs.writeFileSync(`${outputDir}/design-token.code-snippets`, `
+            /* vscode snippets for qd-design-token */
+            ${JSON.stringify(snippets)}
+        `);
     });
 }
 function traverse(data = {}) {
@@ -48,7 +68,7 @@ function traverse(data = {}) {
                 value += 'px';
             }
             else if (item.type === 'fontFamilies') {
-                value = `"${value}"`;
+                value = `${value.replace(/;/g, '')}`;
             }
             // 字体
             else if (item.type === 'typography') {
@@ -64,6 +84,8 @@ function traverse(data = {}) {
                 value = vstr.join(',');
             }
             transformed[name] = `${value};${item.description ? ' /* ' + item.description + ' */' : ''}`;
+            // console.log(name);
+            vars.push(name);
         }
         else {
             transformed[name] = traverse(item);
@@ -113,9 +135,11 @@ function replaceVars(str = '', themeName, itemName) {
     // eg:{brand.--color-brand-5}
     str = str.replace(/\{([\w\-\d]+)\.([\w\-\d]*)\}/g, function(matchStr, name1, name2, index, s) {
         let r = name2 ? data[name1][name2] : data[name1];
+        r = r.replace(/[";]/g, '');
         log && console.log(`r1: name1: ${name1}, name2: ${name2}, s: ${s}, r:${r}, d:${JSON.stringify(data[name1])}`);
         // return replaceVars(r, themeName);
-        return `var(${name2})`;
+        // console.log('name2', name2, r);
+        return /-(famliy|family)-/.test(name2) ? r : `var(${name2})`;
 
     // $fontSize.3
     }).replace(/\$([\w\-\d]+)\.([\w\-\d]*)/g, function(matchStr, name1, name2, index, s) {
