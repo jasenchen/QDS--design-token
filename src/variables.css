@@ -11,10 +11,10 @@
 	--color-primary-focus: var(--color-brand-3); /* focus */
 	--color-primary-disable: var(--color-brand-2); /* disable */
 	--color-primary-light: var(--color-brand-0); /* light */
-	--color-primary-text: #12196d; /* - */
-	--color-primary-light-normal: #f1f6ff; /* light */
-	--color-primary-light-hover: #dbe8ff; /* light-hover */
-	--color-primary-light-active: #b7ceff; /* light-active */
+	--color-primary-text: var(--color-brand-9); /* - */
+	--color-primary-light-normal: var(--color-brand-0); /* light */
+	--color-primary-light-hover: var(--color-brand-1); /* light-hover */
+	--color-primary-light-active: var(--color-brand-2); /* light-active */
 	--color-text-primary: var(--color-gray-13); /* - */
 	--color-text-secondary: var(--color-gray-8); /* 次要 */
 	--color-text-caption: var(--color-gray-6); /* 说明 */
@@ -185,13 +185,13 @@
 	--radius-normal: 3px; /* 控件、小卡片等 */
 	--radius-large: calc(var(--radius-normal)*2); /* 大卡片、大弹框等 */
 	--radius-round: 50%; /* 胶囊 */
-	--size-xxs: 8pxpx;
-	--size-xs: 16pxpx;
-	--size-s: 20pxpx;
-	--size-m: 24pxpx;
-	--size-l: 32pxpx;
-	--size-xl: 48pxpx;
-	--size-xxl: 64pxpx;
+	--size-xxs: 8px;
+	--size-xs: 16px;
+	--size-s: 20px;
+	--size-m: 24px;
+	--size-l: 32px;
+	--size-xl: 48px;
+	--size-xxl: 64px;
 	--spacing-super-tight: 2px; /* 极相关组件相邻关系 */
 	--spacing-tight: 4px; /* 极紧凑组件相邻关系 */
 	--spacing-base: 8px; /* 默认间距基准单位 */
@@ -237,10 +237,10 @@
 	--color-primary-focus: var(--color-brand-3); /* focus */
 	--color-primary-disable: var(--color-brand-2); /* disable */
 	--color-primary-light: var(--color-brand-0); /* light */
-	--color-primary-text: #12196d; /* - */
-	--color-primary-light-normal: #2b3260; /* light-normal */
-	--color-primary-light-hover: #354180; /* light-hover */
-	--color-primary-light-active: #3e4e9f; /* light-active */
+	--color-primary-text: var(--color-brand-9); /* - */
+	--color-primary-light-normal: var(--color-brand-0); /* light-normal */
+	--color-primary-light-hover: var(--color-brand-1); /* light-hover */
+	--color-primary-light-active: var(--color-brand-2); /* light-active */
 	--color-text-primary: var(--color-gray-13); /* - */
 	--color-text-secondary: var(--color-gray-8); /* 次要 */
 	--color-text-caption: var(--color-gray-6); /* 说明 */
@@ -409,13 +409,13 @@
 	--radius-normal: 3px; /* 控件、小卡片等 */
 	--radius-large: calc(var(--radius-normal)*2); /* 大卡片、大弹框等 */
 	--radius-round: 50%; /* 胶囊 */
-	--size-xxs: 8pxpx;
-	--size-xs: 16pxpx;
-	--size-s: 20pxpx;
-	--size-m: 24pxpx;
-	--size-l: 32pxpx;
-	--size-xl: 48pxpx;
-	--size-xxl: 64pxpx;
+	--size-xxs: 8px;
+	--size-xs: 16px;
+	--size-s: 20px;
+	--size-m: 24px;
+	--size-l: 32px;
+	--size-xl: 48px;
+	--size-xxl: 64px;
 	--spacing-super-tight: 2px; /* 极相关组件相邻关系 */
 	--spacing-tight: 4px; /* 极紧凑组件相邻关系 */
 	--spacing-base: 8px; /* 默认间距基准单位 */
