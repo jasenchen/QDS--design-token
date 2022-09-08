@@ -10,10 +10,12 @@ let snippets = {};
 /*
  * @eg, output content
  * :root,
- * :root[theme-mode="themeName1"] {
+ * :root[theme-mode="themeName1"],
+ * .themeName1{
  *     --white: "#ffffff";
  * }
- * :root[theme-mode="themeName2"] {
+ * :root[theme-mode="themeName2"],
+ * .themeName2{
  *     --white: "#eeeeee";
  * }
 */
@@ -26,7 +28,7 @@ const token = fs.readFile(tokenPath, 'utf-8', function(err, data) {
         //     return;
         // }
         if (Object.keys(originData[name]).length) {
-            let themeStr = [`:root[theme-mode="${name}"] {`];
+            let themeStr = [`:root[theme-mode="${name}"], .theme-${name}{`];
             // let themeStr = [`:root {`];
             themeStr = themeStr.concat(tranform(originData[name], name));
             themeStr.push('}\n');
