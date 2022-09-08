@@ -1,5 +1,5 @@
 :root,
-:root[theme-mode="QDS-light"] {
+:root[theme-mode="QDS-light"], .theme-QDS-light{
 	--spacing-none: 0px; /* 零 */
 	--color-white: var(--white);
 	--white: #ffffff; /* 常量 */
@@ -225,7 +225,7 @@
 	--border-focus: 2px; /* focus描边 */
 }
 
-:root[theme-mode="QDS-dark"] {
+:root[theme-mode="QDS-dark"], .theme-QDS-dark{
 	--spacing-none: 0px; /* 零 */
 	--color-white: var(--black);
 	--white: #ffffff; /* 常量 */
