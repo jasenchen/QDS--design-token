@@ -186,6 +186,7 @@
 	--radius-large: calc(var(--radius-normal)*2); /* 大卡片、大弹框等 */
 	--radius-round: 9999px; /* 胶囊 */
 	--size-xxs: 8px;
+	--size-xxs-large: 12px; /* 12 */
 	--size-xs: 16px;
 	--size-s: 20px;
 	--size-m: 24px;
@@ -199,7 +200,7 @@
 	--spacing-loose: 16px; /* 默认宽松尺寸内/外边距 */
 	--spacing-quite-loose: 20px; /* 宽松尺寸内/外边距 */
 	--spacing-extra-loose: 24px; /* 较宽松尺寸内/外边距—容器级别 */
-	--spacing-super-loose: 32px; /* 超宽松尺寸内/外边距—页面级别 */
+	--spacing-super-loose: 32px; /* 默认内/外边距—页面级别 */
 	--radius-0: 0px; /* 无圆角 */
 	--motion--ease-in-out: cubic-bezier(0.36, 0.01, 0.1, 1); /* 缓入缓出 */
 	--motion--ease-out: cubic-bezier(0, 0, 0.2, 1); /* 减速宽松 */
@@ -223,6 +224,8 @@
 	--border-normal: 1px; /* 默认描边 */
 	--border-active: 2px; /* 激活描边 */
 	--border-focus: 2px; /* focus描边 */
+	--spacing-ultra-loose: 48px; /* 较宽松尺寸内/外边距—页面级别 */
+	--spacing-super-loose-large: 64px; /* 很宽松尺寸内/外边距—页面级别 */
 }
 
 :root[theme-mode="QDS-dark"], .theme-QDS-dark{
@@ -410,6 +413,7 @@
 	--radius-large: calc(var(--radius-normal)*2); /* 大卡片、大弹框等 */
 	--radius-round: 9999px; /* 胶囊 */
 	--size-xxs: 8px;
+	--size-xxs-large: 12px; /* 12 */
 	--size-xs: 16px;
 	--size-s: 20px;
 	--size-m: 24px;
@@ -423,7 +427,7 @@
 	--spacing-loose: 16px; /* 默认宽松尺寸内/外边距 */
 	--spacing-quite-loose: 20px; /* 宽松尺寸内/外边距 */
 	--spacing-extra-loose: 24px; /* 较宽松尺寸内/外边距—容器级别 */
-	--spacing-super-loose: 32px; /* 超宽松尺寸内/外边距—页面级别 */
+	--spacing-super-loose: 32px; /* 默认内/外边距—页面级别 */
 	--radius-0: 0px; /* 无圆角 */
 	--motion--ease-in-out: cubic-bezier(0.36, 0.01, 0.1, 1); /* 缓入缓出 */
 	--motion--ease-out: cubic-bezier(0, 0, 0.2, 1); /* 减速宽松 */
@@ -449,4 +453,6 @@
 	--border-normal: 1px; /* 默认描边 */
 	--border-active: 2px; /* 激活描边 */
 	--border-focus: 2px; /* focus描边 */
+	--spacing-ultra-loose: 48px; /* 较宽松尺寸内/外边距—页面级别 */
+	--spacing-super-loose-large: 64px; /* 很宽松尺寸内/外边距—页面级别 */
 }
