@@ -3,6 +3,16 @@
 	--spacing-none: 0px; /* 零 */
 	--color-white: var(--white);
 	--white: #ffffff; /* 常量 */
+	--white-appear-0: #ffffffe6; /* 90%透明度 */
+	--white-appear-1: #ffffffcc; /* 80%透明度 */
+	--white-appear-2: #ffffffb3; /* 70%透明度 */
+	--white-appear-3: #ffffff99; /* 60%透明度 */
+	--white-appear-4: #ffffff80; /* 50%透明度 */
+	--white-appear-5: #ffffff66; /* 40%透明度 */
+	--white-appear-6: #ffffff4d; /* 30%透明度 */
+	--white-appear-7: #ffffff33; /* 20%透明度 */
+	--white-appear-8: #ffffff1a; /* 10%透明度 */
+	--white-appear-9: #ffffff0d; /* 5%透明度 */
 	--color-black: var(--black);
 	--black: #000000; /* 常量 */
 	--color-primary-normal: var(--color-brand-5); /* 主要颜色 */
@@ -234,6 +244,16 @@
 	--spacing-none: 0px; /* 零 */
 	--color-white: var(--black);
 	--white: #ffffff; /* 常量 */
+	--white-appear-0: #ffffffe6; /* 90%透明度 */
+	--white-appear-1: #ffffffcc; /* 80%透明度 */
+	--white-appear-2: #ffffffb3; /* 70%透明度 */
+	--white-appear-3: #ffffff99; /* 60%透明度 */
+	--white-appear-4: #ffffff80; /* 50%透明度 */
+	--white-appear-5: #ffffff66; /* 40%透明度 */
+	--white-appear-6: #ffffff4d; /* 30%透明度 */
+	--white-appear-7: #ffffff33; /* 20%透明度 */
+	--white-appear-8: #ffffff1a; /* 10%透明度 */
+	--white-appear-9: #ffffff0d; /* 5%透明度 */
 	--color-black: var(--white);
 	--black: #000000; /* 常量 */
 	--color-primary-normal: var(--color-brand-5); /* 主要颜色 */
