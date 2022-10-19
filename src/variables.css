@@ -284,7 +284,7 @@
 	--color-bg-1: var(--color-gray-1); /* 强调背景色（弹框类，控件类） */
 	--color-bg-2: var(--color-gray-2); /* 最上层背景色（气泡类、通知类） */
 	--color-overlay: rgba(18,19,25,0.32); /* 蒙层颜色 */
-	--color-bg-contrast: var(--color-gray-0); /* 对比背景色 */
+	--color-bg-contrast: var(--color-gray-1); /* 对比背景色 */
 	--color-bg-header: var(--color-gray-0); /* 头部背景色 */
 	--color-bg-footer: var(--color-gray-0); /* 底部背景色 */
 	--color-nav-1: var(--color-gray-1); /* 一级导航颜色 */
