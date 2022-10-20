@@ -3,16 +3,16 @@
 	--spacing-none: 0px; /* 零 */
 	--color-white: var(--white);
 	--white: #ffffff; /* 常量 */
-	--white-appear-0: #ffffffe6; /* 90%透明度 */
-	--white-appear-1: #ffffffcc; /* 80%透明度 */
-	--white-appear-2: #ffffffb3; /* 70%透明度 */
-	--white-appear-3: #ffffff99; /* 60%透明度 */
-	--white-appear-4: #ffffff80; /* 50%透明度 */
-	--white-appear-5: #ffffff66; /* 40%透明度 */
-	--white-appear-6: #ffffff4d; /* 30%透明度 */
-	--white-appear-7: #ffffff33; /* 20%透明度 */
-	--white-appear-8: #ffffff1a; /* 10%透明度 */
-	--white-appear-9: #ffffff0d; /* 5%透明度 */
+	--inverse-opacity-0: #ffffffe6; /* 90%透明度 */
+	--inverse-opacity-1: #ffffffcc; /* 80%透明度 */
+	--inverse-opacity-2: #ffffffb3; /* 70%透明度 */
+	--inverse-opacity-3: #ffffff99; /* 60%透明度 */
+	--inverse-opacity-4: #ffffff80; /* 50%透明度 */
+	--inverse-opacity-5: #ffffff66; /* 40%透明度 */
+	--inverse-opacity-6: #ffffff4d; /* 30%透明度 */
+	--inverse-opacity-7: #ffffff33; /* 20%透明度 */
+	--inverse-opacity-8: #ffffff1a; /* 10%透明度 */
+	--inverse-opacity-9: #ffffff0d; /* 5%透明度 */
 	--color-black: var(--black);
 	--black: #000000; /* 常量 */
 	--color-primary-normal: var(--color-brand-5); /* 主要颜色 */
@@ -25,20 +25,21 @@
 	--color-primary-light-normal: var(--color-brand-0); /* light */
 	--color-primary-light-hover: var(--color-brand-1); /* light-hover */
 	--color-primary-light-active: var(--color-brand-2); /* light-active */
-	--color-text-primary: var(--color-gray-13); /* - */
-	--color-text-secondary: var(--color-gray-8); /* 次要 */
-	--color-text-caption: var(--color-gray-6); /* 说明 */
-	--color-text-disable: var(--color-gray-4); /* 不可用 */
-	--color-text-white: var(--color-white);
-	--color-border-normal: var(--color-gray-3);
-	--color-border-hover: var(--color-gray-4);
+	--color-text-primary: var(--color-opacity-13); /* - */
+	--color-text-secondary: var(--color-opacity-8); /* 次要 */
+	--color-text-caption: var(--color-opacity-6); /* 说明 */
+	--color-text-disable: var(--color-opacity-4); /* 不可用 */
+	--color-text-white: var(--white); /* 用于深色底的白色文字 */
+	--color-text-black: var(--black); /* 用于浅彩色底的黑色文字 */
+	--color-border-normal: var(--color-opacity-3);
+	--color-border-hover: var(--color-opacity-4);
 	--color-border-active: var(--color-brand-1); /* active */
-	--color-border-disable: var(--color-gray-2); /* 不可用 */
-	--color-divider-normal: var(--color-gray-2); /* 分割线颜色 */
+	--color-border-disable: var(--color-opacity-2); /* 不可用 */
+	--color-divider-normal: var(--color-opacity-2); /* 分割线颜色 */
 	--color-fill-normal: var(--color-white); /* normal */
-	--color-fill-hover: var(--color-gray-1); /* hover */
+	--color-fill-hover: var(--color-opacity-1); /* hover */
 	--color-fill-active: var(--color-brand-0); /* active */
-	--color-fill-disable: var(--color-gray-0); /* disabled */
+	--color-fill-disable: var(--color-opacity-0); /* disabled */
 	--color-bg-0: var(--color-white); /* 最底层背景色 */
 	--color-bg-1: var(--color-white); /* 强调背景色（弹框类，控件类） */
 	--color-bg-2: var(--color-white); /* 最上层背景色（气泡类、通知类） */
@@ -238,22 +239,36 @@
 	--spacing-ultra-loose: 48px; /* 较宽松尺寸内/外边距—页面级别 */
 	--spacing-super-loose-large: 64px; /* 很宽松尺寸内/外边距—页面级别 */
 	--formItem-text-label-default: 400 14px/16px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica, Arial,'PingFang SC','Microsoft YaHei','Noto Sans',sans-serif /* 默认全局字体 */; /* 表单/描述组件label文字 */
+	--color-opacity-0: #364f810a; /* hsla(220,41%,36%,0.04) */
+	--color-opacity-1: #2438610d; /* hsla(220,46%,26%,0.05) */
+	--color-opacity-2: #122a4f14; /* hsla(216,63%,19%,0.08) */
+	--color-opacity-3: #11204621; /* hsla(223,61%,17%,0.13) */
+	--color-opacity-4: #06154233; /* hsla(225,86%,14%,0.2) */
+	--color-opacity-5: #0512384d; /* hsla(225,84%,12%,0.3) */
+	--color-opacity-6: #010b3269; /* hsla(227,96%,10%,0.41) */
+	--color-opacity-7: #030c2b8a; /* hsla(227,87%,9%,0.54) */
+	--color-opacity-8: #030a26a6; /* hsla(229,84%,8%,0.65) */
+	--color-opacity-9: #01071ebd; /* hsla(228,93%,6%,0.74) */
+	--color-opacity-10: #010413cf; /* hsla(231,91%,4%,0.81) */
+	--color-opacity-11: #020412de; /* hsla(232,79%,4%,0.87) */
+	--color-opacity-12: #02040de8; /* hsla(229,73%,3%,0.91) */
+	--color-opacity-13: #00010aed; /* hsla(233,100%,2%,0.93) */
 }
 
 :root[theme-mode="QDS-dark"], .theme-QDS-dark{
 	--spacing-none: 0px; /* 零 */
 	--color-white: var(--black);
 	--white: #ffffff; /* 常量 */
-	--white-appear-0: #ffffffe6; /* 90%透明度 */
-	--white-appear-1: #ffffffcc; /* 80%透明度 */
-	--white-appear-2: #ffffffb3; /* 70%透明度 */
-	--white-appear-3: #ffffff99; /* 60%透明度 */
-	--white-appear-4: #ffffff80; /* 50%透明度 */
-	--white-appear-5: #ffffff66; /* 40%透明度 */
-	--white-appear-6: #ffffff4d; /* 30%透明度 */
-	--white-appear-7: #ffffff33; /* 20%透明度 */
-	--white-appear-8: #ffffff1a; /* 10%透明度 */
-	--white-appear-9: #ffffff0d; /* 5%透明度 */
+	--inverse-opacity-0: #ffffffe6; /* 90%透明度 */
+	--inverse-opacity-1: #ffffffcc; /* 80%透明度 */
+	--inverse-opacity-2: #ffffffb3; /* 70%透明度 */
+	--inverse-opacity-3: #ffffff99; /* 60%透明度 */
+	--inverse-opacity-4: #ffffff80; /* 50%透明度 */
+	--inverse-opacity-5: #ffffff66; /* 40%透明度 */
+	--inverse-opacity-6: #ffffff4d; /* 30%透明度 */
+	--inverse-opacity-7: #ffffff33; /* 20%透明度 */
+	--inverse-opacity-8: #ffffff1a; /* 10%透明度 */
+	--inverse-opacity-9: #ffffff0d; /* 5%透明度 */
 	--color-black: var(--white);
 	--black: #000000; /* 常量 */
 	--color-primary-normal: var(--color-brand-5); /* 主要颜色 */
@@ -266,20 +281,20 @@
 	--color-primary-light-normal: var(--color-brand-0); /* light-normal */
 	--color-primary-light-hover: var(--color-brand-1); /* light-hover */
 	--color-primary-light-active: var(--color-brand-2); /* light-active */
-	--color-text-primary: var(--color-gray-13); /* - */
-	--color-text-secondary: var(--color-gray-8); /* 次要 */
-	--color-text-caption: var(--color-gray-6); /* 说明 */
-	--color-text-disable: var(--color-gray-4); /* 不可用 */
+	--color-text-primary: var(--color-opacity-13); /* - */
+	--color-text-secondary: var(--color-opacity-8); /* 次要 */
+	--color-text-caption: var(--color-opacity-6); /* 说明 */
+	--color-text-disable: var(--color-opacity-4); /* 不可用 */
 	--color-text-white: var(--color-white);
-	--color-border-normal: var(--color-gray-3);
-	--color-border-hover: var(--color-gray-4);
+	--color-border-normal: var(--color-opacity-3);
+	--color-border-hover: var(--color-opacity-4);
 	--color-border-active: var(--color-brand-1); /* active */
-	--color-border-disable: var(--color-gray-2); /* 不可用 */
-	--color-divider-normal: var(--color-gray-2); /* 分割线颜色 */
+	--color-border-disable: var(--color-opacity-2); /* 不可用 */
+	--color-divider-normal: var(--color-opacity-2); /* 分割线颜色 */
 	--color-fill-normal: var(--color-gray-0); /* normal */
-	--color-fill-hover: var(--color-gray-2); /* hover */
+	--color-fill-hover: var(--color-opacity-2); /* hover */
 	--color-fill-active: var(--color-brand-0); /* active */
-	--color-fill-disable: var(--color-gray-0); /* disabled */
+	--color-fill-disable: var(--color-opacity-0); /* disabled */
 	--color-bg-0: var(--color-gray-0); /* 最底层背景色 */
 	--color-bg-1: var(--color-gray-1); /* 强调背景色（弹框类，控件类） */
 	--color-bg-2: var(--color-gray-2); /* 最上层背景色（气泡类、通知类） */
@@ -479,4 +494,18 @@
 	--spacing-ultra-loose: 48px; /* 较宽松尺寸内/外边距—页面级别 */
 	--spacing-super-loose-large: 64px; /* 很宽松尺寸内/外边距—页面级别 */
 	--formItem-text-label-default: 400 14px/16px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica, Arial,'PingFang SC','Microsoft YaHei','Noto Sans',sans-serif; /* 表单/描述组件label文字 */
+	--color-opacity-0: #b2bdfa1a; /* hsla(231,88%,84%,0.1) */
+	--color-opacity-1: #b2c1fa24; /* hsla(228,88%,84%,0.14) */
+	--color-opacity-2: #b9c5fd30; /* hsla(230,95%,86%,0.19) */
+	--color-opacity-3: #bdc9fa42; /* hsla(228,86%,86%,0.26) */
+	--color-opacity-4: #c4d0fd57; /* hsla(227,93%,88%,0.34) */
+	--color-opacity-5: #d1daff70; /* hsla(229,100%,91%,0.44) */
+	--color-opacity-6: #d4ddfc8f; /* hsla(227,87%,91%,0.56) */
+	--color-opacity-7: #e1e7feab; /* hsla(228,94%,94%,0.67) */
+	--color-opacity-8: #ebefffc4; /* hsla(226,100%,96%,0.77) */
+	--color-opacity-9: #eef2fcdb; /* hsla(223,70%,96%,0.86) */
+	--color-opacity-10: #f6f8fee8; /* hsla(225,80%,98%,0.91) */
+	--color-opacity-11: #f6fafef2; /* hsla(210,75%,98%,0.95) */
+	--color-opacity-12: #fafcfff7; /* hsla(220,100%,99%,0.97) */
+	--color-opacity-13: #f7fafcfc; /* hsla(210,50%,98%,0.99) */
 }
