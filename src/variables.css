@@ -285,7 +285,8 @@
 	--color-text-secondary: var(--color-opacity-8); /* 次要 */
 	--color-text-caption: var(--color-opacity-6); /* 说明 */
 	--color-text-disable: var(--color-opacity-4); /* 不可用 */
-	--color-text-white: var(--color-white);
+	--color-text-white: var(--white); /* 用于深色底的白色文字 */
+	--color-text-black: var(--black); /* 用于浅彩色底的黑色文字 */
 	--color-border-normal: var(--color-opacity-3);
 	--color-border-hover: var(--color-opacity-4);
 	--color-border-active: var(--color-brand-1); /* active */
