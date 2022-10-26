@@ -292,7 +292,7 @@
 	--color-border-active: var(--color-brand-1); /* active */
 	--color-border-disable: var(--color-opacity-2); /* 不可用 */
 	--color-divider-normal: var(--color-opacity-2); /* 分割线颜色 */
-	--color-fill-normal: var(--color-gray-0); /* normal */
+	--color-fill-normal: var(--color-opacity-0); /* normal */
 	--color-fill-hover: var(--color-opacity-2); /* hover */
 	--color-fill-active: var(--color-brand-0); /* active */
 	--color-fill-disable: var(--color-opacity-0); /* disabled */
