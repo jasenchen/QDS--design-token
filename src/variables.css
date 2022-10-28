@@ -253,6 +253,7 @@
 	--color-opacity-11: #020412de; /* hsla(232,79%,4%,0.87) */
 	--color-opacity-12: #02040de8; /* hsla(229,73%,3%,0.91) */
 	--color-opacity-13: #00010aed; /* hsla(233,100%,2%,0.93) */
+	--color-highlight-search: var(--color-link-normal); /* 高亮搜索 */
 }
 
 :root[theme-mode="QDS-dark"], .theme-QDS-dark{
@@ -509,4 +510,5 @@
 	--color-opacity-11: #f6fafef2; /* hsla(210,75%,98%,0.95) */
 	--color-opacity-12: #fafcfff7; /* hsla(220,100%,99%,0.97) */
 	--color-opacity-13: #f7fafcfc; /* hsla(210,50%,98%,0.99) */
+	--color-highlight-search: var(--color-link-normal); /* 高亮搜索 */
 }
