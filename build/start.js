@@ -6,6 +6,8 @@ let variables = [':root,'];
 let originData;
 let vars = [];
 let snippets = {};
+let themeName = '';
+let parsedData = {};
 
 /*
  * @eg, output content
@@ -24,6 +26,7 @@ const token = fs.readFile(tokenPath, 'utf-8', function(err, data) {
     let themes = Object.keys(data);
     originData = traverse(data);
     themes.forEach((name, index) => {
+        !themeName && (themeName = name);
         // if (Object.keys(data[name]).length === 0 || index > 0) {
         //     return;
         // }
@@ -40,12 +43,14 @@ const token = fs.readFile(tokenPath, 'utf-8', function(err, data) {
 });
 
 function makeSnippets() {
+    // console.log(parsedData);
+    // v: parsedData['\t--' + key]
     vars.forEach(name => {
         let key = cleanName(name);
         snippets[key] = {
             "scope": "css,less,sass",
             "prefix": `var(--${key})`,
-            "body": [`var(--${key})`]
+            "body": [`var(--${key});`]
         };
     });
 }
@@ -61,6 +66,7 @@ function makeFile() {
 }
 function traverse(data = {}) {
     let transformed = {};
+    // console.log(Object.keys(data));
     Object.keys(data).forEach(name => {
         let item = data[name];
         if (item.value) {
@@ -102,7 +108,9 @@ function tranform(data = {}, themeName, transformed, parentName) {
         let item = data[name];
         if (typeof item === 'string') {
             let n = getVariableName(name, parentName);
-            transformed.push(`${n}: ${replaceVars(item, themeName, n)}`);
+            let v = replaceVars(item, themeName, n);
+            transformed.push(`${n}: ${v}`);
+            !parsedData[n] && (parsedData[n] = v);
         }
         else {
             tranform(item, themeName, transformed, name);
@@ -141,7 +149,8 @@ function replaceVars(str = '', themeName, itemName) {
         log && console.log(`r1: name1: ${name1}, name2: ${name2}, s: ${s}, r:${r}, d:${JSON.stringify(data[name1])}`);
         // return replaceVars(r, themeName);
         // console.log('name2', name2, r);
-        return /-(famliy|family)-/.test(name2) ? r : `var(${name2})`;
+        // return /-(famliy|family)-/.test(name2) ? r : `var(${name2})`;
+        return `var(${name2})`;
 
     // $fontSize.3
     }).replace(/\$([\w\-\d]+)\.([\w\-\d]*)/g, function(matchStr, name1, name2, index, s) {
