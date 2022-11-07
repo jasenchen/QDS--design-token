@@ -46,7 +46,7 @@
 	--color-bg-contrast: var(--color-gray-0); /* 对比背景色 */
 	--color-overlay: rgba(18,19,25,0.32); /* 蒙层颜色 */
 	--color-bg-header: var(--color-white); /* 头部背景色 */
-	--color-bg-footer: var(--color-white); /* 底部背景色 */
+	--color-bg-footer: #ffffff00; /* 底部背景色 */
 	--color-nav-1: var(--color-gray-11); /* 一级导航颜色 */
 	--color-nav-2: var(--color-white); /* 二级导航颜色 */
 	--color-link-normal: var(--color-brand-5); /* normal */
@@ -303,7 +303,7 @@
 	--color-overlay: rgba(18,19,25,0.32); /* 蒙层颜色 */
 	--color-bg-contrast: var(--color-gray-1); /* 对比背景色 */
 	--color-bg-header: var(--color-gray-0); /* 头部背景色 */
-	--color-bg-footer: var(--color-gray-0); /* 底部背景色 */
+	--color-bg-footer: 12131900; /* 底部背景色 */
 	--color-nav-1: var(--color-gray-1); /* 一级导航颜色 */
 	--color-nav-2: var(--color-gray-0); /* 二级导航颜色 */
 	--color-link-normal: var(--color-brand-5); /* normal */
