@@ -45,7 +45,7 @@
 	--color-bg-2: var(--color-white); /* 最上层背景色（气泡类、通知类） */
 	--color-bg-contrast: var(--color-gray-0); /* 对比背景色 */
 	--color-overlay: rgba(18,19,25,0.32); /* 蒙层颜色 */
-	--color-bg-header: var(--color-white); /* 头部背景色 */
+	--color-bg-header: #ffffff00; /* 头部背景色 */
 	--color-bg-footer: #ffffff00; /* 底部背景色 */
 	--color-nav-1: var(--color-gray-11); /* 一级导航颜色 */
 	--color-nav-2: var(--color-white); /* 二级导航颜色 */
@@ -302,7 +302,7 @@
 	--color-bg-2: var(--color-gray-2); /* 最上层背景色（气泡类、通知类） */
 	--color-overlay: rgba(18,19,25,0.32); /* 蒙层颜色 */
 	--color-bg-contrast: var(--color-gray-1); /* 对比背景色 */
-	--color-bg-header: var(--color-gray-0); /* 头部背景色 */
+	--color-bg-header: #12131900; /* 头部背景色 */
 	--color-bg-footer: 12131900; /* 底部背景色 */
 	--color-nav-1: var(--color-gray-1); /* 一级导航颜色 */
 	--color-nav-2: var(--color-gray-0); /* 二级导航颜色 */
