@@ -234,7 +234,7 @@
 	--number-large-medium: 500 32px/40px Inter Display,-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 数字指标字体 */; /* 大号数字medium */
 	--border-thickness: 0.5px; /* 细描边 */
 	--border-normal: 1px; /* 默认描边 */
-	--border-active: 2px; /* 激活描边 */
+	--border-active: 1px; /* 激活描边 */
 	--border-focus: 2px; /* focus描边 */
 	--spacing-ultra-loose: 48px; /* 较宽松尺寸内/外边距—页面级别 */
 	--spacing-super-loose-large: 64px; /* 很宽松尺寸内/外边距—页面级别 */
@@ -491,7 +491,7 @@
 	--number-large-medium: 500 32px/40px Inter Display,-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 数字指标字体 */; /* 大号数字medium */
 	--border-thickness: 0.5px; /* 细描边 */
 	--border-normal: 1px; /* 默认描边 */
-	--border-active: 2px; /* 激活描边 */
+	--border-active: 1px; /* 激活描边 */
 	--border-focus: 2px; /* focus描边 */
 	--spacing-ultra-loose: 48px; /* 较宽松尺寸内/外边距—页面级别 */
 	--spacing-super-loose-large: 64px; /* 很宽松尺寸内/外边距—页面级别 */
