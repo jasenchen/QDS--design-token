@@ -235,7 +235,7 @@
 	--border-thickness: 0.5px; /* 细描边 */
 	--border-normal: 1px; /* 默认描边 */
 	--border-active: 1px; /* 激活描边 */
-	--border-focus: 2px; /* focus描边 */
+	--border-focus: 1px; /* focus描边 */
 	--spacing-ultra-loose: 48px; /* 较宽松尺寸内/外边距—页面级别 */
 	--spacing-super-loose-large: 64px; /* 很宽松尺寸内/外边距—页面级别 */
 	--formItem-text-label-default: 400 14px/16px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 默认全局字体 */; /* 表单/描述组件label文字 */
@@ -492,7 +492,7 @@
 	--border-thickness: 0.5px; /* 细描边 */
 	--border-normal: 1px; /* 默认描边 */
 	--border-active: 1px; /* 激活描边 */
-	--border-focus: 2px; /* focus描边 */
+	--border-focus: 1px; /* focus描边 */
 	--spacing-ultra-loose: 48px; /* 较宽松尺寸内/外边距—页面级别 */
 	--spacing-super-loose-large: 64px; /* 很宽松尺寸内/外边距—页面级别 */
 	--formItem-text-label-default: 400 14px/16px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif; /* 表单/描述组件label文字 */
