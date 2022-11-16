@@ -2,7 +2,7 @@
 :root[theme-mode="QDS-light"], .theme-QDS-light{
 	--spacing-none: 0px; /* 零 */
 	--color-white: var(--white);
-	--white: #CC00FF; /* 常量 */
+	--white: #ffffff; /* 常量 */
 	--inverse-opacity-0: #ffffffe6; /* 90%透明度 */
 	--inverse-opacity-1: #ffffffcc; /* 80%透明度 */
 	--inverse-opacity-2: #ffffffb3; /* 70%透明度 */
@@ -14,7 +14,7 @@
 	--inverse-opacity-8: #ffffff1a; /* 10%透明度 */
 	--inverse-opacity-9: #ffffff0d; /* 5%透明度 */
 	--color-black: var(--black);
-	--black: #7000FF; /* 常量 */
+	--black: #000000; /* 常量 */
 	--color-primary-normal: var(--color-brand-5); /* 主要颜色 */
 	--color-primary-hover: var(--color-brand-6); /* hover */
 	--color-primary-active: var(--color-brand-7); /* active */
@@ -25,26 +25,26 @@
 	--color-primary-light-normal: var(--color-brand-0); /* light */
 	--color-primary-light-hover: var(--color-brand-1); /* light-hover */
 	--color-primary-light-active: var(--color-brand-2); /* light-active */
-	--color-text-primary: #98680C; /* - */
-	--color-text-secondary: #DBA53B; /* 次要 */
-	--color-text-caption: #F5C669; /* 说明 */
-	--color-text-disable: #F9D693; /* 不可用 */
+	--color-text-primary: var(--color-opacity-13); /* - */
+	--color-text-secondary: var(--color-opacity-8); /* 次要 */
+	--color-text-caption: var(--color-opacity-6); /* 说明 */
+	--color-text-disable: var(--color-opacity-4); /* 不可用 */
 	--color-text-white: var(--white); /* 用于深色底的白色文字 */
 	--color-text-black: var(--black); /* 用于浅彩色底的黑色文字 */
-	--color-border-normal: #EAFF69;
-	--color-border-hover: #E4FF40;
+	--color-border-normal: var(--color-opacity-3);
+	--color-border-hover: var(--color-opacity-4);
 	--color-border-active: var(--color-brand-1); /* active */
-	--color-border-disable: #F7FFC6; /* 不可用 */
-	--color-divider-normal: #69C9FF; /* 分割线颜色 */
+	--color-border-disable: var(--color-opacity-2); /* 不可用 */
+	--color-divider-normal: var(--color-opacity-2); /* 分割线颜色 */
 	--color-fill-normal: var(--color-white); /* normal */
-	--color-fill-hover: #00FFF0; /* hover */
+	--color-fill-hover: var(--color-opacity-1); /* hover */
 	--color-fill-active: var(--color-brand-0); /* active */
 	--color-fill-disable: var(--color-opacity-0); /* disabled */
 	--color-bg-0: var(--color-white); /* 最底层背景色 */
 	--color-bg-1: var(--color-white); /* 强调背景色（弹框类，控件类） */
 	--color-bg-2: var(--color-white); /* 最上层背景色（气泡类、通知类） */
 	--color-bg-contrast: var(--color-gray-0); /* 对比背景色 */
-	--color-overlay: rgba(18,19,255,0.32); /* 蒙层颜色 */
+	--color-overlay: rgba(18,19,25,0.32); /* 蒙层颜色 */
 	--color-bg-header: #ffffff00; /* 头部背景色 */
 	--color-bg-footer: #ffffff00; /* 底部背景色 */
 	--color-nav-1: var(--color-gray-11); /* 一级导航颜色 */
@@ -85,16 +85,16 @@
 	--color-error-light-hover: var(--color-red-1); /* light-hover */
 	--color-error-light-active: var(--color-red-2); /* light-active */
 	--color-error-text: var(--color-red-9); /* 提示文本 */
-	--color-brand-0: #F4FFF4; /* - */
-	--color-brand-1: #E3FFE3; /* - */
-	--color-brand-2: #BAFFBA; /* - */
-	--color-brand-3: #85FF85; /* - */
-	--color-brand-4: #40FF40; /* focus */
-	--color-brand-5: #00ff00; /* normal */
-	--color-brand-6: #00D600; /* hover */
-	--color-brand-7: #00AC00; /* active */
-	--color-brand-8: #007C00;
-	--color-brand-9: #004D00;
+	--color-brand-0: #F1F6FF; /* - */
+	--color-brand-1: #DBE8FF; /* - */
+	--color-brand-2: #B7CEFF; /* - */
+	--color-brand-3: #93B1FF; /* - */
+	--color-brand-4: #6E92FF; /* focus */
+	--color-brand-5: #4a70ff; /* normal */
+	--color-brand-6: #3856DB; /* hover */
+	--color-brand-7: #293EB6; /* active */
+	--color-brand-8: #1C2A92;
+	--color-brand-9: #12196D;
 	--color-blue-0: #ECF9FF;
 	--color-blue-1: #D0EFFF;
 	--color-blue-2: #A1DDFF;
@@ -195,7 +195,7 @@
 	--caption-regular: 400 12px/16px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 默认全局字体 */; /* 说明文本 */
 	--caption-medium: 500 12px/16px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 默认全局字体 */; /* 说明文本 */
 	--radius-small: calc(var(--radius-normal)/2);
-	--radius-normal: 8px; /* 控件、小卡片等 */
+	--radius-normal: 3px; /* 控件、小卡片等 */
 	--radius-large: calc(var(--radius-normal)*2); /* 大卡片、大弹框等 */
 	--radius-round: 9999px; /* 胶囊 */
 	--size-xxs: 8px;
@@ -232,10 +232,10 @@
 	--number-normal-medium: 500 24px/32px Inter Display,-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 数字指标字体 */; /* 默认数字medium */
 	--number-large-regular: 400 32px/40px Inter Display,-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 数字指标字体 */; /* 大号数字 */
 	--number-large-medium: 500 32px/40px Inter Display,-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 数字指标字体 */; /* 大号数字medium */
-	--border-thickness: 2px; /* 细描边 */
-	--border-normal: 4px; /* 默认描边 */
-	--border-active: 4px; /* 激活描边 */
-	--border-focus: 6px; /* focus描边 */
+	--border-thickness: 0.5px; /* 细描边 */
+	--border-normal: 1px; /* 默认描边 */
+	--border-active: 1px; /* 激活描边 */
+	--border-focus: 1px; /* focus描边 */
 	--spacing-ultra-loose: 48px; /* 较宽松尺寸内/外边距—页面级别 */
 	--spacing-super-loose-large: 64px; /* 很宽松尺寸内/外边距—页面级别 */
 	--formItem-text-label-default: 400 14px/16px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 默认全局字体 */; /* 表单/描述组件label文字 */
