@@ -289,12 +289,12 @@
 	--color-text-disable: var(--color-opacity-4); /* 不可用 */
 	--color-text-white: var(--white); /* 用于深色底的白色文字 */
 	--color-text-black: var(--black); /* 用于浅彩色底的黑色文字 */
-	--color-border-normal: var(--color-opacity-3);
-	--color-border-hover: var(--color-opacity-4);
+	--color-border-normal: var(--color-opacity-2);
+	--color-border-hover: var(--color-opacity-3);
 	--color-border-active: var(--color-brand-1); /* active */
-	--color-border-disable: var(--color-opacity-2); /* 不可用 */
+	--color-border-disable: var(--color-opacity-1); /* 不可用 */
 	--color-divider-normal: var(--color-opacity-2); /* 分割线颜色 */
-	--color-fill-normal: var(--color-opacity-0); /* normal */
+	--color-fill-normal: var(--color-opacity-1); /* normal */
 	--color-fill-hover: var(--color-opacity-2); /* hover */
 	--color-fill-active: var(--color-brand-0); /* active */
 	--color-fill-disable: var(--color-opacity-0); /* disabled */
@@ -498,20 +498,20 @@
 	--spacing-super-loose-large: 64px; /* 很宽松尺寸内/外边距—页面级别 */
 	--formItem-text-label-default: 400 14px/16px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif; /* 表单/描述组件label文字 */
 	--imageviewer-bg-normal: #01071EBD;
-	--color-opacity-0: #b2bdfa1a; /* hsla(231,88%,84%,0.1) */
-	--color-opacity-1: #b2c1fa24; /* hsla(228,88%,84%,0.14) */
-	--color-opacity-2: #b9c5fd30; /* hsla(230,95%,86%,0.19) */
-	--color-opacity-3: #bdc9fa42; /* hsla(228,86%,86%,0.26) */
-	--color-opacity-4: #c4d0fd57; /* hsla(227,93%,88%,0.34) */
-	--color-opacity-5: #d1daff70; /* hsla(229,100%,91%,0.44) */
-	--color-opacity-6: #d4ddfc8f; /* hsla(227,87%,91%,0.56) */
-	--color-opacity-7: #e1e7feab; /* hsla(228,94%,94%,0.67) */
-	--color-opacity-8: #ebefffc4; /* hsla(226,100%,96%,0.77) */
-	--color-opacity-9: #eef2fcdb; /* hsla(223,70%,96%,0.86) */
-	--color-opacity-10: #f6f8fee8; /* hsla(225,80%,98%,0.91) */
-	--color-opacity-11: #f6fafef2; /* hsla(210,75%,98%,0.95) */
-	--color-opacity-12: #fafcfff7; /* hsla(220,100%,99%,0.97) */
-	--color-opacity-13: #f7fafcfc; /* hsla(210,50%,98%,0.99) */
+	--color-opacity-0: #9db3e108; /* hsla(231,88%,84%,0.1) */
+	--color-opacity-1: #9db3e10d; /* hsla(221,53%,75%, 0.05 ) */
+	--color-opacity-2: #bdc8ff1a; /* hsla(230,100%,87%, 0.1 ) */
+	--color-opacity-3: #bfccf72e; /* hsla(227,78%,86%, 0.18 ) */
+	--color-opacity-4: #c6d3fb45; /* hsla(225,87%,88%, 0.27 ) */
+	--color-opacity-5: #d2dbfe61; /* hsla(228,96%,91%, 0.38 ) */
+	--color-opacity-6: #d9e2fc82; /* hsla(225,86%,92%, 0.51 ) */
+	--color-opacity-7: #e3e9fca3; /* hsla(226,81%,94%, 0.64 ) */
+	--color-opacity-8: #ecf1fdbf; /* hsla(224,83%,96%, 0.75 ) */
+	--color-opacity-9: #f1f4fed6; /* hsla(226,87%,97%, 0.84 ) */
+	--color-opacity-10: #f6f8fee6; /* hsla(223,78%,98%, 0.9 ) */
+	--color-opacity-11: #fafcfff0; /* hsla(216,100%,99%, 0.94 ) */
+	--color-opacity-12: #fbfcfef7; /* hsla(220,60%,99%, 0.97 ) */
+	--color-opacity-13: #fafcfffa; /* hsla(220,100%,99%, 0.98 ) */
 	--color-highlight-search: var(--color-link-normal); /* 高亮搜索 */
 }
 
