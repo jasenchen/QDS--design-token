@@ -1,6 +1,6 @@
 {
   "name": "qd-design-token",
-  "version": "2.0.24",
+  "version": "2.0.25",
   "description": "企点设计系统design token",
   "main": "src/variables.css",
   "scripts": {
