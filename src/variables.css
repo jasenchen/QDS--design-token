@@ -500,8 +500,8 @@
 	--spacing-super-loose-large: 64px; /* 很宽松尺寸内/外边距—页面级别 */
 	--formItem-text-label-default: 400 14px/16px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif; /* 表单/描述组件label文字 */
 	--imageviewer-bg-normal: #01071EBD;
-	--table-shadow-single-right: 1px 0px 1px #12131914,4px 0px 4px #12131914,12px 0px 12px #1213191f;
-	--table-shadow-single-left: -1px 0px 1px #12131914,-4px 0px 4px #12131914,-12px 0px 12px #1213191f;
+	--table-shadow-single-right: 1px 0px 1px rgba(0,0,0,0.24),4px 0px 4px rgba(0,0,0,0.24),12px 0px 12px rgba(0,0,0,0.36);
+	--table-shadow-single-left: -1px 0px 1px rgba(0,0,0,0.24),-4px 0px 4px rgba(0,0,0,0.24),-12px 0px 12px rgba(0,0,0,0.36);
 	--color-opacity-0: #9db3e108; /* hsla(231,88%,84%,0.1) */
 	--color-opacity-1: #9db3e10d; /* hsla(221,53%,75%, 0.05 ) */
 	--color-opacity-2: #bdc8ff1a; /* hsla(230,100%,87%, 0.1 ) */
@@ -760,8 +760,8 @@
 	--spacing-super-loose-large: 64px; /* 很宽松尺寸内/外边距—页面级别 */
 	--formItem-text-label-default: 400 14px/16px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 默认全局字体 */; /* 表单/描述组件label文字 */
 	--imageviewer-bg-normal: var(--color-opacity-9);
-	--table-shadow-single-left: -1px 0px 1px #12131914,-4px 0px 4px #12131914,-12px 0px 12px #1213191f;
-	--table-shadow-single-right: 1px 0px 1px #12131914,4px 0px 4px #12131914,12px 0px 12px #1213191f;
+	--table-shadow-single-left: -1px 0px 1px rgba(79,102,68,0.08),-4px 0px 4px rgba(79,102,68,0.08),-12px 0px 12px rgba(79,102,68,0.12);
+	--table-shadow-single-right: 1px 0px 1px rgba(79,102,68,0.08),4px 0px 4px rgba(79,102,68,0.08),12px 0px 12px rgba(79,102,68,0.12);
 	--color-opacity-0: #364f810a; /* hsla(220,41%,36%,0.04) */
 	--color-opacity-1: #2438610d; /* hsla(220,46%,26%,0.05) */
 	--color-opacity-2: #122a4f14; /* hsla(216,63%,19%,0.08) */
