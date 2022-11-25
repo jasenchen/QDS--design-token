@@ -47,7 +47,7 @@
 	--color-overlay: rgba(18,19,25,0.32); /* 蒙层颜色 */
 	--color-bg-header: #ffffff00; /* 头部背景色 */
 	--color-bg-footer: #ffffff00; /* 底部背景色 */
-	--color-nav-1: var(--color-gray-11); /* 一级导航颜色 */
+	--color-nav-1: var(--white); /* 一级导航颜色 */
 	--color-nav-2: var(--color-white); /* 二级导航颜色 */
 	--color-link-normal: var(--color-brand-5); /* normal */
 	--color-link-hover: var(--color-brand-6); /* hover */
