@@ -303,7 +303,7 @@
 	--color-bg-0: var(--color-gray-0); /* 最底层背景色 */
 	--color-bg-1: var(--color-gray-1); /* 强调背景色（弹框类，控件类） */
 	--color-bg-2: var(--color-gray-2); /* 最上层背景色（气泡类、通知类） */
-	--color-overlay: rgba(18,19,25,0.32); /* 蒙层颜色 */
+	--color-overlay: rgba(18,19,25,0.48); /* 蒙层颜色 */
 	--color-bg-contrast: var(--color-gray-1); /* 对比背景色 */
 	--color-bg-header: #12131900; /* 头部背景色 */
 	--color-bg-footer: 12131900; /* 底部背景色 */
