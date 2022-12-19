@@ -50,7 +50,7 @@ function makeSnippets() {
         snippets[key] = {
             "scope": "css,less,sass",
             "prefix": `var(--${key})`,
-            "body": [`var(--${key});`]
+            "body": [`var(--${key})`]
         };
     });
 }
@@ -90,6 +90,10 @@ function traverse(data = {}) {
                     vstr.push(`${itm.x}px ${itm.y}px ${itm.blur}px ${itm.color}`);
                 });
                 value = vstr.join(',');
+            }
+            // eg: #ffffff00
+            else if (/^#[\d\w]{8}$/.test(value)) {
+                value = toRGBA(value);
             }
             transformed[name] = `${value};${item.description ? ' /* ' + item.description + ' */' : ''}`;
             // console.log(name);
@@ -182,7 +186,7 @@ function replaceVars(str = '', themeName, itemName) {
     return str;
 }
 
-function toRGB(hex) {
+function toRGBA(hex) {
     hex = String(hex);
     if(hex.startsWith('#')){
         hex = hex.substr(1);
@@ -191,8 +195,15 @@ function toRGB(hex) {
     let r = hex.substring(0, 2);
     let g = hex.substring(2, 4);
     let b = hex.substring(4, 6);
+    let a = hex.substring(6, 8);
+    let str = '';
     if (isNaN(parseInt(r, 16))) {
         console.log('parse error:', r, hex);
     }
-    return `${parseInt(r, 16)},${parseInt(g,16)},${parseInt(b,16)}`;
+    str = `${parseInt(r, 16)},${parseInt(g,16)},${parseInt(b,16)}`;
+    if (a) {
+        a = (parseInt(a, 16) / 255).toFixed(2);
+        str = `${str},${a}`;
+    }
+    return `rgba(${str})`;
 }

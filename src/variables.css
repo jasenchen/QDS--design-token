@@ -3,16 +3,16 @@
 	--spacing-none: 0px; /* 零 */
 	--color-white: var(--white);
 	--white: #ffffff; /* 常量 */
-	--inverse-opacity-0: #ffffffe6; /* 90%透明度 */
-	--inverse-opacity-1: #ffffffcc; /* 80%透明度 */
-	--inverse-opacity-2: #ffffffb3; /* 70%透明度 */
-	--inverse-opacity-3: #ffffff99; /* 60%透明度 */
-	--inverse-opacity-4: #ffffff80; /* 50%透明度 */
-	--inverse-opacity-5: #ffffff66; /* 40%透明度 */
-	--inverse-opacity-6: #ffffff4d; /* 30%透明度 */
-	--inverse-opacity-7: #ffffff33; /* 20%透明度 */
-	--inverse-opacity-8: #ffffff1a; /* 10%透明度 */
-	--inverse-opacity-9: #ffffff0d; /* 5%透明度 */
+	--inverse-opacity-0: rgba(255,255,255,0.90); /* 90%透明度 */
+	--inverse-opacity-1: rgba(255,255,255,0.80); /* 80%透明度 */
+	--inverse-opacity-2: rgba(255,255,255,0.70); /* 70%透明度 */
+	--inverse-opacity-3: rgba(255,255,255,0.60); /* 60%透明度 */
+	--inverse-opacity-4: rgba(255,255,255,0.50); /* 50%透明度 */
+	--inverse-opacity-5: rgba(255,255,255,0.40); /* 40%透明度 */
+	--inverse-opacity-6: rgba(255,255,255,0.30); /* 30%透明度 */
+	--inverse-opacity-7: rgba(255,255,255,0.20); /* 20%透明度 */
+	--inverse-opacity-8: rgba(255,255,255,0.10); /* 10%透明度 */
+	--inverse-opacity-9: rgba(255,255,255,0.05); /* 5%透明度 */
 	--color-black: var(--black);
 	--black: #000000; /* 常量 */
 	--color-primary-normal: var(--color-brand-5); /* 主要颜色 */
@@ -239,20 +239,20 @@
 	--spacing-ultra-loose: 48px; /* 较宽松尺寸内/外边距—页面级别 */
 	--spacing-super-loose-large: 64px; /* 很宽松尺寸内/外边距—页面级别 */
 	--formItem-text-label-default: 400 14px/16px var(--font-family-normal); /* 表单/描述组件label文字 */
-	--color-opacity-0: #364f810a; /* hsla(220,41%,36%,0.04) */
-	--color-opacity-1: #2438610d; /* hsla(220,46%,26%,0.05) */
-	--color-opacity-2: #122a4f14; /* hsla(216,63%,19%,0.08) */
-	--color-opacity-3: #11204621; /* hsla(223,61%,17%,0.13) */
-	--color-opacity-4: #06154233; /* hsla(225,86%,14%,0.2) */
-	--color-opacity-5: #0512384d; /* hsla(225,84%,12%,0.3) */
-	--color-opacity-6: #010b3269; /* hsla(227,96%,10%,0.41) */
-	--color-opacity-7: #030c2b8a; /* hsla(227,87%,9%,0.54) */
-	--color-opacity-8: #030a26a6; /* hsla(229,84%,8%,0.65) */
-	--color-opacity-9: #01071ebd; /* hsla(228,93%,6%,0.74) */
-	--color-opacity-10: #010413cf; /* hsla(231,91%,4%,0.81) */
-	--color-opacity-11: #020412de; /* hsla(232,79%,4%,0.87) */
-	--color-opacity-12: #02040de8; /* hsla(229,73%,3%,0.91) */
-	--color-opacity-13: #00010aed; /* hsla(233,100%,2%,0.93) */
+	--color-opacity-0: rgba(54,79,129,0.04); /* hsla(220,41%,36%,0.04) */
+	--color-opacity-1: rgba(36,56,97,0.05); /* hsla(220,46%,26%,0.05) */
+	--color-opacity-2: rgba(18,42,79,0.08); /* hsla(216,63%,19%,0.08) */
+	--color-opacity-3: rgba(17,32,70,0.13); /* hsla(223,61%,17%,0.13) */
+	--color-opacity-4: rgba(6,21,66,0.20); /* hsla(225,86%,14%,0.2) */
+	--color-opacity-5: rgba(5,18,56,0.30); /* hsla(225,84%,12%,0.3) */
+	--color-opacity-6: rgba(1,11,50,0.41); /* hsla(227,96%,10%,0.41) */
+	--color-opacity-7: rgba(3,12,43,0.54); /* hsla(227,87%,9%,0.54) */
+	--color-opacity-8: rgba(3,10,38,0.65); /* hsla(229,84%,8%,0.65) */
+	--color-opacity-9: rgba(1,7,30,0.74); /* hsla(228,93%,6%,0.74) */
+	--color-opacity-10: rgba(1,4,19,0.81); /* hsla(231,91%,4%,0.81) */
+	--color-opacity-11: rgba(2,4,18,0.87); /* hsla(232,79%,4%,0.87) */
+	--color-opacity-12: rgba(2,4,13,0.91); /* hsla(229,73%,3%,0.91) */
+	--color-opacity-13: rgba(0,1,10,0.93); /* hsla(233,100%,2%,0.93) */
 	--color-highlight-search: var(--color-link-normal); /* 高亮搜索 */
 }
 
@@ -260,16 +260,16 @@
 	--spacing-none: 0px; /* 零 */
 	--color-white: var(--black);
 	--white: #ffffff; /* 常量 */
-	--inverse-opacity-0: #ffffffe6; /* 90%透明度 */
-	--inverse-opacity-1: #ffffffcc; /* 80%透明度 */
-	--inverse-opacity-2: #ffffffb3; /* 70%透明度 */
-	--inverse-opacity-3: #ffffff99; /* 60%透明度 */
-	--inverse-opacity-4: #ffffff80; /* 50%透明度 */
-	--inverse-opacity-5: #ffffff66; /* 40%透明度 */
-	--inverse-opacity-6: #ffffff4d; /* 30%透明度 */
-	--inverse-opacity-7: #ffffff33; /* 20%透明度 */
-	--inverse-opacity-8: #ffffff1a; /* 10%透明度 */
-	--inverse-opacity-9: #ffffff0d; /* 5%透明度 */
+	--inverse-opacity-0: rgba(255,255,255,0.90); /* 90%透明度 */
+	--inverse-opacity-1: rgba(255,255,255,0.80); /* 80%透明度 */
+	--inverse-opacity-2: rgba(255,255,255,0.70); /* 70%透明度 */
+	--inverse-opacity-3: rgba(255,255,255,0.60); /* 60%透明度 */
+	--inverse-opacity-4: rgba(255,255,255,0.50); /* 50%透明度 */
+	--inverse-opacity-5: rgba(255,255,255,0.40); /* 40%透明度 */
+	--inverse-opacity-6: rgba(255,255,255,0.30); /* 30%透明度 */
+	--inverse-opacity-7: rgba(255,255,255,0.20); /* 20%透明度 */
+	--inverse-opacity-8: rgba(255,255,255,0.10); /* 10%透明度 */
+	--inverse-opacity-9: rgba(255,255,255,0.05); /* 5%透明度 */
 	--color-black: var(--white);
 	--black: #000000; /* 常量 */
 	--color-primary-normal: var(--color-brand-5); /* 主要颜色 */
@@ -496,19 +496,19 @@
 	--spacing-ultra-loose: 48px; /* 较宽松尺寸内/外边距—页面级别 */
 	--spacing-super-loose-large: 64px; /* 很宽松尺寸内/外边距—页面级别 */
 	--formItem-text-label-default: 400 14px/16px var(--font-family-normal); /* 表单/描述组件label文字 */
-	--color-opacity-0: #b2bdfa1a; /* hsla(231,88%,84%,0.1) */
-	--color-opacity-1: #b2c1fa24; /* hsla(228,88%,84%,0.14) */
-	--color-opacity-2: #b9c5fd30; /* hsla(230,95%,86%,0.19) */
-	--color-opacity-3: #bdc9fa42; /* hsla(228,86%,86%,0.26) */
-	--color-opacity-4: #c4d0fd57; /* hsla(227,93%,88%,0.34) */
-	--color-opacity-5: #d1daff70; /* hsla(229,100%,91%,0.44) */
-	--color-opacity-6: #d4ddfc8f; /* hsla(227,87%,91%,0.56) */
-	--color-opacity-7: #e1e7feab; /* hsla(228,94%,94%,0.67) */
-	--color-opacity-8: #ebefffc4; /* hsla(226,100%,96%,0.77) */
-	--color-opacity-9: #eef2fcdb; /* hsla(223,70%,96%,0.86) */
-	--color-opacity-10: #f6f8fee8; /* hsla(225,80%,98%,0.91) */
-	--color-opacity-11: #f6fafef2; /* hsla(210,75%,98%,0.95) */
-	--color-opacity-12: #fafcfff7; /* hsla(220,100%,99%,0.97) */
-	--color-opacity-13: #f7fafcfc; /* hsla(210,50%,98%,0.99) */
+	--color-opacity-0: rgba(178,189,250,0.10); /* hsla(231,88%,84%,0.1) */
+	--color-opacity-1: rgba(178,193,250,0.14); /* hsla(228,88%,84%,0.14) */
+	--color-opacity-2: rgba(185,197,253,0.19); /* hsla(230,95%,86%,0.19) */
+	--color-opacity-3: rgba(189,201,250,0.26); /* hsla(228,86%,86%,0.26) */
+	--color-opacity-4: rgba(196,208,253,0.34); /* hsla(227,93%,88%,0.34) */
+	--color-opacity-5: rgba(209,218,255,0.44); /* hsla(229,100%,91%,0.44) */
+	--color-opacity-6: rgba(212,221,252,0.56); /* hsla(227,87%,91%,0.56) */
+	--color-opacity-7: rgba(225,231,254,0.67); /* hsla(228,94%,94%,0.67) */
+	--color-opacity-8: rgba(235,239,255,0.77); /* hsla(226,100%,96%,0.77) */
+	--color-opacity-9: rgba(238,242,252,0.86); /* hsla(223,70%,96%,0.86) */
+	--color-opacity-10: rgba(246,248,254,0.91); /* hsla(225,80%,98%,0.91) */
+	--color-opacity-11: rgba(246,250,254,0.95); /* hsla(210,75%,98%,0.95) */
+	--color-opacity-12: rgba(250,252,255,0.97); /* hsla(220,100%,99%,0.97) */
+	--color-opacity-13: rgba(247,250,252,0.99); /* hsla(210,50%,98%,0.99) */
 	--color-highlight-search: var(--color-link-normal); /* 高亮搜索 */
 }
