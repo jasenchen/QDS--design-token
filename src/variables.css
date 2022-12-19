@@ -3,16 +3,16 @@
 	--spacing-none: 0px; /* 零 */
 	--color-white: var(--white);
 	--white: #ffffff; /* 常量 */
-	--inverse-opacity-0: #ffffffe6; /* 90%透明度 */
-	--inverse-opacity-1: #ffffffcc; /* 80%透明度 */
-	--inverse-opacity-2: #ffffffb3; /* 70%透明度 */
-	--inverse-opacity-3: #ffffff99; /* 60%透明度 */
-	--inverse-opacity-4: #ffffff80; /* 50%透明度 */
-	--inverse-opacity-5: #ffffff66; /* 40%透明度 */
-	--inverse-opacity-6: #ffffff4d; /* 30%透明度 */
-	--inverse-opacity-7: #ffffff33; /* 20%透明度 */
-	--inverse-opacity-8: #ffffff1a; /* 10%透明度 */
-	--inverse-opacity-9: #ffffff0d; /* 5%透明度 */
+	--inverse-opacity-0: rgba(255,255,255,0.90); /* 90%透明度 */
+	--inverse-opacity-1: rgba(255,255,255,0.80); /* 80%透明度 */
+	--inverse-opacity-2: rgba(255,255,255,0.70); /* 70%透明度 */
+	--inverse-opacity-3: rgba(255,255,255,0.60); /* 60%透明度 */
+	--inverse-opacity-4: rgba(255,255,255,0.50); /* 50%透明度 */
+	--inverse-opacity-5: rgba(255,255,255,0.40); /* 40%透明度 */
+	--inverse-opacity-6: rgba(255,255,255,0.30); /* 30%透明度 */
+	--inverse-opacity-7: rgba(255,255,255,0.20); /* 20%透明度 */
+	--inverse-opacity-8: rgba(255,255,255,0.10); /* 10%透明度 */
+	--inverse-opacity-9: rgba(255,255,255,0.05); /* 5%透明度 */
 	--color-black: var(--black);
 	--black: #000000; /* 常量 */
 	--color-primary-normal: var(--color-brand-5); /* 主要颜色 */
@@ -45,9 +45,9 @@
 	--color-bg-2: var(--color-white); /* 最上层背景色（气泡类、通知类） */
 	--color-bg-contrast: var(--color-gray-0); /* 对比背景色 */
 	--color-overlay: rgba(18,19,25,0.32); /* 蒙层颜色 */
-	--color-bg-header: #ffffff00; /* 头部背景色 */
-	--color-bg-footer: #ffffff00; /* 底部背景色 */
-	--color-nav-1: var(--white); /* 一级导航颜色 */
+	--color-bg-header: var(--color-white); /* 头部背景色 */
+	--color-bg-footer: var(--color-white); /* 底部背景色 */
+	--color-nav-1: var(--color-gray-11); /* 一级导航颜色 */
 	--color-nav-2: var(--color-white); /* 二级导航颜色 */
 	--color-link-normal: var(--color-brand-5); /* normal */
 	--color-link-hover: var(--color-brand-6); /* hover */
@@ -179,21 +179,21 @@
 	--color-gray-11: #232530; /* - */
 	--color-gray-12: #191b23; /* - */
 	--color-gray-13: #121319; /* - */
-	--shadow-small: 0px 0px 1px 0px rgba(18,19,25,0.08),0px 0px 2px 0px rgba(18,19,25,0.08),0px 2px 4px 0px rgba(18,19,25,0.08); /* 控件类-（滑块等） */
-	--shadow-medium: 0px 0px 1px 0px rgba(18,19,25,0.08),0px 0px 4px 0px rgba(18,19,25,0.08),0px 6px 12px 0px rgba(18,19,25,0.12); /* 下拉弹层、卡片、轻弹层、气泡等 */
-	--shadow-large: 0px 16px 32px 0px rgba(18,19,25,0.16),0px 0px 8px 0px rgba(18,19,25,0.08),0px 0px 1px 0px rgba(18,19,25,0.08); /* 对话框、通知、抽屉等 */
-	--display-bold: 600 32px/40px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 默认全局字体 */; /* 超大标题 */
-	--headline-bold: 600 24px/32px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 默认全局字体 */; /* 大标题 */
+	--shadow-small: 0px 0px 1px rgba(18,19,25,0.08),0px 0px 2px rgba(18,19,25,0.08),0px 2px 4px rgba(18,19,25,0.08); /* 控件类-（滑块等） */
+	--shadow-medium: 0px 0px 1px rgba(18,19,25,0.08),0px 0px 4px rgba(18,19,25,0.08),0px 6px 12px rgba(18,19,25,0.12); /* 下拉弹层、卡片、轻弹层、气泡等 */
+	--shadow-large: 0px 16px 32px rgba(18,19,25,0.16),0px 0px 8px rgba(18,19,25,0.08),0px 0px 1px rgba(18,19,25,0.08); /* 对话框、通知、抽屉等 */
+	--display-bold: 600 32px/40px var(--font-family-normal); /* 超大标题 */
+	--headline-bold: 600 24px/32px var(--font-family-normal); /* 大标题 */
 	--font-family-normal: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial,"PingFang SC","Microsoft YaHei","Noto Sans",sans-serif; /* 默认全局字体 */
 	--font-family-number-display: Inter Display,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial,"PingFang SC","Microsoft YaHei","Noto Sans",sans-serif; /* 数字指标字体 */
-	--title-regular: 400 20px/28px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 默认全局字体 */; /* 标题文字 */
-	--title-bold: 600 20px/28px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 默认全局字体 */; /* 标题 */
-	--subtitle-regular: 400 16px/24px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 默认全局字体 */; /* 小标题 */
-	--subtitle-medium: 500 16px/24px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 默认全局字体 */; /* 小标题 */
-	--body-regular: 400 14px/20px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 默认全局字体 */; /* 正文的默认字号 */
-	--body-medium: 500 14px/20px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 默认全局字体 */; /* 正文 */
-	--caption-regular: 400 12px/16px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 默认全局字体 */; /* 说明文本 */
-	--caption-medium: 500 12px/16px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 默认全局字体 */; /* 说明文本 */
+	--title-regular: 400 20px/28px var(--font-family-normal); /* 标题文字 */
+	--title-bold: 600 20px/28px var(--font-family-normal); /* 标题 */
+	--subtitle-regular: 400 16px/24px var(--font-family-normal); /* 小标题 */
+	--subtitle-medium: 500 16px/24px var(--font-family-normal); /* 小标题 */
+	--body-regular: 400 14px/20px var(--font-family-normal); /* 正文的默认字号 */
+	--body-medium: 500 14px/20px var(--font-family-normal); /* 正文 */
+	--caption-regular: 400 12px/16px var(--font-family-normal); /* 说明文本 */
+	--caption-medium: 500 12px/16px var(--font-family-normal); /* 说明文本 */
 	--radius-small: calc(var(--radius-normal)/2);
 	--radius-normal: 3px; /* 控件、小卡片等 */
 	--radius-large: calc(var(--radius-normal)*2); /* 大卡片、大弹框等 */
@@ -226,37 +226,33 @@
 	--duration-end-m: 0.1s; /* 控件 */
 	--duration-end-l: 0.15s; /* 默认 */
 	--duration-end-xl: 0.3s; /* 大卡片 */
-	--number-small-regular: 400 20px/28px Inter Display,-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 数字指标字体 */; /* 小号数字 */
-	--number-small-medium: 500 20px/28px Inter Display,-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 数字指标字体 */; /* 小号数字medium */
-	--number-normal-regular: 400 24px/32px Inter Display,-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 数字指标字体 */; /* 默认数字 */
-	--number-normal-medium: 500 24px/32px Inter Display,-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 数字指标字体 */; /* 默认数字medium */
-	--number-large-regular: 400 32px/40px Inter Display,-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 数字指标字体 */; /* 大号数字 */
-	--number-large-medium: 500 32px/40px Inter Display,-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 数字指标字体 */; /* 大号数字medium */
+	--number-small-regular: 400 20px/28px var(--font-family-number-display); /* 小号数字 */
+	--number-small-medium: 500 20px/28px var(--font-family-number-display); /* 小号数字medium */
+	--number-normal-regular: 400 24px/32px var(--font-family-number-display); /* 默认数字 */
+	--number-normal-medium: 500 24px/32px var(--font-family-number-display); /* 默认数字medium */
+	--number-large-regular: 400 32px/40px var(--font-family-number-display); /* 大号数字 */
+	--number-large-medium: 500 32px/40px var(--font-family-number-display); /* 大号数字medium */
 	--border-thickness: 0.5px; /* 细描边 */
 	--border-normal: 1px; /* 默认描边 */
-	--border-active: 1px; /* 激活描边 */
-	--border-focus: 1px; /* focus描边 */
+	--border-active: 2px; /* 激活描边 */
+	--border-focus: 2px; /* focus描边 */
 	--spacing-ultra-loose: 48px; /* 较宽松尺寸内/外边距—页面级别 */
 	--spacing-super-loose-large: 64px; /* 很宽松尺寸内/外边距—页面级别 */
-	--formItem-text-label-default: 400 14px/16px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 默认全局字体 */; /* 表单/描述组件label文字 */
-	--imageviewer-bg-normal: var(--color-opacity-9);
-	--table-head-bg: var(--color-gray-1); /* 表头背景色 */
-	--table-shadow-single-left: -1px 0px 1px -1px rgba(18,19,25,0.08),-4px 0px 4px -4px rgba(18,19,25,0.08),-12px 0px 12px -12px rgba(18,19,25,0.12);
-	--table-shadow-single-right: 1px 0px 1px -1px rgba(18,19,25,0.08),4px 0px 4px -4px rgba(18,19,25,0.08),12px 0px 12px -12px rgba(18,19,25,0.12);
-	--color-opacity-0: #364f810a; /* hsla(220,41%,36%,0.04) */
-	--color-opacity-1: #2438610d; /* hsla(220,46%,26%,0.05) */
-	--color-opacity-2: #122a4f14; /* hsla(216,63%,19%,0.08) */
-	--color-opacity-3: #11204621; /* hsla(223,61%,17%,0.13) */
-	--color-opacity-4: #06154233; /* hsla(225,86%,14%,0.2) */
-	--color-opacity-5: #0512384d; /* hsla(225,84%,12%,0.3) */
-	--color-opacity-6: #010b3269; /* hsla(227,96%,10%,0.41) */
-	--color-opacity-7: #030c2b8a; /* hsla(227,87%,9%,0.54) */
-	--color-opacity-8: #030a26a6; /* hsla(229,84%,8%,0.65) */
-	--color-opacity-9: #01071ebd; /* hsla(228,93%,6%,0.74) */
-	--color-opacity-10: #010413cf; /* hsla(231,91%,4%,0.81) */
-	--color-opacity-11: #020412de; /* hsla(232,79%,4%,0.87) */
-	--color-opacity-12: #02040de8; /* hsla(229,73%,3%,0.91) */
-	--color-opacity-13: #00010aed; /* hsla(233,100%,2%,0.93) */
+	--formItem-text-label-default: 400 14px/16px var(--font-family-normal); /* 表单/描述组件label文字 */
+	--color-opacity-0: rgba(54,79,129,0.04); /* hsla(220,41%,36%,0.04) */
+	--color-opacity-1: rgba(36,56,97,0.05); /* hsla(220,46%,26%,0.05) */
+	--color-opacity-2: rgba(18,42,79,0.08); /* hsla(216,63%,19%,0.08) */
+	--color-opacity-3: rgba(17,32,70,0.13); /* hsla(223,61%,17%,0.13) */
+	--color-opacity-4: rgba(6,21,66,0.20); /* hsla(225,86%,14%,0.2) */
+	--color-opacity-5: rgba(5,18,56,0.30); /* hsla(225,84%,12%,0.3) */
+	--color-opacity-6: rgba(1,11,50,0.41); /* hsla(227,96%,10%,0.41) */
+	--color-opacity-7: rgba(3,12,43,0.54); /* hsla(227,87%,9%,0.54) */
+	--color-opacity-8: rgba(3,10,38,0.65); /* hsla(229,84%,8%,0.65) */
+	--color-opacity-9: rgba(1,7,30,0.74); /* hsla(228,93%,6%,0.74) */
+	--color-opacity-10: rgba(1,4,19,0.81); /* hsla(231,91%,4%,0.81) */
+	--color-opacity-11: rgba(2,4,18,0.87); /* hsla(232,79%,4%,0.87) */
+	--color-opacity-12: rgba(2,4,13,0.91); /* hsla(229,73%,3%,0.91) */
+	--color-opacity-13: rgba(0,1,10,0.93); /* hsla(233,100%,2%,0.93) */
 	--color-highlight-search: var(--color-link-normal); /* 高亮搜索 */
 }
 
@@ -264,16 +260,16 @@
 	--spacing-none: 0px; /* 零 */
 	--color-white: var(--black);
 	--white: #ffffff; /* 常量 */
-	--inverse-opacity-0: #ffffffe6; /* 90%透明度 */
-	--inverse-opacity-1: #ffffffcc; /* 80%透明度 */
-	--inverse-opacity-2: #ffffffb3; /* 70%透明度 */
-	--inverse-opacity-3: #ffffff99; /* 60%透明度 */
-	--inverse-opacity-4: #ffffff80; /* 50%透明度 */
-	--inverse-opacity-5: #ffffff66; /* 40%透明度 */
-	--inverse-opacity-6: #ffffff4d; /* 30%透明度 */
-	--inverse-opacity-7: #ffffff33; /* 20%透明度 */
-	--inverse-opacity-8: #ffffff1a; /* 10%透明度 */
-	--inverse-opacity-9: #ffffff0d; /* 5%透明度 */
+	--inverse-opacity-0: rgba(255,255,255,0.90); /* 90%透明度 */
+	--inverse-opacity-1: rgba(255,255,255,0.80); /* 80%透明度 */
+	--inverse-opacity-2: rgba(255,255,255,0.70); /* 70%透明度 */
+	--inverse-opacity-3: rgba(255,255,255,0.60); /* 60%透明度 */
+	--inverse-opacity-4: rgba(255,255,255,0.50); /* 50%透明度 */
+	--inverse-opacity-5: rgba(255,255,255,0.40); /* 40%透明度 */
+	--inverse-opacity-6: rgba(255,255,255,0.30); /* 30%透明度 */
+	--inverse-opacity-7: rgba(255,255,255,0.20); /* 20%透明度 */
+	--inverse-opacity-8: rgba(255,255,255,0.10); /* 10%透明度 */
+	--inverse-opacity-9: rgba(255,255,255,0.05); /* 5%透明度 */
 	--color-black: var(--white);
 	--black: #000000; /* 常量 */
 	--color-primary-normal: var(--color-brand-5); /* 主要颜色 */
@@ -292,22 +288,22 @@
 	--color-text-disable: var(--color-opacity-4); /* 不可用 */
 	--color-text-white: var(--white); /* 用于深色底的白色文字 */
 	--color-text-black: var(--black); /* 用于浅彩色底的黑色文字 */
-	--color-border-normal: var(--color-opacity-2);
-	--color-border-hover: var(--color-opacity-3);
+	--color-border-normal: var(--color-opacity-3);
+	--color-border-hover: var(--color-opacity-4);
 	--color-border-active: var(--color-brand-1); /* active */
-	--color-border-disable: var(--color-opacity-1); /* 不可用 */
+	--color-border-disable: var(--color-opacity-2); /* 不可用 */
 	--color-divider-normal: var(--color-opacity-2); /* 分割线颜色 */
-	--color-fill-normal: var(--color-opacity-1); /* normal */
+	--color-fill-normal: var(--color-opacity-0); /* normal */
 	--color-fill-hover: var(--color-opacity-2); /* hover */
 	--color-fill-active: var(--color-brand-0); /* active */
 	--color-fill-disable: var(--color-opacity-0); /* disabled */
 	--color-bg-0: var(--color-gray-0); /* 最底层背景色 */
 	--color-bg-1: var(--color-gray-1); /* 强调背景色（弹框类，控件类） */
 	--color-bg-2: var(--color-gray-2); /* 最上层背景色（气泡类、通知类） */
-	--color-overlay: rgba(18,19,25,0.48); /* 蒙层颜色 */
+	--color-overlay: rgba(18,19,25,0.32); /* 蒙层颜色 */
 	--color-bg-contrast: var(--color-gray-1); /* 对比背景色 */
-	--color-bg-header: #12131900; /* 头部背景色 */
-	--color-bg-footer: 12131900; /* 底部背景色 */
+	--color-bg-header: var(--color-gray-0); /* 头部背景色 */
+	--color-bg-footer: var(--color-gray-0); /* 底部背景色 */
 	--color-nav-1: var(--color-gray-1); /* 一级导航颜色 */
 	--color-nav-2: var(--color-gray-0); /* 二级导航颜色 */
 	--color-link-normal: var(--color-brand-5); /* normal */
@@ -440,19 +436,19 @@
 	--color-gray-11: #eceef1; /* - */
 	--color-gray-12: #f4f5f7; /* - */
 	--color-gray-13: #f7f8fa; /* - */
-	--shadow-small: 0px 0px 1px 0px rgba(0,0,0,0.24),0px 0px 2px 0px rgba(0,0,0,0.24),0px 2px 4px 0px rgba(0,0,0,0.24); /* 控件类-（滑块等） */
-	--shadow-medium: 0px 0px 1px 0px rgba(0,0,0,0.24),0px 0px 4px 0px rgba(0,0,0,0.24),0px 6px 12px 0px rgba(0,0,0,0.36); /* 下拉弹层、卡片、轻弹层、气泡等 */
-	--shadow-large: 0px 0px 8px 0px rgba(0,0,0,0.24),0px 0px 1px 0px rgba(0,0,0,0.24),0px 16px 32px 0px rgba(0,0,0,0.48); /* 对话框、通知、抽屉等 */
+	--shadow-small: 0px 0px 1px rgba(0,0,0,0.24),0px 0px 2px rgba(0,0,0,0.24),0px 2px 4px rgba(0,0,0,0.24); /* 控件类-（滑块等） */
+	--shadow-medium: 0px 0px 1px rgba(0,0,0,0.24),0px 0px 4px rgba(0,0,0,0.24),0px 6px 12px rgba(0,0,0,0.36); /* 下拉弹层、卡片、轻弹层、气泡等 */
+	--shadow-large: 0px 0px 8px rgba(0,0,0,0.24),0px 0px 1px rgba(0,0,0,0.24),0px 16px 32px rgba(0,0,0,0.48); /* 对话框、通知、抽屉等 */
 	--font-family-normal: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial,"PingFang SC","Microsoft YaHei","Noto Sans",sans-serif;
 	--font-family-number-display: Inter Display,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial,"PingFang SC","Microsoft YaHei","Noto Sans",sans-serif; /* 数字指标字体 */
-	--title-regular: 400 20px/28px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif; /* 标题 */
-	--title-bold: 600 20px/28px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif; /* 标题 */
-	--subtitle-regular: 400 16px/24px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif; /* 小标题 */
-	--subtitle-medium: 500 16px/24px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif; /* 小标题 */
-	--body-regular: 400 14px/20px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif; /* 正文的默认字号 */
-	--body-medium: 500 14px/20px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif; /* 正文 */
-	--caption-regular: 400 12px/16px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif; /* 说明文本 */
-	--caption-medium: 500 12px/16px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif; /* 说明文本 */
+	--title-regular: 400 20px/28px var(--font-family-normal); /* 标题 */
+	--title-bold: 600 20px/28px var(--font-family-normal); /* 标题 */
+	--subtitle-regular: 400 16px/24px var(--font-family-normal); /* 小标题 */
+	--subtitle-medium: 500 16px/24px var(--font-family-normal); /* 小标题 */
+	--body-regular: 400 14px/20px var(--font-family-normal); /* 正文的默认字号 */
+	--body-medium: 500 14px/20px var(--font-family-normal); /* 正文 */
+	--caption-regular: 400 12px/16px var(--font-family-normal); /* 说明文本 */
+	--caption-medium: 500 12px/16px var(--font-family-normal); /* 说明文本 */
 	--radius-normal: 3px; /* 控件、小卡片等 */
 	--radius-large: calc(var(--radius-normal)*2); /* 大卡片、大弹框等 */
 	--radius-round: 9999px; /* 胶囊 */
@@ -485,299 +481,34 @@
 	--duration-end-l: 0.15s; /* 默认 */
 	--duration-end-xl: 0.3s; /* 大卡片 */
 	--radius-small: calc(var(--radius-normal)/2);
-	--display-bold: 600 32px/40px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif; /* 超大标题 */
-	--headline-bold: 600 24px/32px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif; /* 大标题 */
-	--number-small-regular: 500 20px/28px Inter Display,-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 数字指标字体 */; /* 小号数字 */
-	--number-small-medium: 500 20px/28px Inter Display,-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 数字指标字体 */;
-	--number-normal-regular: 400 24px/32px Inter Display,-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 数字指标字体 */; /* 默认数字 */
-	--number-normal-medium: 500 24px/32px Inter Display,-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 数字指标字体 */; /* 默认数字medium */
-	--number-large-regular: 400 32px/40px Inter Display,-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 数字指标字体 */; /* 大号数字 */
-	--number-large-medium: 500 32px/40px Inter Display,-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 数字指标字体 */; /* 大号数字medium */
+	--display-bold: 600 32px/40px var(--font-family-normal); /* 超大标题 */
+	--headline-bold: 600 24px/32px var(--font-family-normal); /* 大标题 */
+	--number-small-regular: 500 20px/28px var(--font-family-number-display); /* 小号数字 */
+	--number-small-medium: 500 20px/28px var(--font-family-number-display);
+	--number-normal-regular: 400 24px/32px var(--font-family-number-display); /* 默认数字 */
+	--number-normal-medium: 500 24px/32px var(--font-family-number-display); /* 默认数字medium */
+	--number-large-regular: 400 32px/40px var(--font-family-number-display); /* 大号数字 */
+	--number-large-medium: 500 32px/40px var(--font-family-number-display); /* 大号数字medium */
 	--border-thickness: 0.5px; /* 细描边 */
 	--border-normal: 1px; /* 默认描边 */
-	--border-active: 1px; /* 激活描边 */
-	--border-focus: 1px; /* focus描边 */
-	--spacing-ultra-loose: 48px; /* 较宽松尺寸内/外边距—页面级别 */
-	--spacing-super-loose-large: 64px; /* 很宽松尺寸内/外边距—页面级别 */
-	--formItem-text-label-default: 400 14px/16px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif; /* 表单/描述组件label文字 */
-	--imageviewer-bg-normal: #01071EBD;
-	--table-head-bg: var(--color-gray-1); /* 表头背景色 */
-	--table-shadow-single-right: 1px 0px 1px -1px rgba(0,0,0,0.24),4px 0px 4px -4px rgba(0,0,0,0.24),12px 0px 12px -12px rgba(0,0,0,0.36);
-	--table-shadow-single-left: -1px 0px 1px -1px rgba(0,0,0,0.24),-4px 0px 4px -4px rgba(0,0,0,0.24),-12px 0px 12px -12px rgba(0,0,0,0.36);
-	--color-opacity-0: #9db3e108; /* hsla(231,88%,84%,0.1) */
-	--color-opacity-1: #9db3e10d; /* hsla(221,53%,75%, 0.05 ) */
-	--color-opacity-2: #bdc8ff1a; /* hsla(230,100%,87%, 0.1 ) */
-	--color-opacity-3: #bfccf72e; /* hsla(227,78%,86%, 0.18 ) */
-	--color-opacity-4: #c6d3fb45; /* hsla(225,87%,88%, 0.27 ) */
-	--color-opacity-5: #d2dbfe61; /* hsla(228,96%,91%, 0.38 ) */
-	--color-opacity-6: #d9e2fc82; /* hsla(225,86%,92%, 0.51 ) */
-	--color-opacity-7: #e3e9fca3; /* hsla(226,81%,94%, 0.64 ) */
-	--color-opacity-8: #ecf1fdbf; /* hsla(224,83%,96%, 0.75 ) */
-	--color-opacity-9: #f1f4fed6; /* hsla(226,87%,97%, 0.84 ) */
-	--color-opacity-10: #f6f8fee6; /* hsla(223,78%,98%, 0.9 ) */
-	--color-opacity-11: #fafcfff0; /* hsla(216,100%,99%, 0.94 ) */
-	--color-opacity-12: #fbfcfef7; /* hsla(220,60%,99%, 0.97 ) */
-	--color-opacity-13: #fafcfffa; /* hsla(220,100%,99%, 0.98 ) */
-	--color-highlight-search: var(--color-link-normal); /* 高亮搜索 */
-}
-
-:root[theme-mode="QDS-test"], .theme-QDS-test{
-	--spacing-none: 0px; /* 零 */
-	--color-white: var(--white);
-	--white: #ffffff; /* 常量 */
-	--inverse-opacity-0: #ffffffe6; /* 90%透明度 */
-	--inverse-opacity-1: #ffffffcc; /* 80%透明度 */
-	--inverse-opacity-2: #ffffffb3; /* 70%透明度 */
-	--inverse-opacity-3: #ffffff99; /* 60%透明度 */
-	--inverse-opacity-4: #ffffff80; /* 50%透明度 */
-	--inverse-opacity-5: #ffffff66; /* 40%透明度 */
-	--inverse-opacity-6: #ffffff4d; /* 30%透明度 */
-	--inverse-opacity-7: #ffffff33; /* 20%透明度 */
-	--inverse-opacity-8: #ffffff1a; /* 10%透明度 */
-	--inverse-opacity-9: #ffffff0d; /* 5%透明度 */
-	--color-black: var(--black);
-	--black: #000000; /* 常量 */
-	--color-primary-normal: var(--color-brand-5); /* 主要颜色 */
-	--color-primary-hover: var(--color-brand-6); /* hover */
-	--color-primary-active: var(--color-brand-7); /* active */
-	--color-primary-focus: var(--color-brand-3); /* focus */
-	--color-primary-disable: var(--color-brand-2); /* disable */
-	--color-primary-light: var(--color-brand-0); /* light */
-	--color-primary-text: var(--color-brand-9); /* - */
-	--color-primary-light-normal: var(--color-brand-0); /* light */
-	--color-primary-light-hover: var(--color-brand-1); /* light-hover */
-	--color-primary-light-active: var(--color-brand-2); /* light-active */
-	--color-text-primary: var(--color-opacity-13); /* - */
-	--color-text-secondary: var(--color-opacity-8); /* 次要 */
-	--color-text-caption: var(--color-opacity-6); /* 说明 */
-	--color-text-disable: var(--color-opacity-4); /* 不可用 */
-	--color-text-white: var(--white); /* 用于深色底的白色文字 */
-	--color-text-black: var(--black); /* 用于浅彩色底的黑色文字 */
-	--color-border-normal: var(--color-opacity-3);
-	--color-border-hover: var(--color-opacity-4);
-	--color-border-active: var(--color-brand-1); /* active */
-	--color-border-disable: var(--color-opacity-2); /* 不可用 */
-	--color-divider-normal: var(--color-opacity-2); /* 分割线颜色 */
-	--color-fill-normal: var(--color-white); /* normal */
-	--color-fill-hover: var(--color-opacity-1); /* hover */
-	--color-fill-active: var(--color-brand-0); /* active */
-	--color-fill-disable: var(--color-opacity-0); /* disabled */
-	--color-bg-0: var(--color-white); /* 最底层背景色 */
-	--color-bg-1: var(--color-white); /* 强调背景色（弹框类，控件类） */
-	--color-bg-2: var(--color-white); /* 最上层背景色（气泡类、通知类） */
-	--color-bg-contrast: var(--color-gray-0); /* 对比背景色 */
-	--color-overlay: rgba(18,19,25,0.32); /* 蒙层颜色 */
-	--color-bg-header: #ffffff00; /* 头部背景色 */
-	--color-bg-footer: #ffffff00; /* 底部背景色 */
-	--color-nav-1: var(--color-gray-11); /* 一级导航颜色 */
-	--color-nav-2: var(--color-white); /* 二级导航颜色 */
-	--color-link-normal: var(--color-brand-5); /* normal */
-	--color-link-hover: var(--color-brand-6); /* hover */
-	--color-link-active: var(--color-brand-7); /* active */
-	--color-link-visited: var(--color-brand-4); /* visited */
-	--color-prompt-normal: var(--color-blue-5); /* normal */
-	--color-prompt-hover: var(--color-blue-6); /* hover */
-	--color-prompt-active: var(--color-blue-7); /* active */
-	--color-prompt-disable: var(--color-blue-2); /* disable */
-	--color-prompt-light-normal: var(--color-blue-0); /* light-normal */
-	--color-prompt-light-hover: var(--color-blue-1); /* light-hover */
-	--color-prompt-light-active: var(--color-blue-2); /* light-active */
-	--color-prompt-text: var(--color-blue-9); /* 提示文本 */
-	--color-success-normal: var(--color-green-5); /* normal */
-	--color-success-hover: var(--color-green-6); /* hover */
-	--color-success-active: var(--color-green-7); /* active */
-	--color-success-disable: var(--color-green-2); /* disable */
-	--color-success-light-normal: var(--color-green-0); /* light-normal */
-	--color-success-light-hover: var(--color-green-1); /* light-hover */
-	--color-success-light-active: var(--color-green-2); /* light-active */
-	--color-success-text: var(--color-green-9); /* 提示文本 */
-	--color-warning-normal: var(--color-orange-5); /* normal */
-	--color-warning-hover: var(--color-orange-6); /* hover */
-	--color-warning-active: var(--color-orange-7); /* active */
-	--color-warning-disable: var(--color-orange-2); /* disable */
-	--color-warning-light-normal: var(--color-orange-0); /* light-normal */
-	--color-warning-light-hover: var(--color-orange-1); /* light-hover */
-	--color-warning-light-active: var(--color-orange-2); /* light-active */
-	--color-warning-text: var(--color-orange-9); /* 提示文本 */
-	--color-error-normal: var(--color-red-5); /* normal */
-	--color-error-hover: var(--color-red-6); /* hover */
-	--color-error-active: var(--color-red-7); /* active */
-	--color-error-disable: var(--color-red-2); /* disable */
-	--color-error-light-normal: var(--color-red-0); /* light-normal */
-	--color-error-light-hover: var(--color-red-1); /* light-hover */
-	--color-error-light-active: var(--color-red-2); /* light-active */
-	--color-error-text: var(--color-red-9); /* 提示文本 */
-	--color-brand-0: #E3E6E1; /* - */
-	--color-brand-1: #C4CCC0; /* - */
-	--color-brand-2: #A4B39B; /* - */
-	--color-brand-3: #85997A; /* - */
-	--color-brand-4: #69805D; /* focus */
-	--color-brand-5: #4F6644; /* normal */
-	--color-brand-6: #3E5733; /* hover */
-	--color-brand-7: #2F4725; /* active */
-	--color-brand-8: #233B1A;
-	--color-brand-9: #172B10;
-	--color-blue-0: #ECF9FF;
-	--color-blue-1: #D0EFFF;
-	--color-blue-2: #A1DDFF;
-	--color-blue-3: #72C7FF;
-	--color-blue-4: #43AEFF; /* focus */
-	--color-blue-5: #1492FF; /* normal */
-	--color-blue-6: #1075DB; /* hover */
-	--color-blue-7: #0B5BB6; /* active */
-	--color-blue-8: #084492;
-	--color-blue-9: #052F6D;
-	--color-green-0: #E6F8EF; /* - */
-	--color-green-1: #C0EBD7;
-	--color-green-2: #8CDEBB;
-	--color-green-3: #5ED1A3;
-	--color-green-4: #34C48F; /* focus */
-	--color-green-5: #0FB87F; /* normal */
-	--color-green-6: #0B9D72; /* hover */
-	--color-green-7: #088362; /* active */
-	--color-green-8: #066952;
-	--color-green-9: #044F40;
-	--color-yellow-0: #FEFDEC;
-	--color-yellow-1: #FDF8D1;
-	--color-yellow-2: #FBF0A3;
-	--color-yellow-3: #FAE476;
-	--color-yellow-4: #F9D64A; /* focus */
-	--color-yellow-5: #F7C51E; /* normal */
-	--color-yellow-6: #D4A217; /* hover */
-	--color-yellow-7: #B18110; /* active */
-	--color-yellow-8: #8D620B;
-	--color-yellow-9: #6A4607;
-	--color-amber-0: #fff9ef;
-	--color-amber-1: #fff0d7;
-	--color-amber-2: #ffdfae;
-	--color-amber-3: #ffcd86;
-	--color-amber-4: #ffb95e;
-	--color-amber-5: #ffa436;
-	--color-amber-6: #db8829;
-	--color-amber-7: #b66c1e;
-	--color-amber-8: #925314;
-	--color-amber-9: #6d3b0d;
-	--color-orange-0: #FFF8F0;
-	--color-orange-1: #FFEBDA;
-	--color-orange-2: #FFD5B5;
-	--color-orange-3: #FFBC8F;
-	--color-orange-4: #FFA16A; /* focus */
-	--color-orange-5: #FF8345; /* normal */
-	--color-orange-6: #DB6634; /* hover */
-	--color-orange-7: #B64D26; /* active */
-	--color-orange-8: #92361A;
-	--color-orange-9: #6D2310;
-	--color-red-0: #FEF3F1; /* - */
-	--color-red-1: #FDE0DC; /* - */
-	--color-red-2: #FBBFB9; /* - */
-	--color-red-3: #FA9C97; /* - */
-	--color-red-4: #F97875; /* focus */
-	--color-red-5: #f75559; /* normal */
-	--color-red-6: #D44047; /* hover */
-	--color-red-7: #B12F3A; /* active */
-	--color-red-8: #8D202D; /* - */
-	--color-red-9: #6A1421; /* - */
-	--color-purple-0: #F4EEFC; /* - */
-	--color-purple-1: #E2D5F8; /* - */
-	--color-purple-2: #C6AFF3; /* - */
-	--color-purple-3: #A98AEF; /* - */
-	--color-purple-4: #8A67EA; /* focus */
-	--color-purple-5: #6A45E5; /* normal */
-	--color-purple-6: #5134C5; /* hover */
-	--color-purple-7: #3B26A4; /* active */
-	--color-purple-8: #281A83; /* - */
-	--color-purple-9: #191062; /* - */
-	--color-gray-0: #f7f8fa; /* - */
-	--color-gray-1: #f4f5f7; /* - */
-	--color-gray-2: #eceef1; /* divider 分割线 */
-	--color-gray-3: #e0e2e7; /* - */
-	--color-gray-4: #cdd0d9; /* - */
-	--color-gray-5: #b4b8c4; /* - */
-	--color-gray-6: #979baa; /* 说明文字 */
-	--color-gray-7: #777c8d; /* - */
-	--color-gray-8: #5b5f70; /* - */
-	--color-gray-9: #434756; /* - */
-	--color-gray-10: #313441; /* - */
-	--color-gray-11: #232530; /* - */
-	--color-gray-12: #191b23; /* - */
-	--color-gray-13: #121319; /* - */
-	--shadow-small: 0px 0px 1px 0px rgba(79,102,68,0.08),0px 0px 2px 0px rgba(79,102,68,0.08),0px 2px 4px 0px rgba(79,102,68,0.08); /* 控件类-（滑块等） */
-	--shadow-medium: 0px 0px 1px 0px rgba(79,102,68,0.08),0px 0px 4px 0px rgba(79,102,68,0.08),0px 6px 12px 0px rgba(79,102,68,0.12); /* 下拉弹层、卡片、轻弹层、气泡等 */
-	--shadow-large: 0px 16px 32px 0px rgba(79,102,68,0.16),0px 0px 8px 0px rgba(79,102,68,0.08),0px 0px 1px 0px rgba(79,102,68,0.08); /* 对话框、通知、抽屉等 */
-	--display-bold: 600 32px/40px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 默认全局字体 */; /* 超大标题 */
-	--headline-bold: 600 24px/32px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 默认全局字体 */; /* 大标题 */
-	--font-family-normal: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial,"PingFang SC","Microsoft YaHei","Noto Sans",sans-serif; /* 默认全局字体 */
-	--font-family-number-display: Inter Display,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial,"PingFang SC","Microsoft YaHei","Noto Sans",sans-serif; /* 数字指标字体 */
-	--title-regular: 400 20px/28px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 默认全局字体 */; /* 标题文字 */
-	--title-bold: 600 20px/28px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 默认全局字体 */; /* 标题 */
-	--subtitle-regular: 400 16px/24px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 默认全局字体 */; /* 小标题 */
-	--subtitle-medium: 500 16px/24px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 默认全局字体 */; /* 小标题 */
-	--body-regular: 400 14px/20px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 默认全局字体 */; /* 正文的默认字号 */
-	--body-medium: 500 14px/20px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 默认全局字体 */; /* 正文 */
-	--caption-regular: 400 12px/16px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 默认全局字体 */; /* 说明文本 */
-	--caption-medium: 500 12px/16px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 默认全局字体 */; /* 说明文本 */
-	--radius-small: calc(var(--radius-normal)/2);
-	--radius-normal: 0px; /* 控件、小卡片等 */
-	--radius-large: calc(var(--radius-normal)*2); /* 大卡片、大弹框等 */
-	--radius-round: 9999px; /* 胶囊 */
-	--size-xxs: 8px;
-	--size-xxs-large: 12px; /* 12 */
-	--size-xs: 16px;
-	--size-s: 20px;
-	--size-m: 24px;
-	--size-l: 32px;
-	--size-xl: 48px;
-	--size-xxl: 64px;
-	--spacing-super-tight: 2px; /* 极相关组件相邻关系 */
-	--spacing-tight: 4px; /* 极紧凑组件相邻关系 */
-	--spacing-base: 8px; /* 默认间距基准单位 */
-	--spacing-base-loose: 12px; /* 紧凑宽松尺寸内/外边距 */
-	--spacing-loose: 16px; /* 默认宽松尺寸内/外边距 */
-	--spacing-quite-loose: 20px; /* 宽松尺寸内/外边距 */
-	--spacing-extra-loose: 24px; /* 较宽松尺寸内/外边距—容器级别 */
-	--spacing-super-loose: 32px; /* 默认内/外边距—页面级别 */
-	--radius-0: 0px; /* 无圆角 */
-	--motion--ease-in-out: cubic-bezier(0.36, 0.01, 0.1, 1); /* 缓入缓出 */
-	--motion--ease-out: cubic-bezier(0, 0, 0.2, 1); /* 减速宽松 */
-	--motion--ease-in: cubic-bezier(0.4, 0, 1, 1); /* 加速宽松 */
-	--duration-start-s: 0.1s; /* 小控件类 */
-	--duration-start-m: 0.2s; /* 控件 */
-	--duration-start-l: 0.25s; /* 默认 */
-	--duration-start-xl: 0.5s; /* 大卡片 */
-	--duration-end-s: 0.07s; /* 小控件 */
-	--duration-end-m: 0.1s; /* 控件 */
-	--duration-end-l: 0.15s; /* 默认 */
-	--duration-end-xl: 0.3s; /* 大卡片 */
-	--number-small-regular: 400 20px/28px Inter Display,-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 数字指标字体 */; /* 小号数字 */
-	--number-small-medium: 500 20px/28px Inter Display,-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 数字指标字体 */; /* 小号数字medium */
-	--number-normal-regular: 400 24px/32px Inter Display,-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 数字指标字体 */; /* 默认数字 */
-	--number-normal-medium: 500 24px/32px Inter Display,-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 数字指标字体 */; /* 默认数字medium */
-	--number-large-regular: 400 32px/40px Inter Display,-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 数字指标字体 */; /* 大号数字 */
-	--number-large-medium: 500 32px/40px Inter Display,-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 数字指标字体 */; /* 大号数字medium */
-	--border-thickness: 1px; /* 细描边 */
-	--border-normal: 2px; /* 默认描边 */
 	--border-active: 2px; /* 激活描边 */
 	--border-focus: 2px; /* focus描边 */
 	--spacing-ultra-loose: 48px; /* 较宽松尺寸内/外边距—页面级别 */
 	--spacing-super-loose-large: 64px; /* 很宽松尺寸内/外边距—页面级别 */
-	--formItem-text-label-default: 400 14px/16px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial,PingFang SC,Microsoft YaHei,Noto Sans,sans-serif /* 默认全局字体 */; /* 表单/描述组件label文字 */
-	--imageviewer-bg-normal: var(--color-opacity-9);
-	--table-head-bg: var(--color-gray-1); /* 表头背景色 */
-	--table-shadow-single-left: -1px 0px 1px -1px rgba(79,102,68,0.08),-4px 0px 4px -4px rgba(79,102,68,0.08),-12px 0px 12px -12px rgba(79,102,68,0.12);
-	--table-shadow-single-right: 1px 0px 1px -1px rgba(79,102,68,0.08),4px 0px 4px -4px rgba(79,102,68,0.08),12px 0px 12px -12px rgba(79,102,68,0.12);
-	--color-opacity-0: #364f810a; /* hsla(220,41%,36%,0.04) */
-	--color-opacity-1: #2438610d; /* hsla(220,46%,26%,0.05) */
-	--color-opacity-2: #122a4f14; /* hsla(216,63%,19%,0.08) */
-	--color-opacity-3: #11204621; /* hsla(223,61%,17%,0.13) */
-	--color-opacity-4: #06154233; /* hsla(225,86%,14%,0.2) */
-	--color-opacity-5: #0512384d; /* hsla(225,84%,12%,0.3) */
-	--color-opacity-6: #010b3269; /* hsla(227,96%,10%,0.41) */
-	--color-opacity-7: #030c2b8a; /* hsla(227,87%,9%,0.54) */
-	--color-opacity-8: #030a26a6; /* hsla(229,84%,8%,0.65) */
-	--color-opacity-9: #01071ebd; /* hsla(228,93%,6%,0.74) */
-	--color-opacity-10: #010413cf; /* hsla(231,91%,4%,0.81) */
-	--color-opacity-11: #020412de; /* hsla(232,79%,4%,0.87) */
-	--color-opacity-12: #02040de8; /* hsla(229,73%,3%,0.91) */
-	--color-opacity-13: #00010aed; /* hsla(233,100%,2%,0.93) */
+	--formItem-text-label-default: 400 14px/16px var(--font-family-normal); /* 表单/描述组件label文字 */
+	--color-opacity-0: rgba(178,189,250,0.10); /* hsla(231,88%,84%,0.1) */
+	--color-opacity-1: rgba(178,193,250,0.14); /* hsla(228,88%,84%,0.14) */
+	--color-opacity-2: rgba(185,197,253,0.19); /* hsla(230,95%,86%,0.19) */
+	--color-opacity-3: rgba(189,201,250,0.26); /* hsla(228,86%,86%,0.26) */
+	--color-opacity-4: rgba(196,208,253,0.34); /* hsla(227,93%,88%,0.34) */
+	--color-opacity-5: rgba(209,218,255,0.44); /* hsla(229,100%,91%,0.44) */
+	--color-opacity-6: rgba(212,221,252,0.56); /* hsla(227,87%,91%,0.56) */
+	--color-opacity-7: rgba(225,231,254,0.67); /* hsla(228,94%,94%,0.67) */
+	--color-opacity-8: rgba(235,239,255,0.77); /* hsla(226,100%,96%,0.77) */
+	--color-opacity-9: rgba(238,242,252,0.86); /* hsla(223,70%,96%,0.86) */
+	--color-opacity-10: rgba(246,248,254,0.91); /* hsla(225,80%,98%,0.91) */
+	--color-opacity-11: rgba(246,250,254,0.95); /* hsla(210,75%,98%,0.95) */
+	--color-opacity-12: rgba(250,252,255,0.97); /* hsla(220,100%,99%,0.97) */
+	--color-opacity-13: rgba(247,250,252,0.99); /* hsla(210,50%,98%,0.99) */
 	--color-highlight-search: var(--color-link-normal); /* 高亮搜索 */
 }

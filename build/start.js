@@ -6,6 +6,8 @@ let variables = [':root,'];
 let originData;
 let vars = [];
 let snippets = {};
+let themeName = '';
+let parsedData = {};
 
 /*
  * @eg, output content
@@ -24,6 +26,7 @@ const token = fs.readFile(tokenPath, 'utf-8', function(err, data) {
     let themes = Object.keys(data);
     originData = traverse(data);
     themes.forEach((name, index) => {
+        !themeName && (themeName = name);
         // if (Object.keys(data[name]).length === 0 || index > 0) {
         //     return;
         // }
@@ -40,6 +43,8 @@ const token = fs.readFile(tokenPath, 'utf-8', function(err, data) {
 });
 
 function makeSnippets() {
+    // console.log(parsedData);
+    // v: parsedData['\t--' + key]
     vars.forEach(name => {
         let key = cleanName(name);
         snippets[key] = {
@@ -61,6 +66,7 @@ function makeFile() {
 }
 function traverse(data = {}) {
     let transformed = {};
+    // console.log(Object.keys(data));
     Object.keys(data).forEach(name => {
         let item = data[name];
         if (item.value) {
@@ -85,6 +91,10 @@ function traverse(data = {}) {
                 });
                 value = vstr.join(',');
             }
+            // eg: #ffffff00
+            else if (/^#[\d\w]{8}$/.test(value)) {
+                value = toRGBA(value);
+            }
             transformed[name] = `${value};${item.description ? ' /* ' + item.description + ' */' : ''}`;
             // console.log(name);
             vars.push(name);
@@ -102,7 +112,9 @@ function tranform(data = {}, themeName, transformed, parentName) {
         let item = data[name];
         if (typeof item === 'string') {
             let n = getVariableName(name, parentName);
-            transformed.push(`${n}: ${replaceVars(item, themeName, n)}`);
+            let v = replaceVars(item, themeName, n);
+            transformed.push(`${n}: ${v}`);
+            !parsedData[n] && (parsedData[n] = v);
         }
         else {
             tranform(item, themeName, transformed, name);
@@ -141,7 +153,8 @@ function replaceVars(str = '', themeName, itemName) {
         log && console.log(`r1: name1: ${name1}, name2: ${name2}, s: ${s}, r:${r}, d:${JSON.stringify(data[name1])}`);
         // return replaceVars(r, themeName);
         // console.log('name2', name2, r);
-        return /-(famliy|family)-/.test(name2) ? r : `var(${name2})`;
+        // return /-(famliy|family)-/.test(name2) ? r : `var(${name2})`;
+        return `var(${name2})`;
 
     // $fontSize.3
     }).replace(/\$([\w\-\d]+)\.([\w\-\d]*)/g, function(matchStr, name1, name2, index, s) {
@@ -173,7 +186,7 @@ function replaceVars(str = '', themeName, itemName) {
     return str;
 }
 
-function toRGB(hex) {
+function toRGBA(hex) {
     hex = String(hex);
     if(hex.startsWith('#')){
         hex = hex.substr(1);
@@ -182,8 +195,15 @@ function toRGB(hex) {
     let r = hex.substring(0, 2);
     let g = hex.substring(2, 4);
     let b = hex.substring(4, 6);
+    let a = hex.substring(6, 8);
+    let str = '';
     if (isNaN(parseInt(r, 16))) {
         console.log('parse error:', r, hex);
     }
-    return `${parseInt(r, 16)},${parseInt(g,16)},${parseInt(b,16)}`;
+    str = `${parseInt(r, 16)},${parseInt(g,16)},${parseInt(b,16)}`;
+    if (a) {
+        a = (parseInt(a, 16) / 255).toFixed(2);
+        str = `${str},${a}`;
+    }
+    return `rgba(${str})`;
 }
