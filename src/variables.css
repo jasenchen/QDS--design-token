@@ -185,7 +185,7 @@
 	--display-bold: 600 32px/40px var(--font-family-normal); /* 超大标题 */
 	--headline-bold: 600 24px/32px var(--font-family-normal); /* 大标题 */
 	--font-family-normal: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial,"PingFang SC","Microsoft YaHei","Noto Sans",sans-serif; /* 默认全局字体 */
-	--font-family-number-display: Inter Display,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial,"PingFang SC","Microsoft YaHei","Noto Sans",sans-serif; /* 数字指标字体 */
+	--font-family-number-display: Inter,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial,"PingFang SC","Microsoft YaHei","Noto Sans",sans-serif; /* 数字指标字体 */
 	--title-regular: 400 20px/28px var(--font-family-normal); /* 标题文字 */
 	--title-bold: 600 20px/28px var(--font-family-normal); /* 标题 */
 	--subtitle-regular: 400 16px/24px var(--font-family-normal); /* 小标题 */
@@ -444,7 +444,7 @@
 	--shadow-medium: 0px 0px 1px 0px rgba(0,0,0,0.24),0px 0px 4px 0px rgba(0,0,0,0.24),0px 6px 12px 0px rgba(0,0,0,0.36); /* 下拉弹层、卡片、轻弹层、气泡等 */
 	--shadow-large: 0px 0px 8px 0px rgba(0,0,0,0.24),0px 0px 1px 0px rgba(0,0,0,0.24),0px 16px 32px 0px rgba(0,0,0,0.48); /* 对话框、通知、抽屉等 */
 	--font-family-normal: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial,"PingFang SC","Microsoft YaHei","Noto Sans",sans-serif;
-	--font-family-number-display: Inter Display,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial,"PingFang SC","Microsoft YaHei","Noto Sans",sans-serif; /* 数字指标字体 */
+	--font-family-number-display: Inter,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial,"PingFang SC","Microsoft YaHei","Noto Sans",sans-serif; /* 数字指标字体 */
 	--title-regular: 400 20px/28px var(--font-family-normal); /* 标题 */
 	--title-bold: 600 20px/28px var(--font-family-normal); /* 标题 */
 	--subtitle-regular: 400 16px/24px var(--font-family-normal); /* 小标题 */
@@ -707,7 +707,7 @@
 	--display-bold: 600 32px/40px var(--font-family-normal); /* 超大标题 */
 	--headline-bold: 600 24px/32px var(--font-family-normal); /* 大标题 */
 	--font-family-normal: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial,"PingFang SC","Microsoft YaHei","Noto Sans",sans-serif; /* 默认全局字体 */
-	--font-family-number-display: Inter Display,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial,"PingFang SC","Microsoft YaHei","Noto Sans",sans-serif; /* 数字指标字体 */
+	--font-family-number-display: Inter,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial,"PingFang SC","Microsoft YaHei","Noto Sans",sans-serif; /* 数字指标字体 */
 	--title-regular: 400 20px/28px var(--font-family-normal); /* 标题文字 */
 	--title-bold: 600 20px/28px var(--font-family-normal); /* 标题 */
 	--subtitle-regular: 400 16px/24px var(--font-family-normal); /* 小标题 */
