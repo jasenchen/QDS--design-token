@@ -182,6 +182,9 @@
 	--shadow-small: 0px 0px 1px 0px rgba(18,19,25,0.08),0px 0px 2px 0px rgba(18,19,25,0.08),0px 2px 4px 0px rgba(18,19,25,0.08); /* 控件类-（滑块等） */
 	--shadow-medium: 0px 0px 1px 0px rgba(18,19,25,0.08),0px 0px 4px 0px rgba(18,19,25,0.08),0px 6px 12px 0px rgba(18,19,25,0.12); /* 下拉弹层、卡片、轻弹层、气泡等 */
 	--shadow-large: 0px 16px 32px 0px rgba(18,19,25,0.16),0px 0px 8px 0px rgba(18,19,25,0.08),0px 0px 1px 0px rgba(18,19,25,0.08); /* 对话框、通知、抽屉等 */
+	--shadow-small-light: 0px 2px 12px 0px rgba(18,19,25,0.06),0px 0px 6px 0px rgba(18,19,25,0.02),0px 0px 1px 0px rgba(18,19,25,0.02);
+	--shadow-medium-light: 0px 8px 24px 0px rgba(18,19,25,0.08),0px 0px 12px 0px rgba(18,19,25,0.04),0px 0px 1px 0px rgba(18,19,25,0.02);
+	--shadow-large-light: 0px 16px 64px 0px rgba(18,19,25,0.16),0px 0px 18px 0px rgba(18,19,25,0.08),0px 0px 1px 0px rgba(18,19,25,0.02);
 	--display-bold: 600 32px/40px var(--font-family-normal); /* 超大标题 */
 	--headline-bold: 600 24px/32px var(--font-family-normal); /* 大标题 */
 	--font-family-normal: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial,"PingFang SC","Microsoft YaHei","Noto Sans",sans-serif; /* 默认全局字体 */
@@ -443,6 +446,9 @@
 	--shadow-small: 0px 0px 1px 0px rgba(0,0,0,0.24),0px 0px 2px 0px rgba(0,0,0,0.24),0px 2px 4px 0px rgba(0,0,0,0.24); /* 控件类-（滑块等） */
 	--shadow-medium: 0px 0px 1px 0px rgba(0,0,0,0.24),0px 0px 4px 0px rgba(0,0,0,0.24),0px 6px 12px 0px rgba(0,0,0,0.36); /* 下拉弹层、卡片、轻弹层、气泡等 */
 	--shadow-large: 0px 0px 8px 0px rgba(0,0,0,0.24),0px 0px 1px 0px rgba(0,0,0,0.24),0px 16px 32px 0px rgba(0,0,0,0.48); /* 对话框、通知、抽屉等 */
+	--shadow-small-light: 0px 0px 1px 0px rgba(0,0,0,0.06),0px 0px 6px 0px rgba(0,0,0,0.06),0px 2px 12px 0px rgba(0,0,0,0.18);
+	--shadow-medium-light: 0px 0px 1px 0px rgba(0,0,0,0.06),0px 0px 12px 0px rgba(0,0,0,0.12),0px 8px 24px 0px rgba(0,0,0,0.24);
+	--shadow-large-light: 0px 0px 1px 0px rgba(0,0,0,0.06),0px 0px 18px 0px rgba(0,0,0,0.24),0px 16px 64px 0px rgba(0,0,0,0.48);
 	--font-family-normal: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial,"PingFang SC","Microsoft YaHei","Noto Sans",sans-serif;
 	--font-family-number-display: Inter,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial,"PingFang SC","Microsoft YaHei","Noto Sans",sans-serif; /* 数字指标字体 */
 	--title-regular: 400 20px/28px var(--font-family-normal); /* 标题 */
@@ -704,6 +710,9 @@
 	--shadow-small: 0px 0px 1px 0px rgba(79,102,68,0.08),0px 0px 2px 0px rgba(79,102,68,0.08),0px 2px 4px 0px rgba(79,102,68,0.08); /* 控件类-（滑块等） */
 	--shadow-medium: 0px 0px 1px 0px rgba(79,102,68,0.08),0px 0px 4px 0px rgba(79,102,68,0.08),0px 6px 12px 0px rgba(79,102,68,0.12); /* 下拉弹层、卡片、轻弹层、气泡等 */
 	--shadow-large: 0px 16px 32px 0px rgba(79,102,68,0.16),0px 0px 8px 0px rgba(79,102,68,0.08),0px 0px 1px 0px rgba(79,102,68,0.08); /* 对话框、通知、抽屉等 */
+	--shadow-small-light: 0px 2px 12px 0px rgba(79,102,68,0.06),0px 0px 6px 0px rgba(79,102,68,0.02),0px 0px 1px 0px rgba(79,102,68,0.02);
+	--shadow-medium-light: 0px 8px 24px 0px rgba(79,102,68,0.08),0px 0px 12px 0px rgba(79,102,68,0.04),0px 0px 1px 0px rgba(79,102,68,0.02);
+	--shadow-large-light: 0px 16px 64px 0px rgba(79,102,68,0.16),0px 0px 18px 0px rgba(79,102,68,0.08),0px 0px 1px 0px rgba(79,102,68,0.02);
 	--display-bold: 600 32px/40px var(--font-family-normal); /* 超大标题 */
 	--headline-bold: 600 24px/32px var(--font-family-normal); /* 大标题 */
 	--font-family-normal: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial,"PingFang SC","Microsoft YaHei","Noto Sans",sans-serif; /* 默认全局字体 */
