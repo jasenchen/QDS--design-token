@@ -91,6 +91,10 @@ function traverse(data = {}) {
                 });
                 value = vstr.join(',');
             }
+            //背景模糊
+            else if (item.type === 'bgBlur'){
+                value = `blur(${value}px);`;
+            }           
             // eg: #ffffff00
             else if (/^#[\d\w]{8}$/.test(value)) {
                 value = toRGBA(value);
