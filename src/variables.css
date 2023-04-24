@@ -179,12 +179,16 @@
 	--color-gray-11: #232530; /* - */
 	--color-gray-12: #191b23; /* - */
 	--color-gray-13: #121319; /* - */
-	--shadow-small: 0px 0px 1px 0px rgba(18,19,25,0.08),0px 0px 2px 0px rgba(18,19,25,0.08),0px 2px 4px 0px rgba(18,19,25,0.08); /* 控件类-（滑块等） */
-	--shadow-medium: 0px 0px 1px 0px rgba(18,19,25,0.08),0px 0px 4px 0px rgba(18,19,25,0.08),0px 6px 12px 0px rgba(18,19,25,0.12); /* 下拉弹层、卡片、轻弹层、气泡等 */
-	--shadow-large: 0px 16px 32px 0px rgba(18,19,25,0.16),0px 0px 8px 0px rgba(18,19,25,0.08),0px 0px 1px 0px rgba(18,19,25,0.08); /* 对话框、通知、抽屉等 */
-	--shadow-small-light: 0px 2px 12px 0px rgba(18,19,25,0.06),0px 0px 6px 0px rgba(18,19,25,0.02),0px 0px 1px 0px rgba(18,19,25,0.08);
-	--shadow-medium-light: 0px 8px 24px 0px rgba(18,19,25,0.08),0px 0px 12px 0px rgba(18,19,25,0.04),0px 0px 1px 0px rgba(18,19,25,0.08);
-	--shadow-large-light: 0px 16px 64px 0px rgba(18,19,25,0.16),0px 0px 18px 0px rgba(18,19,25,0.08),0px 0px 1px 0px rgba(18,19,25,0.08);
+	--shadow-small: 0px 0px 1px 0px,0px 0px 2px 0px,0px 2px 4px 0px; /* 控件类-（滑块等） */
+	--shadow-medium: 0px 0px 1px 0px,0px 0px 4px 0px,0px 6px 12px 0px; /* 下拉弹层、卡片、轻弹层、气泡等 */
+	--shadow-large: 0px 16px 32px 0px,0px 0px 8px 0px,0px 0px 1px 0px; /* 对话框、通知、抽屉等 */
+	--shadow-small-light: 0px 2px 12px 0px,0px 0px 6px 0px,0px 0px 1px 0px; /* 轻投影-小号 */
+	--shadow-medium-light: 0px 8px 24px 0px,0px 0px 12px 0px,0px 0px 1px 0px; /* 轻投影-中号 */
+	--shadow-large-light: 0px 16px 64px 0px,0px 0px 18px 0px,0px 0px 1px 0px; /* 轻投影-大号 */
+	--shadow-left-medium: -12px 0px 12px -12px,-4px 0px 4px -4px,-1px 0px 1px -1px; /* 左侧单边投影 */
+	--shadow-right-medium: 12px 0px 12px -12px,4px 0px 4px -4px,1px 0px 1px -1px; /* 右侧单边投影 */
+	--shadow-top-medium: 0px -12px 12px -12px,0px -4px 4px -4px,0px -1px 1px -1px; /* 上侧单边投影 */
+	--shadow-bottom-medium: 0px 12px 12px -12px,0px 4px 4px -4px,0px 1px 1px -1px; /* 下侧单边投影 */
 	--display-bold: 600 32px/40px var(--font-family-normal); /* 超大标题 */
 	--headline-bold: 600 24px/32px var(--font-family-normal); /* 大标题 */
 	--font-family-normal: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial,"PingFang SC","Microsoft YaHei","Noto Sans",sans-serif; /* 默认全局字体 */
@@ -244,8 +248,8 @@
 	--formItem-text-label-default: 400 14px/16px var(--font-family-normal); /* 表单/描述组件label文字 */
 	--imageviewer-bg-normal: var(--color-opacity-9);
 	--table-head-bg: var(--color-gray-1); /* 表头背景色 */
-	--table-shadow-single-left: -1px 0px 1px -1px rgba(18,19,25,0.08),-4px 0px 4px -4px rgba(18,19,25,0.08),-12px 0px 12px -12px rgba(18,19,25,0.12);
-	--table-shadow-single-right: 1px 0px 1px -1px rgba(18,19,25,0.08),4px 0px 4px -4px rgba(18,19,25,0.08),12px 0px 12px -12px rgba(18,19,25,0.12);
+	--table-shadow-single-left: var(--shadow-left-medium);
+	--table-shadow-single-right: var(--shadow-right-medium);
 	--color-opacity-0: rgba(54,79,129,0.04); /* hsla(220,41%,36%,0.04) */
 	--color-opacity-1: rgba(36,56,97,0.05); /* hsla(220,46%,26%,0.05) */
 	--color-opacity-2: rgba(18,42,79,0.08); /* hsla(216,63%,19%,0.08) */
@@ -261,6 +265,14 @@
 	--color-opacity-12: rgba(2,4,13,0.91); /* hsla(229,73%,3%,0.91) */
 	--color-opacity-13: rgba(0,1,10,0.93); /* hsla(233,100%,2%,0.93) */
 	--color-highlight-search: var(--color-link-normal); /* 高亮搜索 */
+	--bubble-bg-myself-normal: var(--color-brand-1); /* 我方消息气泡背景色 */
+	--bubble-bg-myself-active: var(--color-brand-2); /* 我方气泡背景色-按下 */
+	--bubble-bg-each-other-normal: var(--color-gray-1); /* 对方消息气泡背景色 */
+	--bubble-bg-each-other-active: var(--color-gray-2); /* 对方消息气泡背景色-按下 */
+	--bubble-structured-bg-normal: var(--color-bg-1); /* 结构化消息背景 */
+	--bubble-structured-bg-active: var(--color-gray-2); /* 结构化消息背景按下 */
+	--bubble-tructured-shadow-normal: var(--shadow-medium-light); /* 结构化消息投影 */
+	--bgBlur-medium: 20; /* 背景模糊中号 */
 }
 
 :root[theme-mode="QDS-dark"], .theme-QDS-dark{
@@ -443,12 +455,12 @@
 	--color-gray-11: #eceef1; /* - */
 	--color-gray-12: #f4f5f7; /* - */
 	--color-gray-13: #f7f8fa; /* - */
-	--shadow-small: 0px 0px 1px 0px rgba(0,0,0,0.24),0px 0px 2px 0px rgba(0,0,0,0.24),0px 2px 4px 0px rgba(0,0,0,0.24); /* 控件类-（滑块等） */
-	--shadow-medium: 0px 0px 1px 0px rgba(0,0,0,0.24),0px 0px 4px 0px rgba(0,0,0,0.24),0px 6px 12px 0px rgba(0,0,0,0.36); /* 下拉弹层、卡片、轻弹层、气泡等 */
-	--shadow-large: 0px 0px 8px 0px rgba(0,0,0,0.24),0px 0px 1px 0px rgba(0,0,0,0.24),0px 16px 32px 0px rgba(0,0,0,0.48); /* 对话框、通知、抽屉等 */
-	--shadow-small-light: 0px 0px 1px 0px rgba(0,0,0,0.06),0px 0px 6px 0px rgba(0,0,0,0.06),0px 2px 12px 0px rgba(0,0,0,0.18);
-	--shadow-medium-light: 0px 0px 1px 0px rgba(0,0,0,0.06),0px 0px 12px 0px rgba(0,0,0,0.12),0px 8px 24px 0px rgba(0,0,0,0.24);
-	--shadow-large-light: 0px 0px 1px 0px rgba(0,0,0,0.06),0px 0px 18px 0px rgba(0,0,0,0.24),0px 16px 64px 0px rgba(0,0,0,0.48);
+	--shadow-small: 0px 0px 1px 0px,0px 0px 2px 0px,0px 2px 4px 0px; /* 控件类-（滑块等） */
+	--shadow-medium: 0px 0px 1px 0px,0px 0px 4px 0px,0px 6px 12px 0px; /* 下拉弹层、卡片、轻弹层、气泡等 */
+	--shadow-large: 0px 0px 8px 0px,0px 0px 1px 0px,0px 16px 32px 0px; /* 对话框、通知、抽屉等 */
+	--shadow-small-light: 0px 0px 1px 0px,0px 0px 6px 0px,0px 2px 12px 0px;
+	--shadow-medium-light: 0px 0px 1px 0px,0px 0px 12px 0px,0px 8px 24px 0px;
+	--shadow-large-light: 0px 0px 1px 0px,0px 0px 18px 0px,0px 16px 64px 0px;
 	--font-family-normal: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial,"PingFang SC","Microsoft YaHei","Noto Sans",sans-serif;
 	--font-family-number-display: Inter,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial,"PingFang SC","Microsoft YaHei","Noto Sans",sans-serif; /* 数字指标字体 */
 	--title-regular: 400 20px/28px var(--font-family-normal); /* 标题 */
@@ -508,8 +520,8 @@
 	--formItem-text-label-default: 400 14px/16px var(--font-family-normal); /* 表单/描述组件label文字 */
 	--imageviewer-bg-normal: rgba(1,7,30,0.74);
 	--table-head-bg: var(--color-gray-1); /* 表头背景色 */
-	--table-shadow-single-right: 1px 0px 1px -1px rgba(0,0,0,0.24),4px 0px 4px -4px rgba(0,0,0,0.24),12px 0px 12px -12px rgba(0,0,0,0.36);
-	--table-shadow-single-left: -1px 0px 1px -1px rgba(0,0,0,0.24),-4px 0px 4px -4px rgba(0,0,0,0.24),-12px 0px 12px -12px rgba(0,0,0,0.36);
+	--table-shadow-single-right: 1px 0px 1px -1px,4px 0px 4px -4px,12px 0px 12px -12px;
+	--table-shadow-single-left: -1px 0px 1px -1px,-4px 0px 4px -4px,-12px 0px 12px -12px;
 	--color-opacity-0: rgba(157,179,225,0.03); /* hsla(231,88%,84%,0.1) */
 	--color-opacity-1: rgba(157,179,225,0.05); /* hsla(221,53%,75%, 0.05 ) */
 	--color-opacity-2: rgba(189,200,255,0.10); /* hsla(230,100%,87%, 0.1 ) */
@@ -707,12 +719,12 @@
 	--color-gray-11: #232530; /* - */
 	--color-gray-12: #191b23; /* - */
 	--color-gray-13: #121319; /* - */
-	--shadow-small: 0px 0px 1px 0px rgba(79,102,68,0.08),0px 0px 2px 0px rgba(79,102,68,0.08),0px 2px 4px 0px rgba(79,102,68,0.08); /* 控件类-（滑块等） */
-	--shadow-medium: 0px 0px 1px 0px rgba(79,102,68,0.08),0px 0px 4px 0px rgba(79,102,68,0.08),0px 6px 12px 0px rgba(79,102,68,0.12); /* 下拉弹层、卡片、轻弹层、气泡等 */
-	--shadow-large: 0px 16px 32px 0px rgba(79,102,68,0.16),0px 0px 8px 0px rgba(79,102,68,0.08),0px 0px 1px 0px rgba(79,102,68,0.08); /* 对话框、通知、抽屉等 */
-	--shadow-small-light: 0px 2px 12px 0px rgba(79,102,68,0.06),0px 0px 6px 0px rgba(79,102,68,0.02),0px 0px 1px 0px rgba(79,102,68,0.02);
-	--shadow-medium-light: 0px 8px 24px 0px rgba(79,102,68,0.08),0px 0px 12px 0px rgba(79,102,68,0.04),0px 0px 1px 0px rgba(79,102,68,0.02);
-	--shadow-large-light: 0px 16px 64px 0px rgba(79,102,68,0.16),0px 0px 18px 0px rgba(79,102,68,0.08),0px 0px 1px 0px rgba(79,102,68,0.02);
+	--shadow-small: 0px 0px 1px 0px,0px 0px 2px 0px,0px 2px 4px 0px; /* 控件类-（滑块等） */
+	--shadow-medium: 0px 0px 1px 0px,0px 0px 4px 0px,0px 6px 12px 0px; /* 下拉弹层、卡片、轻弹层、气泡等 */
+	--shadow-large: 0px 16px 32px 0px,0px 0px 8px 0px,0px 0px 1px 0px; /* 对话框、通知、抽屉等 */
+	--shadow-small-light: 0px 2px 12px 0px,0px 0px 6px 0px,0px 0px 1px 0px;
+	--shadow-medium-light: 0px 8px 24px 0px,0px 0px 12px 0px,0px 0px 1px 0px;
+	--shadow-large-light: 0px 16px 64px 0px,0px 0px 18px 0px,0px 0px 1px 0px;
 	--display-bold: 600 32px/40px var(--font-family-normal); /* 超大标题 */
 	--headline-bold: 600 24px/32px var(--font-family-normal); /* 大标题 */
 	--font-family-normal: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial,"PingFang SC","Microsoft YaHei","Noto Sans",sans-serif; /* 默认全局字体 */
@@ -772,8 +784,8 @@
 	--formItem-text-label-default: 400 14px/16px var(--font-family-normal); /* 表单/描述组件label文字 */
 	--imageviewer-bg-normal: var(--color-opacity-9);
 	--table-head-bg: var(--color-gray-1); /* 表头背景色 */
-	--table-shadow-single-left: -1px 0px 1px -1px rgba(79,102,68,0.08),-4px 0px 4px -4px rgba(79,102,68,0.08),-12px 0px 12px -12px rgba(79,102,68,0.12);
-	--table-shadow-single-right: 1px 0px 1px -1px rgba(79,102,68,0.08),4px 0px 4px -4px rgba(79,102,68,0.08),12px 0px 12px -12px rgba(79,102,68,0.12);
+	--table-shadow-single-left: -1px 0px 1px -1px,-4px 0px 4px -4px,-12px 0px 12px -12px;
+	--table-shadow-single-right: 1px 0px 1px -1px,4px 0px 4px -4px,12px 0px 12px -12px;
 	--color-opacity-0: rgba(54,79,129,0.04); /* hsla(220,41%,36%,0.04) */
 	--color-opacity-1: rgba(36,56,97,0.05); /* hsla(220,46%,26%,0.05) */
 	--color-opacity-2: rgba(18,42,79,0.08); /* hsla(216,63%,19%,0.08) */
