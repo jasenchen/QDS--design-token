@@ -272,7 +272,7 @@
 	--bubble-structured-bg-normal: var(--color-bg-1); /* 结构化消息背景 */
 	--bubble-structured-bg-active: var(--color-gray-2); /* 结构化消息背景按下 */
 	--bubble-tructured-shadow-normal: var(--shadow-medium-light); /* 结构化消息投影 */
-	--bgBlur-medium: 20; /* 背景模糊中号 */
+	--bgBlur-medium: blur(20px);; /* 背景模糊中号 */
 }
 
 :root[theme-mode="QDS-dark"], .theme-QDS-dark{
