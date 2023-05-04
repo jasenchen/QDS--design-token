@@ -89,7 +89,7 @@ function traverse(data = {}) {
                 if(typeof(item.value) != 'string'){
                     value.forEach(itm => {
                         if(itm.type === 'dropShadow'){
-                            vstr.push(`${itm.x}px ${itm.y}px ${itm.blur}px ${itm.spread}px`);
+                            vstr.push(`${itm.x}px ${itm.y}px ${itm.blur}px ${itm.spread}px ${itm.color}`);
                         }
     
                     });
