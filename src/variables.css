@@ -204,6 +204,7 @@
 	--radius-small: calc(var(--radius-normal)/2);
 	--radius-normal: 3px; /* 控件、小卡片等 */
 	--radius-large: calc(var(--radius-normal)*2); /* 大卡片、大弹框等 */
+	--radius-super-large: calc(var(--radius-large)*2); /* 特殊大圆角 */
 	--radius-round: 9999px; /* 胶囊 */
 	--size-xxs: 8px;
 	--size-xxs-large: 12px; /* 12 */
@@ -471,8 +472,10 @@
 	--body-medium: 500 14px/20px var(--font-family-normal); /* 正文 */
 	--caption-regular: 400 12px/16px var(--font-family-normal); /* 说明文本 */
 	--caption-medium: 500 12px/16px var(--font-family-normal); /* 说明文本 */
+	--radius-small: calc(var(--radius-normal)/2);
 	--radius-normal: 3px; /* 控件、小卡片等 */
 	--radius-large: calc(var(--radius-normal)*2); /* 大卡片、大弹框等 */
+	--radius-super-large: calc(var(--radius-large)*2); /* 特殊大圆角 */
 	--radius-round: 9999px; /* 胶囊 */
 	--size-xxs: 8px;
 	--size-xxs-large: 12px; /* 12 */
@@ -502,7 +505,6 @@
 	--duration-end-m: 0.1s; /* 控件 */
 	--duration-end-l: 0.15s; /* 默认 */
 	--duration-end-xl: 0.3s; /* 大卡片 */
-	--radius-small: calc(var(--radius-normal)/2);
 	--display-bold: 600 32px/40px var(--font-family-normal); /* 超大标题 */
 	--headline-bold: 600 24px/32px var(--font-family-normal); /* 大标题 */
 	--number-small-regular: 500 20px/28px var(--font-family-number-display); /* 小号数字 */
@@ -738,7 +740,7 @@
 	--caption-regular: 400 12px/16px var(--font-family-normal); /* 说明文本 */
 	--caption-medium: 500 12px/16px var(--font-family-normal); /* 说明文本 */
 	--radius-small: calc(var(--radius-normal)/2);
-	--radius-normal: 0px; /* 控件、小卡片等 */
+	--radius-normal: 6px; /* 控件、小卡片等 */
 	--radius-large: calc(var(--radius-normal)*2); /* 大卡片、大弹框等 */
 	--radius-round: 9999px; /* 胶囊 */
 	--size-xxs: 8px;
@@ -801,4 +803,5 @@
 	--color-opacity-12: rgba(2,4,13,0.91); /* hsla(229,73%,3%,0.91) */
 	--color-opacity-13: rgba(0,1,10,0.93); /* hsla(233,100%,2%,0.93) */
 	--color-highlight-search: var(--color-link-normal); /* 高亮搜索 */
+	--radius-super-large: calc(var(--radius-large)*2); /* 特殊大圆角 */
 }
