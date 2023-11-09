@@ -21,7 +21,7 @@
 	--color-primary-focus: var(--color-brand-3); /* focus */
 	--color-primary-disable: var(--color-brand-2); /* disable */
 	--color-primary-light: var(--color-brand-0); /* light */
-	--color-primary-text: var(--color-brand-9); /* - */
+	--color-primary-text: var(--color-brand-7); /* - */
 	--color-primary-light-normal: var(--color-brand-0); /* light */
 	--color-primary-light-hover: var(--color-brand-1); /* light-hover */
 	--color-primary-light-active: var(--color-brand-2); /* light-active */
@@ -60,7 +60,7 @@
 	--color-prompt-light-normal: var(--color-blue-0); /* light-normal */
 	--color-prompt-light-hover: var(--color-blue-1); /* light-hover */
 	--color-prompt-light-active: var(--color-blue-2); /* light-active */
-	--color-prompt-text: var(--color-blue-9); /* 提示文本 */
+	--color-prompt-text: var(--color-blue-7); /* 提示文本 */
 	--color-success-normal: var(--color-green-5); /* normal */
 	--color-success-hover: var(--color-green-6); /* hover */
 	--color-success-active: var(--color-green-7); /* active */
@@ -68,7 +68,7 @@
 	--color-success-light-normal: var(--color-green-0); /* light-normal */
 	--color-success-light-hover: var(--color-green-1); /* light-hover */
 	--color-success-light-active: var(--color-green-2); /* light-active */
-	--color-success-text: var(--color-green-9); /* 提示文本 */
+	--color-success-text: var(--color-green-7); /* 提示文本 */
 	--color-warning-normal: var(--color-orange-5); /* normal */
 	--color-warning-hover: var(--color-orange-6); /* hover */
 	--color-warning-active: var(--color-orange-7); /* active */
@@ -76,7 +76,7 @@
 	--color-warning-light-normal: var(--color-orange-0); /* light-normal */
 	--color-warning-light-hover: var(--color-orange-1); /* light-hover */
 	--color-warning-light-active: var(--color-orange-2); /* light-active */
-	--color-warning-text: var(--color-orange-9); /* 提示文本 */
+	--color-warning-text: var(--color-orange-7); /* 提示文本 */
 	--color-error-normal: var(--color-red-5); /* normal */
 	--color-error-hover: var(--color-red-6); /* hover */
 	--color-error-active: var(--color-red-7); /* active */
@@ -84,7 +84,7 @@
 	--color-error-light-normal: var(--color-red-0); /* light-normal */
 	--color-error-light-hover: var(--color-red-1); /* light-hover */
 	--color-error-light-active: var(--color-red-2); /* light-active */
-	--color-error-text: var(--color-red-9); /* 提示文本 */
+	--color-error-text: var(--color-red-7); /* 提示文本 */
 	--color-brand-0: #F1F6FF; /* - */
 	--color-brand-1: #DBE8FF; /* - */
 	--color-brand-2: #B7CEFF; /* - */
@@ -298,7 +298,7 @@
 	--color-primary-focus: var(--color-brand-3); /* focus */
 	--color-primary-disable: var(--color-brand-2); /* disable */
 	--color-primary-light: var(--color-brand-0); /* light */
-	--color-primary-text: var(--color-brand-9); /* - */
+	--color-primary-text: var(--color-brand-7); /* - */
 	--color-primary-light-normal: var(--color-brand-0); /* light-normal */
 	--color-primary-light-hover: var(--color-brand-1); /* light-hover */
 	--color-primary-light-active: var(--color-brand-2); /* light-active */
@@ -337,7 +337,7 @@
 	--color-prompt-light-normal: var(--color-blue-0); /* light-normal */
 	--color-prompt-light-hover: var(--color-blue-1); /* light-hover */
 	--color-prompt-light-active: var(--color-blue-2); /* light-active */
-	--color-prompt-text: var(--color-blue-9); /* 提示文本 */
+	--color-prompt-text: var(--color-blue-7); /* 提示文本 */
 	--color-success-normal: var(--color-green-5); /* normal */
 	--color-success-hover: var(--color-green-6); /* hover */
 	--color-success-active: var(--color-green-7); /* active */
@@ -345,7 +345,7 @@
 	--color-success-light-normal: var(--color-green-0); /* light-normal */
 	--color-success-light-hover: var(--color-green-1); /* light-hover */
 	--color-success-light-active: var(--color-green-2); /* light-active */
-	--color-success-text: var(--color-green-9); /* 提示文本 */
+	--color-success-text: var(--color-green-7); /* 提示文本 */
 	--color-warning-normal: var(--color-orange-5); /* normal */
 	--color-warning-hover: var(--color-orange-6); /* hover */
 	--color-warning-active: var(--color-orange-7); /* active */
@@ -353,12 +353,12 @@
 	--color-warning-light-normal: var(--color-orange-0); /* light-normal */
 	--color-warning-light-hover: var(--color-orange-1); /* light-hover */
 	--color-warning-light-active: var(--color-orange-2); /* light-active */
-	--color-warning-text: var(--color-orange-9); /* 提示文本 */
+	--color-warning-text: var(--color-orange-7); /* 提示文本 */
 	--color-error-normal: var(--color-red-5); /* normal */
 	--color-error-hover: var(--color-red-6); /* hover */
 	--color-error-active: var(--color-red-7); /* active */
 	--color-error-disable: var(--color-red-2); /* disable */
-	--color-error-text: var(--color-red-9); /* 提示文本 */
+	--color-error-text: var(--color-red-7); /* 提示文本 */
 	--color-error-light-normal: var(--color-red-0); /* light-normal */
 	--color-error-light-hover: var(--color-red-1); /* light-hover */
 	--color-error-light-active: var(--color-red-2); /* light-active */
@@ -563,7 +563,7 @@
 	--color-primary-focus: var(--color-brand-3); /* focus */
 	--color-primary-disable: var(--color-brand-2); /* disable */
 	--color-primary-light: var(--color-brand-0); /* light */
-	--color-primary-text: var(--color-brand-9); /* - */
+	--color-primary-text: var(--color-brand-7); /* - */
 	--color-primary-light-normal: var(--color-brand-0); /* light */
 	--color-primary-light-hover: var(--color-brand-1); /* light-hover */
 	--color-primary-light-active: var(--color-brand-2); /* light-active */
@@ -602,7 +602,7 @@
 	--color-prompt-light-normal: var(--color-blue-0); /* light-normal */
 	--color-prompt-light-hover: var(--color-blue-1); /* light-hover */
 	--color-prompt-light-active: var(--color-blue-2); /* light-active */
-	--color-prompt-text: var(--color-blue-9); /* 提示文本 */
+	--color-prompt-text: var(--color-blue-7); /* 提示文本 */
 	--color-success-normal: var(--color-green-5); /* normal */
 	--color-success-hover: var(--color-green-6); /* hover */
 	--color-success-active: var(--color-green-7); /* active */
@@ -610,7 +610,7 @@
 	--color-success-light-normal: var(--color-green-0); /* light-normal */
 	--color-success-light-hover: var(--color-green-1); /* light-hover */
 	--color-success-light-active: var(--color-green-2); /* light-active */
-	--color-success-text: var(--color-green-9); /* 提示文本 */
+	--color-success-text: var(--color-green-7); /* 提示文本 */
 	--color-warning-normal: var(--color-orange-5); /* normal */
 	--color-warning-hover: var(--color-orange-6); /* hover */
 	--color-warning-active: var(--color-orange-7); /* active */
@@ -618,7 +618,7 @@
 	--color-warning-light-normal: var(--color-orange-0); /* light-normal */
 	--color-warning-light-hover: var(--color-orange-1); /* light-hover */
 	--color-warning-light-active: var(--color-orange-2); /* light-active */
-	--color-warning-text: var(--color-orange-9); /* 提示文本 */
+	--color-warning-text: var(--color-orange-7); /* 提示文本 */
 	--color-error-normal: var(--color-red-5); /* normal */
 	--color-error-hover: var(--color-red-6); /* hover */
 	--color-error-active: var(--color-red-7); /* active */
@@ -626,7 +626,7 @@
 	--color-error-light-normal: var(--color-red-0); /* light-normal */
 	--color-error-light-hover: var(--color-red-1); /* light-hover */
 	--color-error-light-active: var(--color-red-2); /* light-active */
-	--color-error-text: var(--color-red-9); /* 提示文本 */
+	--color-error-text: var(--color-red-7); /* 提示文本 */
 	--color-brand-0: #E3E6E1; /* - */
 	--color-brand-1: #C4CCC0; /* - */
 	--color-brand-2: #A4B39B; /* - */
