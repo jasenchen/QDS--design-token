@@ -234,12 +234,13 @@
 	--duration-end-m: 0.1s; /* 控件 */
 	--duration-end-l: 0.15s; /* 默认 */
 	--duration-end-xl: 0.3s; /* 大卡片 */
+	--number-text-bold: 600 16px/24px var(--font-family-normal); /* 文本数字 */
 	--number-small-regular: 400 20px/28px var(--font-family-number-display); /* 小号数字 */
-	--number-small-medium: 500 20px/28px var(--font-family-number-display); /* 小号数字medium */
+	--number-small-medium: 550 20px/28px var(--font-family-number-display); /* 小号数字medium */
 	--number-normal-regular: 400 24px/32px var(--font-family-number-display); /* 默认数字 */
-	--number-normal-medium: 500 24px/32px var(--font-family-number-display); /* 默认数字medium */
+	--number-normal-medium: 550 24px/32px var(--font-family-number-display); /* 默认数字medium */
 	--number-large-regular: 400 32px/40px var(--font-family-number-display); /* 大号数字 */
-	--number-large-medium: 500 32px/40px var(--font-family-number-display); /* 大号数字medium */
+	--number-large-medium: 550 32px/40px var(--font-family-number-display); /* 大号数字medium */
 	--border-thickness: 0.5px; /* 细描边 */
 	--border-normal: 1px; /* 默认描边 */
 	--border-active: 1px; /* 激活描边 */
@@ -464,6 +465,8 @@
 	--shadow-large-light: 0px 0px 1px 0px rgba(0,0,0,0.06),0px 0px 18px 0px rgba(0,0,0,0.24),0px 16px 64px 0px rgba(0,0,0,0.48);
 	--font-family-normal: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial,"PingFang SC","Microsoft YaHei","Noto Sans",sans-serif;
 	--font-family-number-display: Inter,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial,"PingFang SC","Microsoft YaHei","Noto Sans",sans-serif; /* 数字指标字体 */
+	--display-bold: 600 32px/40px var(--font-family-normal); /* 超大标题 */
+	--headline-bold: 600 24px/32px var(--font-family-normal); /* 大标题 */
 	--title-regular: 400 20px/28px var(--font-family-normal); /* 标题 */
 	--title-bold: 600 20px/28px var(--font-family-normal); /* 标题 */
 	--subtitle-regular: 400 16px/24px var(--font-family-normal); /* 小标题 */
@@ -505,14 +508,13 @@
 	--duration-end-m: 0.1s; /* 控件 */
 	--duration-end-l: 0.15s; /* 默认 */
 	--duration-end-xl: 0.3s; /* 大卡片 */
-	--display-bold: 600 32px/40px var(--font-family-normal); /* 超大标题 */
-	--headline-bold: 600 24px/32px var(--font-family-normal); /* 大标题 */
-	--number-small-regular: 500 20px/28px var(--font-family-number-display); /* 小号数字 */
-	--number-small-medium: 500 20px/28px var(--font-family-number-display);
+	--number-text-bold: 600 16px/24px var(--font-family-normal); /* 超大标题 */
+	--number-small-regular: 400 20px/28px var(--font-family-number-display); /* 小号数字 */
+	--number-small-medium: 550 20px/28px var(--font-family-number-display);
 	--number-normal-regular: 400 24px/32px var(--font-family-number-display); /* 默认数字 */
-	--number-normal-medium: 500 24px/32px var(--font-family-number-display); /* 默认数字medium */
+	--number-normal-medium: 550 24px/32px var(--font-family-number-display); /* 默认数字medium */
 	--number-large-regular: 400 32px/40px var(--font-family-number-display); /* 大号数字 */
-	--number-large-medium: 500 32px/40px var(--font-family-number-display); /* 大号数字medium */
+	--number-large-medium: 550 32px/40px var(--font-family-number-display); /* 大号数字medium */
 	--border-thickness: 0.5px; /* 细描边 */
 	--border-normal: 1px; /* 默认描边 */
 	--border-active: 1px; /* 激活描边 */
@@ -771,12 +773,13 @@
 	--duration-end-m: 0.1s; /* 控件 */
 	--duration-end-l: 0.15s; /* 默认 */
 	--duration-end-xl: 0.3s; /* 大卡片 */
+	--number-text-bold: 600 16px/24px var(--font-family-normal); /* 文本数字 */
 	--number-small-regular: 400 20px/28px var(--font-family-number-display); /* 小号数字 */
-	--number-small-medium: 500 20px/28px var(--font-family-number-display); /* 小号数字medium */
+	--number-small-medium: 550 20px/28px var(--font-family-number-display); /* 小号数字medium */
 	--number-normal-regular: 400 24px/32px var(--font-family-number-display); /* 默认数字 */
-	--number-normal-medium: 500 24px/32px var(--font-family-number-display); /* 默认数字medium */
+	--number-normal-medium: 550 24px/32px var(--font-family-number-display); /* 默认数字medium */
 	--number-large-regular: 400 32px/40px var(--font-family-number-display); /* 大号数字 */
-	--number-large-medium: 500 32px/40px var(--font-family-number-display); /* 大号数字medium */
+	--number-large-medium: 550 32px/40px var(--font-family-number-display); /* 大号数字medium */
 	--border-thickness: 1px; /* 细描边 */
 	--border-normal: 2px; /* 默认描边 */
 	--border-active: 2px; /* 激活描边 */
