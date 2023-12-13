@@ -179,16 +179,179 @@
 	--color-gray-11: #232530; /* - */
 	--color-gray-12: #191b23; /* - */
 	--color-gray-13: #121319; /* - */
-	--shadow-small: 0px 0px 1px 0px rgba(18,19,25,0.08),0px 0px 2px 0px rgba(18,19,25,0.08),0px 2px 4px 0px rgba(18,19,25,0.08); /* 控件类-（滑块等） */
-	--shadow-medium: 0px 0px 1px 0px rgba(18,19,25,0.08),0px 0px 4px 0px rgba(18,19,25,0.08),0px 6px 12px 0px rgba(18,19,25,0.12); /* 下拉弹层、卡片、轻弹层、气泡等 */
-	--shadow-large: 0px 16px 32px 0px rgba(18,19,25,0.16),0px 0px 8px 0px rgba(18,19,25,0.08),0px 0px 1px 0px rgba(18,19,25,0.08); /* 对话框、通知、抽屉等 */
-	--shadow-small-light: 0px 2px 12px 0px rgba(18,19,25,0.06),0px 0px 6px 0px rgba(18,19,25,0.02),0px 0px 1px 0px rgba(18,19,25,0.08); /* 轻投影-小号 */
-	--shadow-medium-light: 0px 8px 24px 0px rgba(18,19,25,0.08),0px 0px 12px 0px rgba(18,19,25,0.04),0px 0px 1px 0px rgba(18,19,25,0.08); /* 轻投影-中号 */
-	--shadow-large-light: 0px 16px 64px 0px rgba(18,19,25,0.16),0px 0px 18px 0px rgba(18,19,25,0.08),0px 0px 1px 0px rgba(18,19,25,0.08); /* 轻投影-大号 */
-	--shadow-left-medium: -12px 0px 12px -12px rgba(18,19,25,0.12),-4px 0px 4px -4px rgba(18,19,25,0.08),-1px 0px 1px -1px rgba(18,19,25,0.08); /* 左侧单边投影 */
-	--shadow-right-medium: 12px 0px 12px -12px rgba(18,19,25,0.12),4px 0px 4px -4px rgba(18,19,25,0.08),1px 0px 1px -1px rgba(18,19,25,0.08); /* 右侧单边投影 */
-	--shadow-top-medium: 0px -12px 12px -12px rgba(18,19,25,0.12),0px -4px 4px -4px rgba(18,19,25,0.08),0px -1px 1px -1px rgba(18,19,25,0.08); /* 上侧单边投影 */
-	--shadow-bottom-medium: 0px 12px 12px -12px rgba(18,19,25,0.12),0px 4px 4px -4px rgba(18,19,25,0.08),0px 1px 1px -1px rgba(18,19,25,0.08); /* 下侧单边投影 */
+	--shadow-small-color-1: rgba(18,19,25,0.08);
+	--shadow-small-color-2: rgba(18,19,25,0.08);
+	--shadow-small-color-3: rgba(18,19,25,0.08);
+	--shadow-medium-color-1: rgba(18,19,25,0.08);
+	--shadow-medium-color-2: rgba(18,19,25,0.08);
+	--shadow-medium-color-3: rgba(18,19,25,0.12);
+	--shadow-large-color-1: rgba(18,19,25,0.08);
+	--shadow-large-color-2: rgba(18,19,25,0.08);
+	--shadow-large-color-3: rgba(18,19,25,0.16);
+
+	--shadow-small-light-color-1: rgba(18,19,25,0.08);
+	--shadow-small-light-color-2: rgba(18,19,25,0.02);
+	--shadow-small-light-color-3: rgba(18,19,25,0.06);
+	--shadow-medium-light-color-1: rgba(18,19,25,0.08);
+	--shadow-medium-light-color-2: rgba(18,19,25,0.04);
+	--shadow-medium-light-color-3: rgba(18,19,25,0.08);
+	--shadow-large-light-color-1: rgba(18,19,25,0.08);
+	--shadow-large-light-color-2: rgba(18,19,25,0.08);
+	--shadow-large-light-color-3: rgba(18,19,25,0.16);
+
+	--shadow-left-medium-color-1: rgba(18,19,25,0.08);
+	--shadow-left-medium-color-2: rgba(18,19,25,0.08);
+	--shadow-left-medium-color-3: rgba(18,19,25,0.12);
+	--shadow-right-medium-color-1: rgba(18,19,25,0.08);
+	--shadow-right-medium-color-2: rgba(18,19,25,0.08);
+	--shadow-right-medium-color-3: rgba(18,19,25,0.12);
+	--shadow-top-medium-color-1: rgba(18,19,25,0.08);
+	--shadow-top-medium-color-2: rgba(18,19,25,0.08);
+	--shadow-top-medium-color-3: rgba(18,19,25,0.12);
+	--shadow-bottom-medium-color-1: rgba(18,19,25,0.08);
+	--shadow-bottom-medium-color-2: rgba(18,19,25,0.08);
+	--shadow-bottom-medium-color-3: rgba(18,19,25,0.12);
+
+	--shadow-small-x-1: 0px;
+	--shadow-small-x-2: 0px;
+	--shadow-small-x-3: 0px;
+	--shadow-medium-x-1: 0px;
+	--shadow-medium-x-2: 0px;
+	--shadow-medium-x-3: 0px;
+	--shadow-large-x-1: 0px;
+	--shadow-large-x-2: 0px;
+	--shadow-large-x-3: 0px;
+	--shadow-small-light-x-1: 0px;
+	--shadow-small-light-x-2: 0px;
+	--shadow-small-light-x-3: 0px;
+	--shadow-medium-light-x-1: 0px;
+	--shadow-medium-light-x-2: 0px;
+	--shadow-medium-light-x-3: 0px;
+	--shadow-large-light-x-1: 0px;
+	--shadow-large-light-x-2: 0px;
+	--shadow-large-light-x-3: 0px;
+	--shadow-left-medium-x-1: -1px;
+	--shadow-left-medium-x-2: -4px;
+	--shadow-left-medium-x-3: -12px;
+	--shadow-right-medium-x-1: 1px;
+	--shadow-right-medium-x-2: 4px;
+	--shadow-right-medium-x-3: 12px;
+	--shadow-top-medium-x-1: 0px;
+	--shadow-top-medium-x-2: 0px;
+	--shadow-top-medium-x-3: 0px;
+	--shadow-top-medium-x-1: 0px;
+	--shadow-top-medium-x-2: 0px;
+	--shadow-top-medium-x-3: 0px;
+	--shadow-bottom-medium-x-1: 0px;
+	--shadow-bottom-medium-x-2: 0px;
+	--shadow-bottom-medium-x-3: 0px;
+	--shadow-bottom-medium-x-1: 0px;
+	--shadow-bottom-medium-x-2: 0px;
+	--shadow-bottom-medium-x-3: 0px;
+	--shadow-small-y-1: 0px;
+	--shadow-small-y-2: 0px;
+	--shadow-small-y-3: 2px;
+	--shadow-medium-y-1: 0px;
+	--shadow-medium-y-2: 0px;
+	--shadow-medium-y-3: 6px;
+	--shadow-large-y-1: 0px;
+	--shadow-large-y-2: 0px;
+	--shadow-large-y-3: 16px;
+	--shadow-small-light-y-1: 0px;
+	--shadow-small-light-y-2: 0px;
+	--shadow-small-light-y-3: 2px;
+	--shadow-medium-light-y-1: 0px;
+	--shadow-medium-light-y-1: 0px;
+	--shadow-medium-light-y-1: 8px;
+	--shadow-large-light-y-1: 0px;
+	--shadow-large-light-y-2: 0px;
+	--shadow-large-light-y-3: 16px;
+	--shadow-left-medium-y-1: 0px;
+	--shadow-left-medium-y-2: 0px;
+	--shadow-left-medium-y-3: 0px;
+	--shadow-right-medium-y-1: 0px;
+	--shadow-right-medium-y-2: 0px;
+	--shadow-right-medium-y-3: 0px;
+	--shadow-top-medium-y-1: -1px;
+	--shadow-top-medium-y-2: -4px;
+	--shadow-top-medium-y-3: -12px;
+	--shadow-bottom-medium-y-1: 1px;
+	--shadow-bottom-medium-y-2: 4px;
+	--shadow-bottom-medium-y-3: 12px;
+
+	--shadow-small-blur-1: 1px;
+	--shadow-small-blur-2: 2px;
+	--shadow-small-blur-3: 4px;
+	--shadow-medium-blur-1: 1px;
+	--shadow-medium-blur-2: 4px;
+	--shadow-medium-blur-3: 12px;
+	--shadow-large-blur-1: 1px;
+	--shadow-large-blur-2: 8px;
+	--shadow-large-blur-3: 32px;
+	--shadow-small-light-blur-1: 1px;
+	--shadow-small-light-blur-2: 6px;
+	--shadow-small-light-blur-3: 12px;
+	--shadow-medium-light-blur-1: 1px;
+	--shadow-medium-light-blur-2: 12px;
+	--shadow-medium-light-blur-3: 24px;
+	--shadow-large-light-blur-1: 1px;
+	--shadow-large-light-blur-2: 18px;
+	--shadow-large-light-blur-3: 64px;
+	--shadow-left-medium-blur-1: 1px;
+	--shadow-left-medium-blur-2: 4px;
+	--shadow-left-medium-blur-3: 12px;
+	--shadow-right-medium-blur-1: 1px;
+	--shadow-right-medium-blur-2: 4px;
+	--shadow-right-medium-blur-3: 12px;
+	--shadow-top-medium-blur-1: 1px;
+	--shadow-top-medium-blur-2: 4px;
+	--shadow-top-medium-blur-3: 12px;
+	--shadow-bottom-medium-blur-1: 1px;
+	--shadow-bottom-medium-blur-2: 4px;
+	--shadow-bottom-medium-blur-3: 12px;
+
+	--shadow-small-spread-1: 0px;
+	--shadow-small-spread-2: 0px;
+	--shadow-small-spread-3: 0px;
+	--shadow-medium-spread-1: 0px;
+	--shadow-medium-spread-2: 0px;
+	--shadow-medium-spread-3: 0px;
+	--shadow-large-spread-1: 0px;
+	--shadow-large-spread-2: 0px;
+	--shadow-large-spread-3: 0px;
+	--shadow-small-light-spread-1: 0px;
+	--shadow-small-light-spread-2: 0px;
+	--shadow-small-light-spread-3: 0px;
+	--shadow-medium-light-spread-1: 0px;
+	--shadow-medium-light-spread-2: 0px;
+	--shadow-medium-light-spread-3: 0px;
+	--shadow-large-light-spread-1: 0px;
+	--shadow-large-light-spread-2: 0px;
+	--shadow-large-light-spread-3: 0px;
+	--shadow-left-medium-spread-1: -1px;
+	--shadow-left-medium-spread-1: -4px;
+	--shadow-left-medium-spread-1: -12px;
+	--shadow-right-medium-spread-1: -1px;
+	--shadow-right-medium-spread-2: -4px;
+	--shadow-right-medium-spread-3: -12px;
+	--shadow-top-medium-spread-1: -1px;
+	--shadow-top-medium-spread-2: -4px;
+	--shadow-top-medium-spread-3: -12px;
+	--shadow-bottom-medium-spread-1: -1px;
+	--shadow-bottom-medium-spread-2: -4px;
+	--shadow-bottom-medium-spread-3: -12px;
+
+
+	--shadow-small: var(--shadow-small-x-3) var(--shadow-small-y-3) var(--shadow-small-blur-3) var(--shadow-small-spread-3) var(--shadow-small-color-3), var(--shadow-small-x-2) var(--shadow-small-y-2) var(--shadow-small-blur-2) var(--shadow-small-spread-2) var(--shadow-small-color-2), var(--shadow-small-x-1) var(--shadow-small-y-1) var(--shadow-small-blur-1) var(--shadow-small-spread-1) var(--shadow-small-color-1); /* 控件类-（滑块等） */
+	--shadow-medium: var(--shadow-medium-x-3) var(--shadow-medium-y-3) var(--shadow-medium-blur-3) var(--shadow-medium-spread-3) var(--shadow-medium-color-3), var(--shadow-medium-x-2) var(--shadow-medium-y-2) var(--shadow-medium-blur-2) var(--shadow-medium-spread-2) var(--shadow-medium-color-2), var(--shadow-medium-x-1) var(--shadow-medium-y-2) var(--shadow-medium-blur-1) var(--shadow-medium-spread-1) var(--shadow-medium-color-1); /* 下拉弹层、卡片、轻弹层、气泡等 */
+	--shadow-large: var(--shadow-large-x-3) var(--shadow-large-y-3) var(--shadow-large-blur-3) var(--shadow-large-spread-3) var(--shadow-large-color-3), var(--shadow-large-x-2) var(--shadow-large-y-2) var(--shadow-large-blur-2) var(--shadow-large-spread-2) var(--shadow-large-color-2), var(--shadow-large-x-1) var(--shadow-large-y-1) var(--shadow-large-blur-1) var(--shadow-large-spread-1) var(--shadow-large-color-1);/* 对话框、通知、抽屉等 */
+	--shadow-small-light: var(--shadow-small-light-x-3) var(--shadow-small-light-y-3) var(--shadow-small-light-blur-3) var(--shadow-small-light-spread-3) var(--shadow-small-light-color-3), var(--shadow-small-light-x-2) var(--shadow-small-light-y-2) var(--shadow-small-light-blur-2) var(--shadow-small-light-spread-2) var(--shadow-small-light-color-2), var(--shadow-small-light-x-1) var(--shadow-small-light-y-1) var(--shadow-large-light-blur-1) var(--shadow-small-light-spread-1) var(--shadow-small-light-color-1); /* 轻投影-小号 */
+	--shadow-medium-light: var(--shadow-medium-light-x-3) var(--shadow-medium-light-y-3) var(--shadow-medium-light-blur-3) var(--shadow-medium-light-spread-3) var(--shadow-medium-light-color-3), var(--shadow-medium-light-x-2) var(--shadow-medium-light-y-2) var(--shadow-medium-light-blur-2) var(--shadow-medium-light-spread-2) var(--shadow-medium-light-color-2), var(--shadow-medium-light-x-1) var(--shadow-medium-light-y-1) var(--shadow-medium-light-blur-1) var(--shadow-medium-light-spread-1) var(--shadow-medium-light-color-1); /* 轻投影-中号 */
+	--shadow-large-light: var(--shadow-large-light-x-3) var(--shadow-large-light-y-3) var(--shadow-large-light-blur-3) var(--shadow-large-light-spread-3) var(--shadow-large-light-color-3), var(--shadow-large-light-x-2) var(--shadow-large-light-y-2) var(--shadow-large-light-blur-2) var(--shadow-large-light-spread-2) var(--shadow-large-light-color-2), var(--shadow-large-light-x-1) var(--shadow-large-light-y-1) var(--shadow-large-light-blur-1) var(--shadow-large-light-spread-1) var(--shadow-large-light-color-1); /* 轻投影-大号 */
+	--shadow-left-medium: var(--shadow-left-medium-x-3) var(--shadow-left-medium-y-3) var(--shadow-left-medium-blur-3) var(--shadow-left-medium-spread-2) var(--shadow-left-medium-color-3), var(--shadow-left-medium-x-2) var(--shadow-left-medium-y-2) var(--shadow-left-medium-blur-2) -4px var(--shadow-left-medium-color-2), var(--shadow-left-medium-x-1) var(--shadow-left-medium-y-1) var(--shadow-left-medium-blur-1) var(--shadow-left-medium-spread-1) var(--shadow-left-medium-color-1); /* 左侧单边投影 */
+	--shadow-right-medium: var(--shadow-right-medium-x-3) var(--shadow-right-medium-y-3) var(--shadow-right-medium-blur-3) var(--shadow-right-medium-spread-3) var(--shadow-right-medium-color-3), var(--shadow-right-medium-x-2) var(--shadow-right-medium-y-2) var(--shadow-right-medium-blur-2) var(--shadow-right-medium-spread-2) var(--shadow-right-medium-color-2), var(--shadow-right-medium-x-1) var(--shadow-right-medium-y-1) var(--shadow-right-medium-blur-1) var(--shadow-right-medium-spread-1) var(--shadow-right-medium-color-1); /* 右侧单边投影 */
+	--shadow-top-medium: var(--shadow-top-medium-x-3) var(--shadow-top-medium-y-3) var(--shadow-top-medium-blur-3) var(--shadow-top-medium-spread-3) var(--shadow-top-medium-color-3), var(--shadow-top-medium-x-2) var(--shadow-top-medium-y-2) var(--shadow-top-medium-blur-2) var(--shadow-top-medium-spread-2) var(--shadow-top-medium-color-2), var(--shadow-top-medium-x-1) var(--shadow-top-medium-y-1) var(--shadow-top-medium-blur-1) var(--shadow-top-medium-spread-1) var(--shadow-top-medium-color-1); /* 上侧单边投影 */
+	--shadow-bottom-medium: var(--shadow-bottom-medium-x-3) var(--shadow-bottom-medium-y-1) var(--shadow-bottom-medium-blur-3) var(--shadow-bottom-medium-spread-3) var(--shadow-bottom-medium-color-3), var(--shadow-bottom-medium-x-2) var(--shadow-bottom-medium-y-1) var(--shadow-bottom-medium-blur-2) var(--shadow-bottom-medium-spread-2) var(--shadow-bottom-medium-color-2), var(--shadow-bottom-medium-x-1) var(--shadow-bottom-medium-y-1) var(--shadow-bottom-medium-blur-1) var(--shadow-bottom-medium-spread-1) var(--shadow-bottom-medium-color-1); /* 下侧单边投影 */
 	--display-bold: 600 32px/40px var(--font-family-normal); /* 超大标题 */
 	--headline-bold: 600 24px/32px var(--font-family-normal); /* 大标题 */
 	--font-family-normal: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial,"PingFang SC","Microsoft YaHei","Noto Sans",sans-serif; /* 默认全局字体 */
@@ -274,7 +437,8 @@
 	--bubble-structured-bg-normal: var(--color-bg-1); /* 结构化消息背景 */
 	--bubble-structured-bg-active: var(--color-gray-2); /* 结构化消息背景按下 */
 	--bubble-tructured-shadow-normal: var(--shadow-small-light); /* 结构化消息投影 */
-	--bgBlur-medium: blur(20px);; /* 背景模糊中号 */
+	--bgBlur-medium: 40px; /* 背景模糊中号 */
+	
 }
 
 :root[theme-mode="QDS-dark"], .theme-QDS-dark{
@@ -457,12 +621,179 @@
 	--color-gray-11: #eceef1; /* - */
 	--color-gray-12: #f4f5f7; /* - */
 	--color-gray-13: #f7f8fa; /* - */
-	--shadow-small: 0px 0px 1px 0px rgba(0,0,0,0.24),0px 0px 2px 0px rgba(0,0,0,0.24),0px 2px 4px 0px rgba(0,0,0,0.24); /* 控件类-（滑块等） */
-	--shadow-medium: 0px 0px 1px 0px rgba(0,0,0,0.24),0px 0px 4px 0px rgba(0,0,0,0.24),0px 6px 12px 0px rgba(0,0,0,0.36); /* 下拉弹层、卡片、轻弹层、气泡等 */
-	--shadow-large: 0px 0px 8px 0px rgba(0,0,0,0.24),0px 0px 1px 0px rgba(0,0,0,0.24),0px 16px 32px 0px rgba(0,0,0,0.48); /* 对话框、通知、抽屉等 */
-	--shadow-small-light: 0px 0px 1px 0px rgba(0,0,0,0.06),0px 0px 6px 0px rgba(0,0,0,0.06),0px 2px 12px 0px rgba(0,0,0,0.18);
-	--shadow-medium-light: 0px 0px 1px 0px rgba(0,0,0,0.06),0px 0px 12px 0px rgba(0,0,0,0.12),0px 8px 24px 0px rgba(0,0,0,0.24);
-	--shadow-large-light: 0px 0px 1px 0px rgba(0,0,0,0.06),0px 0px 18px 0px rgba(0,0,0,0.24),0px 16px 64px 0px rgba(0,0,0,0.48);
+	--shadow-small-color-1: rgba(0, 0, 0, 0.24);
+	--shadow-small-color-2: rgba(0, 0, 0, 0.24);
+	--shadow-small-color-3: rgba(0, 0, 0, 0.24);
+	--shadow-medium-color-1: rgba(0, 0, 0, 0.24);
+	--shadow-medium-color-2: rgba(0, 0, 0, 0.24);
+	--shadow-medium-color-3: rgba(0, 0, 0, 0.36);
+	--shadow-large-color-1: rgba(0, 0, 0, 0.24);
+	--shadow-large-color-2: rgba(0, 0, 0, 0.24);
+	--shadow-large-color-3: rgba(0, 0, 0, 0.48);
+
+	--shadow-small-light-color-1: rgba(0, 0, 0, 0.06);
+	--shadow-small-light-color-2: rgba(0, 0, 0, 0.06);
+	--shadow-small-light-color-3: rgba(0, 0, 0, 0.18);
+	--shadow-medium-light-color-1: rgba(0, 0, 0, 0.06);
+	--shadow-medium-light-color-2: rgba(0, 0, 0, 0.12);
+	--shadow-medium-light-color-3: rgba(0, 0, 0, 0.24);
+	--shadow-large-light-color-1: rgba(0, 0, 0, 0.06);
+	--shadow-large-light-color-2: rgba(0, 0, 0, 0.24);
+	--shadow-large-light-color-3: rgba(0, 0, 0, 0.48);
+
+	--shadow-left-medium-color-1: rgba(0, 0, 0, 0.24);
+	--shadow-left-medium-color-2: rgba(0, 0, 0, 0.24);
+	--shadow-left-medium-color-3: rgba(0, 0, 0, 0.36);
+	--shadow-right-medium-color-1: rgba(0, 0, 0, 0.24);
+	--shadow-right-medium-color-2: rgba(0, 0, 0, 0.24);
+	--shadow-right-medium-color-3: rgba(0, 0, 0, 0.36);
+	--shadow-top-medium-color-1: rgba(0, 0, 0, 0.24);
+	--shadow-top-medium-color-2: rgba(0, 0, 0, 0.24);
+	--shadow-top-medium-color-3: rgba(0, 0, 0, 0.36);
+	--shadow-bottom-medium-color-1: rgba(0, 0, 0, 0.24);
+	--shadow-bottom-medium-color-2: rgba(0, 0, 0, 0.24);
+	--shadow-bottom-medium-color-3: rgba(0, 0, 0, 0.36);
+
+	--shadow-small-x-1: 0px;
+	--shadow-small-x-2: 0px;
+	--shadow-small-x-3: 0px;
+	--shadow-medium-x-1: 0px;
+	--shadow-medium-x-2: 0px;
+	--shadow-medium-x-3: 0px;
+	--shadow-large-x-1: 0px;
+	--shadow-large-x-2: 0px;
+	--shadow-large-x-3: 0px;
+	--shadow-small-light-x-1: 0px;
+	--shadow-small-light-x-2: 0px;
+	--shadow-small-light-x-3: 0px;
+	--shadow-medium-light-x-1: 0px;
+	--shadow-medium-light-x-2: 0px;
+	--shadow-medium-light-x-3: 0px;
+	--shadow-large-light-x-1: 0px;
+	--shadow-large-light-x-2: 0px;
+	--shadow-large-light-x-3: 0px;
+	--shadow-left-medium-x-1: -1px;
+	--shadow-left-medium-x-2: -4px;
+	--shadow-left-medium-x-3: -12px;
+	--shadow-right-medium-x-1: 1px;
+	--shadow-right-medium-x-2: 4px;
+	--shadow-right-medium-x-3: 12px;
+	--shadow-top-medium-x-1: 0px;
+	--shadow-top-medium-x-2: 0px;
+	--shadow-top-medium-x-3: 0px;
+	--shadow-top-medium-x-1: 0px;
+	--shadow-top-medium-x-2: 0px;
+	--shadow-top-medium-x-3: 0px;
+	--shadow-bottom-medium-x-1: 0px;
+	--shadow-bottom-medium-x-2: 0px;
+	--shadow-bottom-medium-x-3: 0px;
+	--shadow-bottom-medium-x-1: 0px;
+	--shadow-bottom-medium-x-2: 0px;
+	--shadow-bottom-medium-x-3: 0px;
+	--shadow-small-y-1: 0px;
+	--shadow-small-y-2: 0px;
+	--shadow-small-y-3: 2px;
+	--shadow-medium-y-1: 0px;
+	--shadow-medium-y-2: 0px;
+	--shadow-medium-y-3: 6px;
+	--shadow-large-y-1: 0px;
+	--shadow-large-y-2: 0px;
+	--shadow-large-y-3: 16px;
+	--shadow-small-light-y-1: 0px;
+	--shadow-small-light-y-2: 0px;
+	--shadow-small-light-y-3: 2px;
+	--shadow-medium-light-y-1: 0px;
+	--shadow-medium-light-y-1: 0px;
+	--shadow-medium-light-y-1: 8px;
+	--shadow-large-light-y-1: 0px;
+	--shadow-large-light-y-2: 0px;
+	--shadow-large-light-y-3: 16px;
+	--shadow-left-medium-y-1: 0px;
+	--shadow-left-medium-y-2: 0px;
+	--shadow-left-medium-y-3: 0px;
+	--shadow-right-medium-y-1: 0px;
+	--shadow-right-medium-y-2: 0px;
+	--shadow-right-medium-y-3: 0px;
+	--shadow-top-medium-y-1: -1px;
+	--shadow-top-medium-y-2: -4px;
+	--shadow-top-medium-y-3: -12px;
+	--shadow-bottom-medium-y-1: 1px;
+	--shadow-bottom-medium-y-2: 4px;
+	--shadow-bottom-medium-y-3: 12px;
+
+	--shadow-small-blur-1: 1px;
+	--shadow-small-blur-2: 2px;
+	--shadow-small-blur-3: 4px;
+	--shadow-medium-blur-1: 1px;
+	--shadow-medium-blur-2: 4px;
+	--shadow-medium-blur-3: 12px;
+	--shadow-large-blur-1: 1px;
+	--shadow-large-blur-2: 8px;
+	--shadow-large-blur-3: 32px;
+	--shadow-small-light-blur-1: 1px;
+	--shadow-small-light-blur-2: 6px;
+	--shadow-small-light-blur-3: 12px;
+	--shadow-medium-light-blur-1: 1px;
+	--shadow-medium-light-blur-2: 12px;
+	--shadow-medium-light-blur-3: 24px;
+	--shadow-large-light-blur-1: 1px;
+	--shadow-large-light-blur-2: 18px;
+	--shadow-large-light-blur-3: 64px;
+	--shadow-left-medium-blur-1: 1px;
+	--shadow-left-medium-blur-2: 4px;
+	--shadow-left-medium-blur-3: 12px;
+	--shadow-right-medium-blur-1: 1px;
+	--shadow-right-medium-blur-2: 4px;
+	--shadow-right-medium-blur-3: 12px;
+	--shadow-top-medium-blur-1: 1px;
+	--shadow-top-medium-blur-2: 4px;
+	--shadow-top-medium-blur-3: 12px;
+	--shadow-bottom-medium-blur-1: 1px;
+	--shadow-bottom-medium-blur-2: 4px;
+	--shadow-bottom-medium-blur-3: 12px;
+
+	--shadow-small-spread-1: 0px;
+	--shadow-small-spread-2: 0px;
+	--shadow-small-spread-3: 0px;
+	--shadow-medium-spread-1: 0px;
+	--shadow-medium-spread-2: 0px;
+	--shadow-medium-spread-3: 0px;
+	--shadow-large-spread-1: 0px;
+	--shadow-large-spread-2: 0px;
+	--shadow-large-spread-3: 0px;
+	--shadow-small-light-spread-1: 0px;
+	--shadow-small-light-spread-2: 0px;
+	--shadow-small-light-spread-3: 0px;
+	--shadow-medium-light-spread-1: 0px;
+	--shadow-medium-light-spread-2: 0px;
+	--shadow-medium-light-spread-3: 0px;
+	--shadow-large-light-spread-1: 0px;
+	--shadow-large-light-spread-2: 0px;
+	--shadow-large-light-spread-3: 0px;
+	--shadow-left-medium-spread-1: -1px;
+	--shadow-left-medium-spread-1: -4px;
+	--shadow-left-medium-spread-1: -12px;
+	--shadow-right-medium-spread-1: -1px;
+	--shadow-right-medium-spread-2: -4px;
+	--shadow-right-medium-spread-3: -12px;
+	--shadow-top-medium-spread-1: -1px;
+	--shadow-top-medium-spread-2: -4px;
+	--shadow-top-medium-spread-3: -12px;
+	--shadow-bottom-medium-spread-1: -1px;
+	--shadow-bottom-medium-spread-2: -4px;
+	--shadow-bottom-medium-spread-3: -12px;
+
+
+	--shadow-small: var(--shadow-small-x-3) var(--shadow-small-y-3) var(--shadow-small-blur-3) var(--shadow-small-spread-3) var(--shadow-small-color-3), var(--shadow-small-x-2) var(--shadow-small-y-2) var(--shadow-small-blur-2) var(--shadow-small-spread-2) var(--shadow-small-color-2), var(--shadow-small-x-1) var(--shadow-small-y-1) var(--shadow-small-blur-1) var(--shadow-small-spread-1) var(--shadow-small-color-1); /* 控件类-（滑块等） */
+	--shadow-medium: var(--shadow-medium-x-3) var(--shadow-medium-y-3) var(--shadow-medium-blur-3) var(--shadow-medium-spread-3) var(--shadow-medium-color-3), var(--shadow-medium-x-2) var(--shadow-medium-y-2) var(--shadow-medium-blur-2) var(--shadow-medium-spread-2) var(--shadow-medium-color-2), var(--shadow-medium-x-1) var(--shadow-medium-y-2) var(--shadow-medium-blur-1) var(--shadow-medium-spread-1) var(--shadow-medium-color-1); /* 下拉弹层、卡片、轻弹层、气泡等 */
+	--shadow-large: var(--shadow-large-x-3) var(--shadow-large-y-3) var(--shadow-large-blur-3) var(--shadow-large-spread-3) var(--shadow-large-color-3), var(--shadow-large-x-2) var(--shadow-large-y-2) var(--shadow-large-blur-2) var(--shadow-large-spread-2) var(--shadow-large-color-2), var(--shadow-large-x-1) var(--shadow-large-y-1) var(--shadow-large-blur-1) var(--shadow-large-spread-1) var(--shadow-large-color-1);/* 对话框、通知、抽屉等 */
+	--shadow-small-light: var(--shadow-small-light-x-3) var(--shadow-small-light-y-3) var(--shadow-small-light-blur-3) var(--shadow-small-light-spread-3) var(--shadow-small-light-color-3), var(--shadow-small-light-x-2) var(--shadow-small-light-y-2) var(--shadow-small-light-blur-2) var(--shadow-small-light-spread-2) var(--shadow-small-light-color-2), var(--shadow-small-light-x-1) var(--shadow-small-light-y-1) var(--shadow-large-light-blur-1) var(--shadow-small-light-spread-1) var(--shadow-small-light-color-1); /* 轻投影-小号 */
+	--shadow-medium-light: var(--shadow-medium-light-x-3) var(--shadow-medium-light-y-3) var(--shadow-medium-light-blur-3) var(--shadow-medium-light-spread-3) var(--shadow-medium-light-color-3), var(--shadow-medium-light-x-2) var(--shadow-medium-light-y-2) var(--shadow-medium-light-blur-2) var(--shadow-medium-light-spread-2) var(--shadow-medium-light-color-2), var(--shadow-medium-light-x-1) var(--shadow-medium-light-y-1) var(--shadow-medium-light-blur-1) var(--shadow-medium-light-spread-1) var(--shadow-medium-light-color-1); /* 轻投影-中号 */
+	--shadow-large-light: var(--shadow-large-light-x-3) var(--shadow-large-light-y-3) var(--shadow-large-light-blur-3) var(--shadow-large-light-spread-3) var(--shadow-large-light-color-3), var(--shadow-large-light-x-2) var(--shadow-large-light-y-2) var(--shadow-large-light-blur-2) var(--shadow-large-light-spread-2) var(--shadow-large-light-color-2), var(--shadow-large-light-x-1) var(--shadow-large-light-y-1) var(--shadow-large-light-blur-1) var(--shadow-large-light-spread-1) var(--shadow-large-light-color-1); /* 轻投影-大号 */
+	--shadow-left-medium: var(--shadow-left-medium-x-3) var(--shadow-left-medium-y-3) var(--shadow-left-medium-blur-3) var(--shadow-left-medium-spread-2) var(--shadow-left-medium-color-3), var(--shadow-left-medium-x-2) var(--shadow-left-medium-y-2) var(--shadow-left-medium-blur-2) -4px var(--shadow-left-medium-color-2), var(--shadow-left-medium-x-1) var(--shadow-left-medium-y-1) var(--shadow-left-medium-blur-1) var(--shadow-left-medium-spread-1) var(--shadow-left-medium-color-1); /* 左侧单边投影 */
+	--shadow-right-medium: var(--shadow-right-medium-x-3) var(--shadow-right-medium-y-3) var(--shadow-right-medium-blur-3) var(--shadow-right-medium-spread-3) var(--shadow-right-medium-color-3), var(--shadow-right-medium-x-2) var(--shadow-right-medium-y-2) var(--shadow-right-medium-blur-2) var(--shadow-right-medium-spread-2) var(--shadow-right-medium-color-2), var(--shadow-right-medium-x-1) var(--shadow-right-medium-y-1) var(--shadow-right-medium-blur-1) var(--shadow-right-medium-spread-1) var(--shadow-right-medium-color-1); /* 右侧单边投影 */
+	--shadow-top-medium: var(--shadow-top-medium-x-3) var(--shadow-top-medium-y-3) var(--shadow-top-medium-blur-3) var(--shadow-top-medium-spread-3) var(--shadow-top-medium-color-3), var(--shadow-top-medium-x-2) var(--shadow-top-medium-y-2) var(--shadow-top-medium-blur-2) var(--shadow-top-medium-spread-2) var(--shadow-top-medium-color-2), var(--shadow-top-medium-x-1) var(--shadow-top-medium-y-1) var(--shadow-top-medium-blur-1) var(--shadow-top-medium-spread-1) var(--shadow-top-medium-color-1); /* 上侧单边投影 */
+	--shadow-bottom-medium: var(--shadow-bottom-medium-x-3) var(--shadow-bottom-medium-y-1) var(--shadow-bottom-medium-blur-3) var(--shadow-bottom-medium-spread-3) var(--shadow-bottom-medium-color-3), var(--shadow-bottom-medium-x-2) var(--shadow-bottom-medium-y-1) var(--shadow-bottom-medium-blur-2) var(--shadow-bottom-medium-spread-2) var(--shadow-bottom-medium-color-2), var(--shadow-bottom-medium-x-1) var(--shadow-bottom-medium-y-1) var(--shadow-bottom-medium-blur-1) var(--shadow-bottom-medium-spread-1) var(--shadow-bottom-medium-color-1); /* 下侧单边投影 */
 	--font-family-normal: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial,"PingFang SC","Microsoft YaHei","Noto Sans",sans-serif;
 	--font-family-number-display: Inter,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial,"PingFang SC","Microsoft YaHei","Noto Sans",sans-serif; /* 数字指标字体 */
 	--display-bold: 600 32px/40px var(--font-family-normal); /* 超大标题 */
@@ -524,8 +855,8 @@
 	--formItem-text-label-default: 400 14px/16px var(--font-family-normal); /* 表单/描述组件label文字 */
 	--imageviewer-bg-normal: rgba(1,7,30,0.74);
 	--table-head-bg: var(--color-opacity-1); /* 表头背景色 */
-	--table-shadow-single-right: 1px 0px 1px -1px rgba(0,0,0,0.24),4px 0px 4px -4px rgba(0,0,0,0.24),12px 0px 12px -12px rgba(0,0,0,0.36);
-	--table-shadow-single-left: -1px 0px 1px -1px rgba(0,0,0,0.24),-4px 0px 4px -4px rgba(0,0,0,0.24),-12px 0px 12px -12px rgba(0,0,0,0.36);
+	--table-shadow-single-right: var(--shadow-right-medium);
+	--table-shadow-single-left: var(--shadow-left-medium);
 	--color-opacity-0: rgba(157,179,225,0.03); /* hsla(231,88%,84%,0.1) */
 	--color-opacity-1: rgba(157,179,225,0.05); /* hsla(221,53%,75%, 0.05 ) */
 	--color-opacity-2: rgba(189,200,255,0.10); /* hsla(230,100%,87%, 0.1 ) */
@@ -541,6 +872,7 @@
 	--color-opacity-12: rgba(251,252,254,0.97); /* hsla(220,60%,99%, 0.97 ) */
 	--color-opacity-13: rgba(250,252,255,0.98); /* hsla(220,100%,99%, 0.98 ) */
 	--color-highlight-search: var(--color-link-normal); /* 高亮搜索 */
+	--bgBlur-medium: 40px; /* 背景模糊中号 */
 }
 
 :root[theme-mode="QDS-test"], .theme-QDS-test{
@@ -723,12 +1055,179 @@
 	--color-gray-11: #232530; /* - */
 	--color-gray-12: #191b23; /* - */
 	--color-gray-13: #121319; /* - */
-	--shadow-small: 0px 0px 1px 0px rgba(79,102,68,0.08),0px 0px 2px 0px rgba(79,102,68,0.08),0px 2px 4px 0px rgba(79,102,68,0.08); /* 控件类-（滑块等） */
-	--shadow-medium: 0px 0px 1px 0px rgba(79,102,68,0.08),0px 0px 4px 0px rgba(79,102,68,0.08),0px 6px 12px 0px rgba(79,102,68,0.12); /* 下拉弹层、卡片、轻弹层、气泡等 */
-	--shadow-large: 0px 16px 32px 0px rgba(79,102,68,0.16),0px 0px 8px 0px rgba(79,102,68,0.08),0px 0px 1px 0px rgba(79,102,68,0.08); /* 对话框、通知、抽屉等 */
-	--shadow-small-light: 0px 2px 12px 0px rgba(79,102,68,0.06),0px 0px 6px 0px rgba(79,102,68,0.02),0px 0px 1px 0px rgba(79,102,68,0.02);
-	--shadow-medium-light: 0px 8px 24px 0px rgba(79,102,68,0.08),0px 0px 12px 0px rgba(79,102,68,0.04),0px 0px 1px 0px rgba(79,102,68,0.02);
-	--shadow-large-light: 0px 16px 64px 0px rgba(79,102,68,0.16),0px 0px 18px 0px rgba(79,102,68,0.08),0px 0px 1px 0px rgba(79,102,68,0.02);
+	--shadow-small-color-1: rgba(79,102,68,0.08);
+	--shadow-small-color-2: rgba(79,102,68,0.08);
+	--shadow-small-color-3: rgba(79,102,68,0.08);
+	--shadow-medium-color-1: rgba(79,102,68,0.08);
+	--shadow-medium-color-2: rgba(79,102,68,0.08);
+	--shadow-medium-color-3: rgba(79,102,68,0.12);
+	--shadow-large-color-1: rgba(79,102,68,0.08);
+	--shadow-large-color-2: rgba(79,102,68,0.08);
+	--shadow-large-color-3: rgba(79,102,68,0.16);
+
+	--shadow-small-light-color-1: rgba(79,102,68,0.08);
+	--shadow-small-light-color-2: rgba(79,102,68,0.02);
+	--shadow-small-light-color-3: rgba(79,102,68,0.06);
+	--shadow-medium-light-color-1: rgba(79,102,68,0.08);
+	--shadow-medium-light-color-2: rgba(79,102,68,0.04);
+	--shadow-medium-light-color-3: rgba(79,102,68,0.08);
+	--shadow-large-light-color-1: rgba(79,102,68,0.08);
+	--shadow-large-light-color-2: rgba(79,102,68,0.08);
+	--shadow-large-light-color-3: rgba(79,102,68,0.16);
+
+	--shadow-left-medium-color-1: rgba(79,102,68,0.08);
+	--shadow-left-medium-color-2: rgba(79,102,68,0.08);
+	--shadow-left-medium-color-3: rgba(79,102,68,0.12);
+	--shadow-right-medium-color-1: rgba(79,102,68,0.08);
+	--shadow-right-medium-color-2: rgba(79,102,68,0.08);
+	--shadow-right-medium-color-3: rgba(79,102,68,0.12);
+	--shadow-top-medium-color-1: rgba(79,102,68,0.08);
+	--shadow-top-medium-color-2: rgba(79,102,68,0.08);
+	--shadow-top-medium-color-3: rgba(79,102,68,0.12);
+	--shadow-bottom-medium-color-1: rgba(79,102,68,0.08);
+	--shadow-bottom-medium-color-2: rgba(79,102,68,0.08);
+	--shadow-bottom-medium-color-3: rgba(79,102,68,0.12);
+
+	--shadow-small-x-1: 0px;
+	--shadow-small-x-2: 0px;
+	--shadow-small-x-3: 0px;
+	--shadow-medium-x-1: 0px;
+	--shadow-medium-x-2: 0px;
+	--shadow-medium-x-3: 0px;
+	--shadow-large-x-1: 0px;
+	--shadow-large-x-2: 0px;
+	--shadow-large-x-3: 0px;
+	--shadow-small-light-x-1: 0px;
+	--shadow-small-light-x-2: 0px;
+	--shadow-small-light-x-3: 0px;
+	--shadow-medium-light-x-1: 0px;
+	--shadow-medium-light-x-2: 0px;
+	--shadow-medium-light-x-3: 0px;
+	--shadow-large-light-x-1: 0px;
+	--shadow-large-light-x-2: 0px;
+	--shadow-large-light-x-3: 0px;
+	--shadow-left-medium-x-1: -1px;
+	--shadow-left-medium-x-2: -4px;
+	--shadow-left-medium-x-3: -12px;
+	--shadow-right-medium-x-1: 1px;
+	--shadow-right-medium-x-2: 4px;
+	--shadow-right-medium-x-3: 12px;
+	--shadow-top-medium-x-1: 0px;
+	--shadow-top-medium-x-2: 0px;
+	--shadow-top-medium-x-3: 0px;
+	--shadow-top-medium-x-1: 0px;
+	--shadow-top-medium-x-2: 0px;
+	--shadow-top-medium-x-3: 0px;
+	--shadow-bottom-medium-x-1: 0px;
+	--shadow-bottom-medium-x-2: 0px;
+	--shadow-bottom-medium-x-3: 0px;
+	--shadow-bottom-medium-x-1: 0px;
+	--shadow-bottom-medium-x-2: 0px;
+	--shadow-bottom-medium-x-3: 0px;
+	--shadow-small-y-1: 0px;
+	--shadow-small-y-2: 0px;
+	--shadow-small-y-3: 2px;
+	--shadow-medium-y-1: 0px;
+	--shadow-medium-y-2: 0px;
+	--shadow-medium-y-3: 6px;
+	--shadow-large-y-1: 0px;
+	--shadow-large-y-2: 0px;
+	--shadow-large-y-3: 16px;
+	--shadow-small-light-y-1: 0px;
+	--shadow-small-light-y-2: 0px;
+	--shadow-small-light-y-3: 2px;
+	--shadow-medium-light-y-1: 0px;
+	--shadow-medium-light-y-1: 0px;
+	--shadow-medium-light-y-1: 8px;
+	--shadow-large-light-y-1: 0px;
+	--shadow-large-light-y-2: 0px;
+	--shadow-large-light-y-3: 16px;
+	--shadow-left-medium-y-1: 0px;
+	--shadow-left-medium-y-2: 0px;
+	--shadow-left-medium-y-3: 0px;
+	--shadow-right-medium-y-1: 0px;
+	--shadow-right-medium-y-2: 0px;
+	--shadow-right-medium-y-3: 0px;
+	--shadow-top-medium-y-1: -1px;
+	--shadow-top-medium-y-2: -4px;
+	--shadow-top-medium-y-3: -12px;
+	--shadow-bottom-medium-y-1: 1px;
+	--shadow-bottom-medium-y-2: 4px;
+	--shadow-bottom-medium-y-3: 12px;
+
+	--shadow-small-blur-1: 1px;
+	--shadow-small-blur-2: 2px;
+	--shadow-small-blur-3: 4px;
+	--shadow-medium-blur-1: 1px;
+	--shadow-medium-blur-2: 4px;
+	--shadow-medium-blur-3: 12px;
+	--shadow-large-blur-1: 1px;
+	--shadow-large-blur-2: 8px;
+	--shadow-large-blur-3: 32px;
+	--shadow-small-light-blur-1: 1px;
+	--shadow-small-light-blur-2: 6px;
+	--shadow-small-light-blur-3: 12px;
+	--shadow-medium-light-blur-1: 1px;
+	--shadow-medium-light-blur-2: 12px;
+	--shadow-medium-light-blur-3: 24px;
+	--shadow-large-light-blur-1: 1px;
+	--shadow-large-light-blur-2: 18px;
+	--shadow-large-light-blur-3: 64px;
+	--shadow-left-medium-blur-1: 1px;
+	--shadow-left-medium-blur-2: 4px;
+	--shadow-left-medium-blur-3: 12px;
+	--shadow-right-medium-blur-1: 1px;
+	--shadow-right-medium-blur-2: 4px;
+	--shadow-right-medium-blur-3: 12px;
+	--shadow-top-medium-blur-1: 1px;
+	--shadow-top-medium-blur-2: 4px;
+	--shadow-top-medium-blur-3: 12px;
+	--shadow-bottom-medium-blur-1: 1px;
+	--shadow-bottom-medium-blur-2: 4px;
+	--shadow-bottom-medium-blur-3: 12px;
+
+	--shadow-small-spread-1: 0px;
+	--shadow-small-spread-2: 0px;
+	--shadow-small-spread-3: 0px;
+	--shadow-medium-spread-1: 0px;
+	--shadow-medium-spread-2: 0px;
+	--shadow-medium-spread-3: 0px;
+	--shadow-large-spread-1: 0px;
+	--shadow-large-spread-2: 0px;
+	--shadow-large-spread-3: 0px;
+	--shadow-small-light-spread-1: 0px;
+	--shadow-small-light-spread-2: 0px;
+	--shadow-small-light-spread-3: 0px;
+	--shadow-medium-light-spread-1: 0px;
+	--shadow-medium-light-spread-2: 0px;
+	--shadow-medium-light-spread-3: 0px;
+	--shadow-large-light-spread-1: 0px;
+	--shadow-large-light-spread-2: 0px;
+	--shadow-large-light-spread-3: 0px;
+	--shadow-left-medium-spread-1: -1px;
+	--shadow-left-medium-spread-1: -4px;
+	--shadow-left-medium-spread-1: -12px;
+	--shadow-right-medium-spread-1: -1px;
+	--shadow-right-medium-spread-2: -4px;
+	--shadow-right-medium-spread-3: -12px;
+	--shadow-top-medium-spread-1: -1px;
+	--shadow-top-medium-spread-2: -4px;
+	--shadow-top-medium-spread-3: -12px;
+	--shadow-bottom-medium-spread-1: -1px;
+	--shadow-bottom-medium-spread-2: -4px;
+	--shadow-bottom-medium-spread-3: -12px;
+
+
+	--shadow-small: var(--shadow-small-x-3) var(--shadow-small-y-3) var(--shadow-small-blur-3) var(--shadow-small-spread-3) var(--shadow-small-color-3), var(--shadow-small-x-2) var(--shadow-small-y-2) var(--shadow-small-blur-2) var(--shadow-small-spread-2) var(--shadow-small-color-2), var(--shadow-small-x-1) var(--shadow-small-y-1) var(--shadow-small-blur-1) var(--shadow-small-spread-1) var(--shadow-small-color-1); /* 控件类-（滑块等） */
+	--shadow-medium: var(--shadow-medium-x-3) var(--shadow-medium-y-3) var(--shadow-medium-blur-3) var(--shadow-medium-spread-3) var(--shadow-medium-color-3), var(--shadow-medium-x-2) var(--shadow-medium-y-2) var(--shadow-medium-blur-2) var(--shadow-medium-spread-2) var(--shadow-medium-color-2), var(--shadow-medium-x-1) var(--shadow-medium-y-2) var(--shadow-medium-blur-1) var(--shadow-medium-spread-1) var(--shadow-medium-color-1); /* 下拉弹层、卡片、轻弹层、气泡等 */
+	--shadow-large: var(--shadow-large-x-3) var(--shadow-large-y-3) var(--shadow-large-blur-3) var(--shadow-large-spread-3) var(--shadow-large-color-3), var(--shadow-large-x-2) var(--shadow-large-y-2) var(--shadow-large-blur-2) var(--shadow-large-spread-2) var(--shadow-large-color-2), var(--shadow-large-x-1) var(--shadow-large-y-1) var(--shadow-large-blur-1) var(--shadow-large-spread-1) var(--shadow-large-color-1);/* 对话框、通知、抽屉等 */
+	--shadow-small-light: var(--shadow-small-light-x-3) var(--shadow-small-light-y-3) var(--shadow-small-light-blur-3) var(--shadow-small-light-spread-3) var(--shadow-small-light-color-3), var(--shadow-small-light-x-2) var(--shadow-small-light-y-2) var(--shadow-small-light-blur-2) var(--shadow-small-light-spread-2) var(--shadow-small-light-color-2), var(--shadow-small-light-x-1) var(--shadow-small-light-y-1) var(--shadow-large-light-blur-1) var(--shadow-small-light-spread-1) var(--shadow-small-light-color-1); /* 轻投影-小号 */
+	--shadow-medium-light: var(--shadow-medium-light-x-3) var(--shadow-medium-light-y-3) var(--shadow-medium-light-blur-3) var(--shadow-medium-light-spread-3) var(--shadow-medium-light-color-3), var(--shadow-medium-light-x-2) var(--shadow-medium-light-y-2) var(--shadow-medium-light-blur-2) var(--shadow-medium-light-spread-2) var(--shadow-medium-light-color-2), var(--shadow-medium-light-x-1) var(--shadow-medium-light-y-1) var(--shadow-medium-light-blur-1) var(--shadow-medium-light-spread-1) var(--shadow-medium-light-color-1); /* 轻投影-中号 */
+	--shadow-large-light: var(--shadow-large-light-x-3) var(--shadow-large-light-y-3) var(--shadow-large-light-blur-3) var(--shadow-large-light-spread-3) var(--shadow-large-light-color-3), var(--shadow-large-light-x-2) var(--shadow-large-light-y-2) var(--shadow-large-light-blur-2) var(--shadow-large-light-spread-2) var(--shadow-large-light-color-2), var(--shadow-large-light-x-1) var(--shadow-large-light-y-1) var(--shadow-large-light-blur-1) var(--shadow-large-light-spread-1) var(--shadow-large-light-color-1); /* 轻投影-大号 */
+	--shadow-left-medium: var(--shadow-left-medium-x-3) var(--shadow-left-medium-y-3) var(--shadow-left-medium-blur-3) var(--shadow-left-medium-spread-2) var(--shadow-left-medium-color-3), var(--shadow-left-medium-x-2) var(--shadow-left-medium-y-2) var(--shadow-left-medium-blur-2) -4px var(--shadow-left-medium-color-2), var(--shadow-left-medium-x-1) var(--shadow-left-medium-y-1) var(--shadow-left-medium-blur-1) var(--shadow-left-medium-spread-1) var(--shadow-left-medium-color-1); /* 左侧单边投影 */
+	--shadow-right-medium: var(--shadow-right-medium-x-3) var(--shadow-right-medium-y-3) var(--shadow-right-medium-blur-3) var(--shadow-right-medium-spread-3) var(--shadow-right-medium-color-3), var(--shadow-right-medium-x-2) var(--shadow-right-medium-y-2) var(--shadow-right-medium-blur-2) var(--shadow-right-medium-spread-2) var(--shadow-right-medium-color-2), var(--shadow-right-medium-x-1) var(--shadow-right-medium-y-1) var(--shadow-right-medium-blur-1) var(--shadow-right-medium-spread-1) var(--shadow-right-medium-color-1); /* 右侧单边投影 */
+	--shadow-top-medium: var(--shadow-top-medium-x-3) var(--shadow-top-medium-y-3) var(--shadow-top-medium-blur-3) var(--shadow-top-medium-spread-3) var(--shadow-top-medium-color-3), var(--shadow-top-medium-x-2) var(--shadow-top-medium-y-2) var(--shadow-top-medium-blur-2) var(--shadow-top-medium-spread-2) var(--shadow-top-medium-color-2), var(--shadow-top-medium-x-1) var(--shadow-top-medium-y-1) var(--shadow-top-medium-blur-1) var(--shadow-top-medium-spread-1) var(--shadow-top-medium-color-1); /* 上侧单边投影 */
+	--shadow-bottom-medium: var(--shadow-bottom-medium-x-3) var(--shadow-bottom-medium-y-1) var(--shadow-bottom-medium-blur-3) var(--shadow-bottom-medium-spread-3) var(--shadow-bottom-medium-color-3), var(--shadow-bottom-medium-x-2) var(--shadow-bottom-medium-y-1) var(--shadow-bottom-medium-blur-2) var(--shadow-bottom-medium-spread-2) var(--shadow-bottom-medium-color-2), var(--shadow-bottom-medium-x-1) var(--shadow-bottom-medium-y-1) var(--shadow-bottom-medium-blur-1) var(--shadow-bottom-medium-spread-1) var(--shadow-bottom-medium-color-1); /* 下侧单边投影 */
 	--display-bold: 600 32px/40px var(--font-family-normal); /* 超大标题 */
 	--headline-bold: 600 24px/32px var(--font-family-normal); /* 大标题 */
 	--font-family-normal: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial,"PingFang SC","Microsoft YaHei","Noto Sans",sans-serif; /* 默认全局字体 */
@@ -789,8 +1288,8 @@
 	--formItem-text-label-default: 400 14px/16px var(--font-family-normal); /* 表单/描述组件label文字 */
 	--imageviewer-bg-normal: var(--color-opacity-9);
 	--table-head-bg: var(--color-opacity-9); /* 表头背景色 */
-	--table-shadow-single-left: -1px 0px 1px -1px rgba(79,102,68,0.08),-4px 0px 4px -4px rgba(79,102,68,0.08),-12px 0px 12px -12px rgba(79,102,68,0.12);
-	--table-shadow-single-right: 1px 0px 1px -1px rgba(79,102,68,0.08),4px 0px 4px -4px rgba(79,102,68,0.08),12px 0px 12px -12px rgba(79,102,68,0.12);
+	--table-shadow-single-left: var(--shadow-left-medium);
+	--table-shadow-single-right: var(--shadow-right-medium);
 	--color-opacity-0: rgba(54,79,129,0.04); /* hsla(220,41%,36%,0.04) */
 	--color-opacity-1: rgba(36,56,97,0.05); /* hsla(220,46%,26%,0.05) */
 	--color-opacity-2: rgba(18,42,79,0.08); /* hsla(216,63%,19%,0.08) */
@@ -807,4 +1306,5 @@
 	--color-opacity-13: rgba(0,1,10,0.93); /* hsla(233,100%,2%,0.93) */
 	--color-highlight-search: var(--color-link-normal); /* 高亮搜索 */
 	--radius-super-large: calc(var(--radius-large)*2); /* 特殊大圆角 */
+	--bgBlur-medium: 40px; /* 背景模糊中号 */
 }
