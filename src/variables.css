@@ -191,7 +191,7 @@
 
 	--shadow-small-light-color-1: rgba(18,19,25,0.08);
 	--shadow-small-light-color-2: rgba(18,19,25,0.02);
-	--shadow-small-light-color-3: rgba(18,19,25,0.06);
+	--shadow-small-light-color-3: rgba(18,19,25,0.04);
 	--shadow-medium-light-color-1: rgba(18,19,25,0.08);
 	--shadow-medium-light-color-2: rgba(18,19,25,0.04);
 	--shadow-medium-light-color-3: rgba(18,19,25,0.08);
@@ -633,7 +633,7 @@
 
 	--shadow-small-light-color-1: rgba(0, 0, 0, 0.06);
 	--shadow-small-light-color-2: rgba(0, 0, 0, 0.06);
-	--shadow-small-light-color-3: rgba(0, 0, 0, 0.18);
+	--shadow-small-light-color-3: rgba(0, 0, 0, 0.12);
 	--shadow-medium-light-color-1: rgba(0, 0, 0, 0.06);
 	--shadow-medium-light-color-2: rgba(0, 0, 0, 0.12);
 	--shadow-medium-light-color-3: rgba(0, 0, 0, 0.24);
@@ -1067,7 +1067,7 @@
 
 	--shadow-small-light-color-1: rgba(79,102,68,0.08);
 	--shadow-small-light-color-2: rgba(79,102,68,0.02);
-	--shadow-small-light-color-3: rgba(79,102,68,0.06);
+	--shadow-small-light-color-3: rgba(79,102,68,0.04);
 	--shadow-medium-light-color-1: rgba(79,102,68,0.08);
 	--shadow-medium-light-color-2: rgba(79,102,68,0.04);
 	--shadow-medium-light-color-3: rgba(79,102,68,0.08);
