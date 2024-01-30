@@ -261,8 +261,8 @@
 	--shadow-small-light-y-2: 0px;
 	--shadow-small-light-y-3: 2px;
 	--shadow-medium-light-y-1: 0px;
-	--shadow-medium-light-y-1: 0px;
-	--shadow-medium-light-y-1: 8px;
+	--shadow-medium-light-y-2: 0px;
+	--shadow-medium-light-y-3: 8px;
 	--shadow-large-light-y-1: 0px;
 	--shadow-large-light-y-2: 0px;
 	--shadow-large-light-y-3: 16px;
@@ -329,8 +329,8 @@
 	--shadow-large-light-spread-2: 0px;
 	--shadow-large-light-spread-3: 0px;
 	--shadow-left-medium-spread-1: -1px;
-	--shadow-left-medium-spread-1: -4px;
-	--shadow-left-medium-spread-1: -12px;
+	--shadow-left-medium-spread-2: -4px;
+	--shadow-left-medium-spread-3: -12px;
 	--shadow-right-medium-spread-1: -1px;
 	--shadow-right-medium-spread-2: -4px;
 	--shadow-right-medium-spread-3: -12px;
@@ -703,8 +703,8 @@
 	--shadow-small-light-y-2: 0px;
 	--shadow-small-light-y-3: 2px;
 	--shadow-medium-light-y-1: 0px;
-	--shadow-medium-light-y-1: 0px;
-	--shadow-medium-light-y-1: 8px;
+	--shadow-medium-light-y-2: 0px;
+	--shadow-medium-light-y-3: 8px;
 	--shadow-large-light-y-1: 0px;
 	--shadow-large-light-y-2: 0px;
 	--shadow-large-light-y-3: 16px;
@@ -771,8 +771,8 @@
 	--shadow-large-light-spread-2: 0px;
 	--shadow-large-light-spread-3: 0px;
 	--shadow-left-medium-spread-1: -1px;
-	--shadow-left-medium-spread-1: -4px;
-	--shadow-left-medium-spread-1: -12px;
+	--shadow-left-medium-spread-2: -4px;
+	--shadow-left-medium-spread-3: -12px;
 	--shadow-right-medium-spread-1: -1px;
 	--shadow-right-medium-spread-2: -4px;
 	--shadow-right-medium-spread-3: -12px;
@@ -1137,8 +1137,8 @@
 	--shadow-small-light-y-2: 0px;
 	--shadow-small-light-y-3: 2px;
 	--shadow-medium-light-y-1: 0px;
-	--shadow-medium-light-y-1: 0px;
-	--shadow-medium-light-y-1: 8px;
+	--shadow-medium-light-y-2: 0px;
+	--shadow-medium-light-y-3: 8px;
 	--shadow-large-light-y-1: 0px;
 	--shadow-large-light-y-2: 0px;
 	--shadow-large-light-y-3: 16px;
