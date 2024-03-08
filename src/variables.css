@@ -341,7 +341,6 @@
 	--shadow-bottom-medium-spread-2: -4px;
 	--shadow-bottom-medium-spread-3: -12px;
 
-
 	--shadow-small: var(--shadow-small-x-3) var(--shadow-small-y-3) var(--shadow-small-blur-3) var(--shadow-small-spread-3) var(--shadow-small-color-3), var(--shadow-small-x-2) var(--shadow-small-y-2) var(--shadow-small-blur-2) var(--shadow-small-spread-2) var(--shadow-small-color-2), var(--shadow-small-x-1) var(--shadow-small-y-1) var(--shadow-small-blur-1) var(--shadow-small-spread-1) var(--shadow-small-color-1); /* 控件类-（滑块等） */
 	--shadow-medium: var(--shadow-medium-x-3) var(--shadow-medium-y-3) var(--shadow-medium-blur-3) var(--shadow-medium-spread-3) var(--shadow-medium-color-3), var(--shadow-medium-x-2) var(--shadow-medium-y-2) var(--shadow-medium-blur-2) var(--shadow-medium-spread-2) var(--shadow-medium-color-2), var(--shadow-medium-x-1) var(--shadow-medium-y-2) var(--shadow-medium-blur-1) var(--shadow-medium-spread-1) var(--shadow-medium-color-1); /* 下拉弹层、卡片、轻弹层、气泡等 */
 	--shadow-large: var(--shadow-large-x-3) var(--shadow-large-y-3) var(--shadow-large-blur-3) var(--shadow-large-spread-3) var(--shadow-large-color-3), var(--shadow-large-x-2) var(--shadow-large-y-2) var(--shadow-large-blur-2) var(--shadow-large-spread-2) var(--shadow-large-color-2), var(--shadow-large-x-1) var(--shadow-large-y-1) var(--shadow-large-blur-1) var(--shadow-large-spread-1) var(--shadow-large-color-1);/* 对话框、通知、抽屉等 */
@@ -352,18 +351,23 @@
 	--shadow-right-medium: var(--shadow-right-medium-x-3) var(--shadow-right-medium-y-3) var(--shadow-right-medium-blur-3) var(--shadow-right-medium-spread-3) var(--shadow-right-medium-color-3), var(--shadow-right-medium-x-2) var(--shadow-right-medium-y-2) var(--shadow-right-medium-blur-2) var(--shadow-right-medium-spread-2) var(--shadow-right-medium-color-2), var(--shadow-right-medium-x-1) var(--shadow-right-medium-y-1) var(--shadow-right-medium-blur-1) var(--shadow-right-medium-spread-1) var(--shadow-right-medium-color-1); /* 右侧单边投影 */
 	--shadow-top-medium: var(--shadow-top-medium-x-3) var(--shadow-top-medium-y-3) var(--shadow-top-medium-blur-3) var(--shadow-top-medium-spread-3) var(--shadow-top-medium-color-3), var(--shadow-top-medium-x-2) var(--shadow-top-medium-y-2) var(--shadow-top-medium-blur-2) var(--shadow-top-medium-spread-2) var(--shadow-top-medium-color-2), var(--shadow-top-medium-x-1) var(--shadow-top-medium-y-1) var(--shadow-top-medium-blur-1) var(--shadow-top-medium-spread-1) var(--shadow-top-medium-color-1); /* 上侧单边投影 */
 	--shadow-bottom-medium: var(--shadow-bottom-medium-x-3) var(--shadow-bottom-medium-y-1) var(--shadow-bottom-medium-blur-3) var(--shadow-bottom-medium-spread-3) var(--shadow-bottom-medium-color-3), var(--shadow-bottom-medium-x-2) var(--shadow-bottom-medium-y-1) var(--shadow-bottom-medium-blur-2) var(--shadow-bottom-medium-spread-2) var(--shadow-bottom-medium-color-2), var(--shadow-bottom-medium-x-1) var(--shadow-bottom-medium-y-1) var(--shadow-bottom-medium-blur-1) var(--shadow-bottom-medium-spread-1) var(--shadow-bottom-medium-color-1); /* 下侧单边投影 */
-	--display-bold: 600 32px/40px var(--font-family-normal); /* 超大标题 */
-	--headline-bold: 600 24px/32px var(--font-family-normal); /* 大标题 */
+	
+	--font-weight-regular:400;
+	--font-weight-medium:500;
+	--font-weight-semi-bold:550;
+	--font-weight-bold:600;
+	--display-bold: var(--font-weight-bold) 32px/40px var(--font-family-normal); /* 超大标题 */
+	--headline-bold: var(--font-weight-bold) 24px/32px var(--font-family-normal); /* 大标题 */
 	--font-family-normal: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial,"PingFang SC","Microsoft YaHei","Noto Sans",sans-serif; /* 默认全局字体 */
 	--font-family-number-display: Inter,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial,"PingFang SC","Microsoft YaHei","Noto Sans",sans-serif; /* 数字指标字体 */
-	--title-regular: 400 20px/28px var(--font-family-normal); /* 标题文字 */
-	--title-bold: 600 20px/28px var(--font-family-normal); /* 标题 */
-	--subtitle-regular: 400 16px/24px var(--font-family-normal); /* 小标题 */
-	--subtitle-medium: 500 16px/24px var(--font-family-normal); /* 小标题 */
-	--body-regular: 400 14px/20px var(--font-family-normal); /* 正文的默认字号 */
-	--body-medium: 500 14px/20px var(--font-family-normal); /* 正文 */
-	--caption-regular: 400 12px/16px var(--font-family-normal); /* 说明文本 */
-	--caption-medium: 500 12px/16px var(--font-family-normal); /* 说明文本 */
+	--title-regular: var(--font-weight-regular) 20px/28px var(--font-family-normal); /* 标题文字 */
+	--title-bold: var(--font-weight-bold) 20px/28px var(--font-family-normal); /* 标题 */
+	--subtitle-regular: var(--font-weight-regular) 16px/24px var(--font-family-normal); /* 小标题 */
+	--subtitle-medium: var(--font-weight-medium) 16px/24px var(--font-family-normal); /* 小标题 */
+	--body-regular: var(--font-weight-regular) 14px/20px var(--font-family-normal); /* 正文的默认字号 */
+	--body-medium: var(--font-weight-medium) 14px/20px var(--font-family-normal); /* 正文 */
+	--caption-regular: var(--font-weight-regular) 12px/16px var(--font-family-normal); /* 说明文本 */
+	--caption-medium: var(--font-weight-medium) 12px/16px var(--font-family-normal); /* 说明文本 */
 	--radius-small: calc(var(--radius-normal)/2);
 	--radius-normal: 3px; /* 控件、小卡片等 */
 	--radius-large: calc(var(--radius-normal)*2); /* 大卡片、大弹框等 */
@@ -397,20 +401,20 @@
 	--duration-end-m: 0.1s; /* 控件 */
 	--duration-end-l: 0.15s; /* 默认 */
 	--duration-end-xl: 0.3s; /* 大卡片 */
-	--number-text-bold: 600 16px/24px var(--font-family-normal); /* 文本数字 */
-	--number-small-regular: 400 20px/28px var(--font-family-number-display); /* 小号数字 */
-	--number-small-medium: 550 20px/28px var(--font-family-number-display); /* 小号数字medium */
-	--number-normal-regular: 400 24px/32px var(--font-family-number-display); /* 默认数字 */
-	--number-normal-medium: 550 24px/32px var(--font-family-number-display); /* 默认数字medium */
-	--number-large-regular: 400 32px/40px var(--font-family-number-display); /* 大号数字 */
-	--number-large-medium: 550 32px/40px var(--font-family-number-display); /* 大号数字medium */
+	--number-text-bold: var(--font-weight-bold) 16px/24px var(--font-family-normal); /* 文本数字 */
+	--number-small-regular: var(--font-weight-regular) 20px/28px var(--font-family-number-display); /* 小号数字 */
+	--number-small-medium: var(--font-weight-semi-bold) 20px/28px var(--font-family-number-display); /* 小号数字medium */
+	--number-normal-regular: var(--font-weight-regular) 24px/32px var(--font-family-number-display); /* 默认数字 */
+	--number-normal-medium: var(--font-weight-semi-bold) 24px/32px var(--font-family-number-display); /* 默认数字medium */
+	--number-large-regular: var(--font-weight-regular) 32px/40px var(--font-family-number-display); /* 大号数字 */
+	--number-large-medium: var(--font-weight-semi-bold) 32px/40px var(--font-family-number-display); /* 大号数字medium */
 	--border-thickness: 0.5px; /* 细描边 */
 	--border-normal: 1px; /* 默认描边 */
 	--border-active: 1px; /* 激活描边 */
 	--border-focus: 1px; /* focus描边 */
 	--spacing-ultra-loose: 48px; /* 较宽松尺寸内/外边距—页面级别 */
 	--spacing-super-loose-large: 64px; /* 很宽松尺寸内/外边距—页面级别 */
-	--formItem-text-label-default: 400 14px/16px var(--font-family-normal); /* 表单/描述组件label文字 */
+	--formItem-text-label-default: var(--font-weight-regular) 14px/16px var(--font-family-normal); /* 表单/描述组件label文字 */
 	--imageviewer-bg-normal: var(--color-opacity-9);
 	--table-head-bg: var(--color-opacity-1); /* 表头背景色 */
 	--table-shadow-single-left: var(--shadow-left-medium);
@@ -796,16 +800,21 @@
 	--shadow-bottom-medium: var(--shadow-bottom-medium-x-3) var(--shadow-bottom-medium-y-1) var(--shadow-bottom-medium-blur-3) var(--shadow-bottom-medium-spread-3) var(--shadow-bottom-medium-color-3), var(--shadow-bottom-medium-x-2) var(--shadow-bottom-medium-y-1) var(--shadow-bottom-medium-blur-2) var(--shadow-bottom-medium-spread-2) var(--shadow-bottom-medium-color-2), var(--shadow-bottom-medium-x-1) var(--shadow-bottom-medium-y-1) var(--shadow-bottom-medium-blur-1) var(--shadow-bottom-medium-spread-1) var(--shadow-bottom-medium-color-1); /* 下侧单边投影 */
 	--font-family-normal: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial,"PingFang SC","Microsoft YaHei","Noto Sans",sans-serif;
 	--font-family-number-display: Inter,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial,"PingFang SC","Microsoft YaHei","Noto Sans",sans-serif; /* 数字指标字体 */
-	--display-bold: 600 32px/40px var(--font-family-normal); /* 超大标题 */
-	--headline-bold: 600 24px/32px var(--font-family-normal); /* 大标题 */
-	--title-regular: 400 20px/28px var(--font-family-normal); /* 标题 */
-	--title-bold: 600 20px/28px var(--font-family-normal); /* 标题 */
-	--subtitle-regular: 400 16px/24px var(--font-family-normal); /* 小标题 */
-	--subtitle-medium: 500 16px/24px var(--font-family-normal); /* 小标题 */
-	--body-regular: 400 14px/20px var(--font-family-normal); /* 正文的默认字号 */
-	--body-medium: 500 14px/20px var(--font-family-normal); /* 正文 */
-	--caption-regular: 400 12px/16px var(--font-family-normal); /* 说明文本 */
-	--caption-medium: 500 12px/16px var(--font-family-normal); /* 说明文本 */
+	
+	--font-weight-regular:400;
+	--font-weight-medium:500;
+	--font-weight-semi-bold:550;
+	--font-weight-bold:600;
+	--display-bold: var(--font-weight-bold) 32px/40px var(--font-family-normal); /* 超大标题 */
+	--headline-bold: var(--font-weight-bold) 24px/32px var(--font-family-normal); /* 大标题 */
+	--title-regular: var(--font-weight-regular) 20px/28px var(--font-family-normal); /* 标题 */
+	--title-bold: var(--font-weight-bold) 20px/28px var(--font-family-normal); /* 标题 */
+	--subtitle-regular: var(--font-weight-regular) 16px/24px var(--font-family-normal); /* 小标题 */
+	--subtitle-medium: var(--font-weight-medium) 16px/24px var(--font-family-normal); /* 小标题 */
+	--body-regular: var(--font-weight-regular) 14px/20px var(--font-family-normal); /* 正文的默认字号 */
+	--body-medium: var(--font-weight-medium) 14px/20px var(--font-family-normal); /* 正文 */
+	--caption-regular: var(--font-weight-regular) 12px/16px var(--font-family-normal); /* 说明文本 */
+	--caption-medium: var(--font-weight-medium) 12px/16px var(--font-family-normal); /* 说明文本 */
 	--radius-small: calc(var(--radius-normal)/2);
 	--radius-normal: 3px; /* 控件、小卡片等 */
 	--radius-large: calc(var(--radius-normal)*2); /* 大卡片、大弹框等 */
@@ -839,20 +848,20 @@
 	--duration-end-m: 0.1s; /* 控件 */
 	--duration-end-l: 0.15s; /* 默认 */
 	--duration-end-xl: 0.3s; /* 大卡片 */
-	--number-text-bold: 600 16px/24px var(--font-family-normal); /* 超大标题 */
-	--number-small-regular: 400 20px/28px var(--font-family-number-display); /* 小号数字 */
-	--number-small-medium: 550 20px/28px var(--font-family-number-display);
-	--number-normal-regular: 400 24px/32px var(--font-family-number-display); /* 默认数字 */
-	--number-normal-medium: 550 24px/32px var(--font-family-number-display); /* 默认数字medium */
-	--number-large-regular: 400 32px/40px var(--font-family-number-display); /* 大号数字 */
-	--number-large-medium: 550 32px/40px var(--font-family-number-display); /* 大号数字medium */
+	--number-text-bold: var(--font-weight-bold) 16px/24px var(--font-family-normal); /* 超大标题 */
+	--number-small-regular: var(--font-weight-regular) 20px/28px var(--font-family-number-display); /* 小号数字 */
+	--number-small-medium: var(--font-weight-semi-bold) 20px/28px var(--font-family-number-display);
+	--number-normal-regular: var(--font-weight-regular) 24px/32px var(--font-family-number-display); /* 默认数字 */
+	--number-normal-medium: var(--font-weight-semi-bold) 24px/32px var(--font-family-number-display); /* 默认数字medium */
+	--number-large-regular: var(--font-weight-regular) 32px/40px var(--font-family-number-display); /* 大号数字 */
+	--number-large-medium: var(--font-weight-semi-bold) 32px/40px var(--font-family-number-display); /* 大号数字medium */
 	--border-thickness: 0.5px; /* 细描边 */
 	--border-normal: 1px; /* 默认描边 */
 	--border-active: 1px; /* 激活描边 */
 	--border-focus: 1px; /* focus描边 */
 	--spacing-ultra-loose: 48px; /* 较宽松尺寸内/外边距—页面级别 */
 	--spacing-super-loose-large: 64px; /* 很宽松尺寸内/外边距—页面级别 */
-	--formItem-text-label-default: 400 14px/16px var(--font-family-normal); /* 表单/描述组件label文字 */
+	--formItem-text-label-default: var(--font-weight-regular) 14px/16px var(--font-family-normal); /* 表单/描述组件label文字 */
 	--imageviewer-bg-normal: rgba(1,7,30,0.74);
 	--table-head-bg: var(--color-opacity-1); /* 表头背景色 */
 	--table-shadow-single-right: var(--shadow-right-medium);
@@ -1228,18 +1237,23 @@
 	--shadow-right-medium: var(--shadow-right-medium-x-3) var(--shadow-right-medium-y-3) var(--shadow-right-medium-blur-3) var(--shadow-right-medium-spread-3) var(--shadow-right-medium-color-3), var(--shadow-right-medium-x-2) var(--shadow-right-medium-y-2) var(--shadow-right-medium-blur-2) var(--shadow-right-medium-spread-2) var(--shadow-right-medium-color-2), var(--shadow-right-medium-x-1) var(--shadow-right-medium-y-1) var(--shadow-right-medium-blur-1) var(--shadow-right-medium-spread-1) var(--shadow-right-medium-color-1); /* 右侧单边投影 */
 	--shadow-top-medium: var(--shadow-top-medium-x-3) var(--shadow-top-medium-y-3) var(--shadow-top-medium-blur-3) var(--shadow-top-medium-spread-3) var(--shadow-top-medium-color-3), var(--shadow-top-medium-x-2) var(--shadow-top-medium-y-2) var(--shadow-top-medium-blur-2) var(--shadow-top-medium-spread-2) var(--shadow-top-medium-color-2), var(--shadow-top-medium-x-1) var(--shadow-top-medium-y-1) var(--shadow-top-medium-blur-1) var(--shadow-top-medium-spread-1) var(--shadow-top-medium-color-1); /* 上侧单边投影 */
 	--shadow-bottom-medium: var(--shadow-bottom-medium-x-3) var(--shadow-bottom-medium-y-1) var(--shadow-bottom-medium-blur-3) var(--shadow-bottom-medium-spread-3) var(--shadow-bottom-medium-color-3), var(--shadow-bottom-medium-x-2) var(--shadow-bottom-medium-y-1) var(--shadow-bottom-medium-blur-2) var(--shadow-bottom-medium-spread-2) var(--shadow-bottom-medium-color-2), var(--shadow-bottom-medium-x-1) var(--shadow-bottom-medium-y-1) var(--shadow-bottom-medium-blur-1) var(--shadow-bottom-medium-spread-1) var(--shadow-bottom-medium-color-1); /* 下侧单边投影 */
-	--display-bold: 600 32px/40px var(--font-family-normal); /* 超大标题 */
-	--headline-bold: 600 24px/32px var(--font-family-normal); /* 大标题 */
+	
+	--font-weight-regular:400;
+	--font-weight-medium:500;
+	--font-weight-semi-bold:550;
+	--font-weight-bold:600;
+	--display-bold: var(--font-weight-bold) 32px/40px var(--font-family-normal); /* 超大标题 */
+	--headline-bold: var(--font-weight-bold) 24px/32px var(--font-family-normal); /* 大标题 */
 	--font-family-normal: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial,"PingFang SC","Microsoft YaHei","Noto Sans",sans-serif; /* 默认全局字体 */
 	--font-family-number-display: Inter,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial,"PingFang SC","Microsoft YaHei","Noto Sans",sans-serif; /* 数字指标字体 */
-	--title-regular: 400 20px/28px var(--font-family-normal); /* 标题文字 */
-	--title-bold: 600 20px/28px var(--font-family-normal); /* 标题 */
-	--subtitle-regular: 400 16px/24px var(--font-family-normal); /* 小标题 */
-	--subtitle-medium: 500 16px/24px var(--font-family-normal); /* 小标题 */
-	--body-regular: 400 14px/20px var(--font-family-normal); /* 正文的默认字号 */
-	--body-medium: 500 14px/20px var(--font-family-normal); /* 正文 */
-	--caption-regular: 400 12px/16px var(--font-family-normal); /* 说明文本 */
-	--caption-medium: 500 12px/16px var(--font-family-normal); /* 说明文本 */
+	--title-regular: var(--font-weight-regular) 20px/28px var(--font-family-normal); /* 标题文字 */
+	--title-bold: var(--font-weight-bold) 20px/28px var(--font-family-normal); /* 标题 */
+	--subtitle-regular: var(--font-weight-regular) 16px/24px var(--font-family-normal); /* 小标题 */
+	--subtitle-medium: var(--font-weight-medium) 16px/24px var(--font-family-normal); /* 小标题 */
+	--body-regular: var(--font-weight-regular) 14px/20px var(--font-family-normal); /* 正文的默认字号 */
+	--body-medium: var(--font-weight-medium) 14px/20px var(--font-family-normal); /* 正文 */
+	--caption-regular: var(--font-weight-regular) 12px/16px var(--font-family-normal); /* 说明文本 */
+	--caption-medium: var(--font-weight-medium) 12px/16px var(--font-family-normal); /* 说明文本 */
 	--radius-small: calc(var(--radius-normal)/2);
 	--radius-normal: 6px; /* 控件、小卡片等 */
 	--radius-large: calc(var(--radius-normal)*2); /* 大卡片、大弹框等 */
@@ -1272,20 +1286,20 @@
 	--duration-end-m: 0.1s; /* 控件 */
 	--duration-end-l: 0.15s; /* 默认 */
 	--duration-end-xl: 0.3s; /* 大卡片 */
-	--number-text-bold: 600 16px/24px var(--font-family-normal); /* 文本数字 */
-	--number-small-regular: 400 20px/28px var(--font-family-number-display); /* 小号数字 */
-	--number-small-medium: 550 20px/28px var(--font-family-number-display); /* 小号数字medium */
-	--number-normal-regular: 400 24px/32px var(--font-family-number-display); /* 默认数字 */
-	--number-normal-medium: 550 24px/32px var(--font-family-number-display); /* 默认数字medium */
-	--number-large-regular: 400 32px/40px var(--font-family-number-display); /* 大号数字 */
-	--number-large-medium: 550 32px/40px var(--font-family-number-display); /* 大号数字medium */
+	--number-text-bold: var(--font-weight-bold) 16px/24px var(--font-family-normal); /* 文本数字 */
+	--number-small-regular: var(--font-weight-regular) 20px/28px var(--font-family-number-display); /* 小号数字 */
+	--number-small-medium: var(--font-weight-semi-bold) 20px/28px var(--font-family-number-display); /* 小号数字medium */
+	--number-normal-regular: var(--font-weight-regular) 24px/32px var(--font-family-number-display); /* 默认数字 */
+	--number-normal-medium: var(--font-weight-semi-bold) 24px/32px var(--font-family-number-display); /* 默认数字medium */
+	--number-large-regular: var(--font-weight-regular) 32px/40px var(--font-family-number-display); /* 大号数字 */
+	--number-large-medium: var(--font-weight-semi-bold) 32px/40px var(--font-family-number-display); /* 大号数字medium */
 	--border-thickness: 1px; /* 细描边 */
 	--border-normal: 2px; /* 默认描边 */
 	--border-active: 2px; /* 激活描边 */
 	--border-focus: 2px; /* focus描边 */
 	--spacing-ultra-loose: 48px; /* 较宽松尺寸内/外边距—页面级别 */
 	--spacing-super-loose-large: 64px; /* 很宽松尺寸内/外边距—页面级别 */
-	--formItem-text-label-default: 400 14px/16px var(--font-family-normal); /* 表单/描述组件label文字 */
+	--formItem-text-label-default: var(--font-weight-regular) 14px/16px var(--font-family-normal); /* 表单/描述组件label文字 */
 	--imageviewer-bg-normal: var(--color-opacity-9);
 	--table-head-bg: var(--color-opacity-9); /* 表头背景色 */
 	--table-shadow-single-left: var(--shadow-left-medium);
